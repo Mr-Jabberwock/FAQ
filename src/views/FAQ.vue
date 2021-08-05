@@ -7,7 +7,49 @@
             <topics>
             <!-- This slot will handle the title/header of the accordion and is the part you click on -->
                 <template slot="accordion-trigger">
-                    <h3 class="accordion__title">Item 1</h3>
+                    <h2 class="accordion__title">Punch clock</h2>
+                </template>
+                <!-- This slot will handle all the content that is passed to the accordion -->
+                <template slot="accordion-content">
+                    <ul class="accordion-content__list">
+                        <li class="accordion-content__item">
+                            <div class="accordion-content__itemContent">
+                                <h3 class="accordion-content__itemTitle">Where is Gamora?</h3>
+                                <p class="accordion-content__itemText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris convallis sagittis lacinia. Integer nulla nisi, finibus sit amet ante id. </p>
+                            </div>
+                        </li>
+                        <li class="accordion-content__item">
+                            <div class="accordion-content__itemContent">
+                                <h3 class="accordion-content__itemTitle">Who is Gamora?</h3>
+                                <p class="accordion-content__itemText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris convallis sagittis lacinia. Integer nulla nisi, finibus sit amet ante id. </p>
+                            </div>
+                        </li>
+                        <li class="accordion-content__item">
+                            <div class="accordion-content__itemContent">
+                                <h3 class="accordion-content__itemTitle">Why is Gamora?</h3>
+                                <p class="accordion-content__itemText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris convallis sagittis lacinia. Integer nulla nisi, finibus sit amet ante id. </p>
+                            </div>
+                        </li>
+                        <li class="accordion-content__item">
+                            <div class="accordion-content__itemContent">
+                                <h3 class="accordion-content__itemTitle">When is Gamora?</h3>
+                                <p class="accordion-content__itemText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris convallis sagittis lacinia. Integer nulla nisi, finibus sit amet ante id. </p>
+                            </div>
+                        </li>
+                        <li class="accordion-content__item">
+                            <div class="accordion-content__itemContent">
+                                <h3 class="accordion-content__itemTitle">How is Gamora?</h3>
+                                <p class="accordion-content__itemText">Could be better.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </template>
+            </topics>
+
+            <topics>
+                <!-- This slot will handle the title/header of the accordion and is the part you click on -->
+                <template slot="accordion-trigger">
+                    <h2 class="accordion__title">Scan</h2>
                 </template>
                 <!-- This slot will handle all the content that is passed to the accordion -->
                 <template slot="accordion-content">
@@ -18,18 +60,7 @@
             <topics>
                 <!-- This slot will handle the title/header of the accordion and is the part you click on -->
                 <template slot="accordion-trigger">
-                    <h3 class="accordion__title">Item 2</h3>
-                </template>
-                <!-- This slot will handle all the content that is passed to the accordion -->
-                <template slot="accordion-content">
-                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-                </template>
-            </topics>
-
-            <topics>
-                <!-- This slot will handle the title/header of the accordion and is the part you click on -->
-                <template slot="accordion-trigger">
-                    <h3 class="accordion__title">Item 3</h3>
+                    <h2 class="accordion__title">Trophies</h2>
                 </template>
                 <!-- This slot will handle all the content that is passed to the accordion -->
                 <template slot="accordion-content">
@@ -77,5 +108,18 @@ export default {
 }
 .accordion__title{
     margin-left: 5%;
+}
+.accordion{
+    max-width: 80%;
+}
+.accordion-content__list{
+    margin-top: 1rem;
+    list-style-type: none;
+    
+}
+.accordion-content__itemContent{
+    cursor: pointer;
+    border: 1px solid #ebebeb;
+    position: relative;
 }
 </style>
