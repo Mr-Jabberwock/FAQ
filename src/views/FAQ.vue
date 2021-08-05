@@ -1,8 +1,8 @@
 <template>
-    <div>
-       <SearchBar class="SearchBar"/>
-       <NavigationBar/>
-    </div>
+  <div id="faq">
+    <navigation-bar></navigation-bar>
+    <accordion>
+        <topics>
 </template>
 
 <script>
@@ -14,8 +14,9 @@ export default {
   components: {
     NavigationBar,
     SearchBar
+    Accordion,
+    Topics
   }
-}
 
 </script>
 <style>
@@ -27,4 +28,11 @@ export default {
 }
 
 
+<style>
+#FAQ {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  margin-top: 60px;
 </style>
