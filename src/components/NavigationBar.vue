@@ -1,5 +1,5 @@
 <template>
-<div>navoigation</div>
+<div>navigation</div>
 </template>
 
 <script>
