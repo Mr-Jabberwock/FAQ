@@ -67,7 +67,7 @@ export default {
 .accordion__item {
   cursor: pointer;
   border-bottom: 1px solid #ebebeb;
-  position: relative;
+  /* position: relative; */
 }
 .accordion__trigger_active, .accordion__item:hover{
     background-color: #ccc;

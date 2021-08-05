@@ -7,7 +7,7 @@
             <topics>
             <!-- This slot will handle the title/header of the accordion and is the part you click on -->
                 <template slot="accordion-trigger">
-                    <h3>Item 1</h3>
+                    <h3 class="accordion__title">Item 1</h3>
                 </template>
                 <!-- This slot will handle all the content that is passed to the accordion -->
                 <template slot="accordion-content">
@@ -18,7 +18,7 @@
             <topics>
                 <!-- This slot will handle the title/header of the accordion and is the part you click on -->
                 <template slot="accordion-trigger">
-                    <h3>Item 2</h3>
+                    <h3 class="accordion__title">Item 2</h3>
                 </template>
                 <!-- This slot will handle all the content that is passed to the accordion -->
                 <template slot="accordion-content">
@@ -29,7 +29,7 @@
             <topics>
                 <!-- This slot will handle the title/header of the accordion and is the part you click on -->
                 <template slot="accordion-trigger">
-                    <h3>Item 3</h3>
+                    <h3 class="accordion__title">Item 3</h3>
                 </template>
                 <!-- This slot will handle all the content that is passed to the accordion -->
                 <template slot="accordion-content">
@@ -74,5 +74,8 @@ export default {
     -moz-osx-font-smoothing: grayscale;
     color: #2c3e50;
     margin-top: 60px;
+}
+.accordion__title{
+    margin-left: 5%;
 }
 </style>

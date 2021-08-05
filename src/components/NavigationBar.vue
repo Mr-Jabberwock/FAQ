@@ -3,18 +3,18 @@
     <div class="container">
     <div>
     <ul class="subject_list">
-        <li class="l1">Punch clock</li>
-        <li class="l2">Scan</li>
-        <li class="l3">Trophies</li>
-        <li class="l4">Parcels</li>
-        <li class="l5">Serial number</li>
-        <li class="l6">Users</li>
-        <li class="l7">Salary</li>
-        <li class="l8">Lists</li>
-        <li class="l9">Statistics</li>
-        <li class="l10">Dashboard</li>
-        <li class="l11">Schedule</li>
-        <li class="l12">Settings</li>
+        <li class="subject_list__item">Punch clock</li>
+        <li class="subject_list__item">Scan</li>
+        <li class="subject_list__item">Trophies</li>
+        <li class="subject_list__item">Parcels</li>
+        <li class="subject_list__item">Serial number</li>
+        <li class="subject_list__item">Users</li>
+        <li class="subject_list__item">Salary</li>
+        <li class="subject_list__item">Lists</li>
+        <li class="subject_list__item">Statistics</li>
+        <li class="subject_list__item">Dashboard</li>
+        <li class="subject_list__item">Schedule</li>
+        <li class="subject_list__item">Settings</li>
     </ul>
     </div>
    </div>
@@ -40,13 +40,13 @@ export default{
    list-style-type: none;
 
 }
-li{
+.subject_list__item{
    padding-bottom: 10px;
    margin-top: 10px;
    color: rgb(63, 63, 63);
 }
 
-li:hover{
+.subject_list__item:hover{
   padding-left: 20px;
 }
 </style>
