@@ -54,7 +54,9 @@ export default {
 </script>
 
 <style>
-#FAQ {
+#faq{
+    display: grid;
+    grid-template-columns: 10% auto;
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

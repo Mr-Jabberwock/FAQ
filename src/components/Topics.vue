@@ -66,9 +66,15 @@ export default {
 <style>
 .accordion__item {
   cursor: pointer;
-  padding: 10px 20px 10px 40px;
   border-bottom: 1px solid #ebebeb;
   position: relative;
+}
+.accordion__trigger_active, .accordion__item:hover{
+    background-color: #ccc;
+}
+
+.accordion__content{
+    background-color: white;
 }
 
 .accordion__trigger {

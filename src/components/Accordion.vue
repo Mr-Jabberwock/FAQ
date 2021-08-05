@@ -28,7 +28,7 @@ export default {
   padding: 0;
 }
 
-.accordion__item:last-child {
+/* .accordion__item:last-child {
 border-bottom: none;
-}
+} */
 </style>
