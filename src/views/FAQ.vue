@@ -2,18 +2,18 @@
     <div id="faq">
         <navigation-bar></navigation-bar>
         <div class="faq__content">
-        <search-bar></search-bar>
+        <search-bar v-on:searchCriteria="searchData"></search-bar>
         <accordion>
             <topics>
             <!-- This slot will handle the title/header of the accordion and is the part you click on -->
-                <template slot="accordion-trigger">
+                <template slot="accordion-trigger" v-if="punchClockSearched">
                     <h2 class="accordion__title">Punch Clock</h2>
                 </template>
                 <!-- This slot will handle all the content that is passed to the accordion -->
                 <template slot="accordion-content">
                     <div class="accordion-content__itemContent" v-for="article in articlesForPunchClock" :key="article.title">
                       <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
-                       <p class="accordion-content__itemText">{{article.bodyText[0]}}</p>
+                      <p class="accordion-content__itemText">{{article.bodyText[0]}}</p>
                     </div>
                 </template>
             </topics>
@@ -73,8 +73,15 @@ export default {
   },
   data(){
     return{
-      articles: json.articles
+      articles: json.articles,
+      searchCriteria: "",
     }
+  },
+  methods: {
+     searchData(data){
+        this.searchCriteria = data;
+        console.log(data)
+     }
   },
   computed: {
       articlesForPunchClock() {
@@ -87,6 +94,18 @@ export default {
           return article.category === "Users";
         });
       }
+  },
+  watch: {
+    punchClockSearched(){
+        
+        for (const iterator of this.articlesForPunchClock) {
+          console.log(iterator.title)
+          
+        }
+        console.log(this.sumOfText)
+        return this.articlesForPunchClock[0].title.includes(this.searchCriteria);
+      }
+
   }
 }
 

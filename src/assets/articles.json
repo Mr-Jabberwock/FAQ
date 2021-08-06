@@ -1,37 +1,37 @@
 {
-  "articles": [
-        {
-            "title": "How to punch in/out",
-            "category": "Punch Clock",
-            "bodyText": [
-                "The big green 'Punch in' button is a toggle switch. Press it to start your shift. When you do so it will turn red and the text will say 'Punch out'.",
-                "Additionally at the bottom of the page your name will be added to a series of lines. These are the 'punched in' employees and you see their name and their 'punch in' time in this line. As an admin, you also have the possibility to 'punch out' an employee. This is in case they forgot to punch themselves out or in case something else of that sort goes wrong. The salary type toggle makes it possible for you to toggle your own or someone else's salary between being on commision or being on an hourly rate. The 'Punch Clock' list on the top right side indicates your 10 most recent 'punch outs'. The most recent one will be at the top. Furthermore you can search for the names of people who are 'punched in' in the search bar."
-            ],
-            "images": [
-                "Image1", "Image2"
-            ]
-        },
-        {
-            "title": "How to validate",
-            "category": "Punch Clock",
-            "bodyText": [
-                "Head over to the Validation page.",
-                "It looks similar to the Punches site, but there are some variations. Mainly at the bottom. This is like a more sophisticated version of the list from the Punches page. What we can see here is the time that a certain employee punched in and the time they punched out. This list however, is for both the employees who are currently punched in, and employees who have punched out. "
-            ],
-            "images": [
-                "Image1", "Image2"
-            ]
-        },
-        {
-            "title": "How to create a new user",
-            "category": "Users",
-            "bodyText": [
-                "To create a new user click on the “Create user” button on the right side of the page.",
-                "You will then be shown a page where you can enter the information."
-            ],
-            "images": [
-                "Image1", "Image2"
-            ]
-        }
-  ]
-}
+    "articles": [
+          {
+              "title": "How to punch in/out",
+              "category": "Punch Clock",
+              "bodyText": [
+                  "The big green 'Punch in' button is a toggle switch. Press it to start your shift. When you do so it will turn red and the text will say 'Punch out'.",
+                  "Additionally at the bottom of the page your name will be added to a series of lines. These are the 'punched in' employees and you see their name and their 'punch in' time in this line. As an admin, you also have the possibility to 'punch out' an employee. This is in case they forgot to punch themselves out or in case something else of that sort goes wrong. The salary type toggle makes it possible for you to toggle your own or someone else's salary between being on commision or being on an hourly rate. The 'Punch Clock' list on the top right side indicates your 10 most recent 'punch outs'. The most recent one will be at the top. Furthermore you can search for the names of people who are 'punched in' in the search bar."
+              ],
+              "images": [
+                  "Image1", "Image2"
+              ]
+          },
+          {
+              "title": "How to validate",
+              "category": "Punch Clock",
+              "bodyText": [
+                  "Head over to the Validation page.",
+                  "It looks similar to the Punches site, but there are some variations. Mainly at the bottom. This is like a more sophisticated version of the list from the Punches page. What we can see here is the time that a certain employee punched in and the time they punched out. This list however, is for both the employees who are currently punched in, and employees who have punched out. "
+              ],
+              "images": [
+                  "Image1", "Image2"
+              ]
+          },
+          {
+              "title": "How to create a new user",
+              "category": "Users",
+              "bodyText": [
+                  "To create a new user click on the “Create user” button on the right side of the page.",
+                  "You will then be shown a page where you can enter the information."
+              ],
+              "images": [
+                  "Image1", "Image2"
+              ]
+          }
+    ]
+  }
