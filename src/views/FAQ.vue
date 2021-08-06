@@ -2,11 +2,11 @@
     <div id="faq">
         <navigation-bar></navigation-bar>
         <div class="faq__content">
-        <search-bar></search-bar>
+        <search-bar v-on:searchCriteria="searchData"></search-bar>
         <accordion>
             <topics>
             <!-- This slot will handle the title/header of the accordion and is the part you click on -->
-                <template slot="accordion-trigger">
+                <template slot="accordion-trigger" v-if="punchClockSearched">
                     <h2 class="accordion__title">Punch Clock</h2>
                 </template>
                 <!-- This slot will handle all the content that is passed to the accordion -->
@@ -16,11 +16,11 @@
                     :key="article.title"
                     @click="goToArticle(article.title)">
                       <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
-                       <p class="accordion-content__itemText">{{article.bodyText[0]}}</p>
+                      <p class="accordion-content__itemText">{{article.bodyText[0]}}</p>
                     </div>
                 </template>
             </topics>
-            <topics>
+                        <topics>
             <!-- This slot will handle the title/header of the accordion and is the part you click on -->
                 <template slot="accordion-trigger">
                     <h2 class="accordion__title">Users</h2>
@@ -117,9 +117,9 @@
                 </template>
             </topics>
             <topics>
-            <!-- This slot will handle the title/header of the accordion and is the part you click on -->
+                <!-- This slot will handle the title/header of the accordion and is the part you click on -->
                 <template slot="accordion-trigger">
-                    <h2 class="accordion__title">Statistics</h2>
+                    <h2 class="accordion__title">Scan</h2>
                 </template>
                 <!-- This slot will handle all the content that is passed to the accordion -->
                 <template slot="accordion-content">
@@ -132,10 +132,11 @@
                     </div>
                 </template>
             </topics>
+
             <topics>
-            <!-- This slot will handle the title/header of the accordion and is the part you click on -->
+                <!-- This slot will handle the title/header of the accordion and is the part you click on -->
                 <template slot="accordion-trigger">
-                    <h2 class="accordion__title">Lists</h2>
+                    <h2 class="accordion__title">Trophies</h2>
                 </template>
                 <!-- This slot will handle all the content that is passed to the accordion -->
                 <template slot="accordion-content">
@@ -170,7 +171,17 @@ export default {
   },
   data(){
     return{
-      articles: json.articles
+      articles: json.articles,
+      searchCriteria: "",
+    }
+  },
+  methods: {
+     searchData(data){
+        this.searchCriteria = data;
+        console.log(data)
+     },
+         goToArticle(title) {
+      this.$router.push("/articles/" + title);
     }
   },
   computed: {
@@ -183,47 +194,18 @@ export default {
         return this.articles.filter(function(article) {
           return article.category === "Users";
         });
-      },
-      articlesForSettings(){
-        return this.articles.filter(function(article) {
-          return article.category === "Settings";
-        });
-      },
-      articlesForSchedule(){
-        return this.articles.filter(function(article) {
-          return article.category === "Schedule";
-        });
-      },
-      articlesForSerialNumber(){
-        return this.articles.filter(function(article) {
-          return article.category === "Serial Number";
-        });
-      },
-      articlesForParcels(){
-        return this.articles.filter(function(article) {
-          return article.category === "Parcels";
-        });
-      },
-      articlesForSalary(){
-        return this.articles.filter(function(article) {
-          return article.category === "Salary";
-        });
-      },
-      articlesForStatistics(){
-        return this.articles.filter(function(article) {
-          return article.category === "Statistics";
-        });
-      },
-      articlesForLists(){
-        return this.articles.filter(function(article) {
-          return article.category === "Lists";
-        });
       }
   },
-  methods: {
-    goToArticle(title) {
-      this.$router.push("/articles/" + title);
-    }
+  watch: {
+    punchClockSearched(){
+        
+        for (const iterator of this.articlesForPunchClock) {
+          console.log(iterator.title)
+        }
+        console.log(this.sumOfText)
+        return this.articlesForPunchClock[0].title.includes(this.searchCriteria);
+      }
+
   }
 }
 
@@ -237,16 +219,13 @@ export default {
 }
 
 #faq{
-    /* display: grid;
-    grid-template-columns: 30% auto; */
+    display: grid;
+    grid-template-columns: 30% auto;
     font-family: "Avenir", Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #2c3e50;
     margin-top: 60px;
-}
-.faq__content{
-    padding-left: 30%;
 }
 .accordion__title{
     margin-left: 5%;
@@ -262,16 +241,6 @@ export default {
 .accordion-content__itemContent{
     cursor: pointer;
     border: 1px solid #ebebeb;
-    margin-left:-2.5rem;
-    
-}
-.accordion-content__itemTitle{
-    margin-left:3rem;
-    
-}
-.accordion-content__itemText{
-    margin-left:4rem;
-    margin-right: 4rem;
-    
+    position: relative;
 }
 </style>
