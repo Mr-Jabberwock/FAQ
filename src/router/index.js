@@ -6,7 +6,7 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/faq',
+    path: '/',
     name: 'FAQ',
     component: FAQ
   },
@@ -27,6 +27,7 @@ const routes = [
 
 const router = new VueRouter({
   mode: 'history',
+  hash: false,
   base: process.env.BASE_URL,
   routes
 })

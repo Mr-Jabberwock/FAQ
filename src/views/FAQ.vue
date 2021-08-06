@@ -194,18 +194,15 @@ export default {
         return this.articles.filter(function(article) {
           return article.category === "Users";
         });
-      }
-  },
-  watch: {
-    punchClockSearched(){
+      },
+      punchClockSearched(){
         
         for (const iterator of this.articlesForPunchClock) {
           console.log(iterator.title)
         }
         console.log(this.sumOfText)
         return this.articlesForPunchClock[0].title.includes(this.searchCriteria);
-      }
-
+     }
   }
 }
 
