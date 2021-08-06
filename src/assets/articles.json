@@ -1,6 +1,7 @@
 {
   "articles": [
         {
+            "id":"1",
             "title": "How to punch in/out",
             "category": "Punch Clock",
             "bodyText": [
@@ -12,6 +13,7 @@
             ]
         },
         {
+            "id":"2",
             "title": "How to validate",
             "category": "Punch Clock",
             "bodyText": [
@@ -23,6 +25,7 @@
             ]
         },
         {
+            "id":"3",
             "title": "How to create a new user",
             "category": "Users",
             "bodyText": [
@@ -34,6 +37,7 @@
             ]
         },
         {
+            "id":"4",
             "title": "How to select a printer",
             "category": "Settings",
             "bodyText": [
@@ -45,6 +49,7 @@
             ]
         },
         {
+            "id":"5",
             "title": "How to request a leave",
             "category": "Schedule",
             "bodyText": [
@@ -58,6 +63,7 @@
             ]
         },
         {
+            "id":"6",
             "title": "How do I create a new route?",
             "category": "Lists",
             "bodyText": [
@@ -69,6 +75,7 @@
             ]
         },
         {
+            "id":"7",
             "title": "How do I see the infromation of a serial number?",
             "category": "Serial Number",
             "bodyText": [
@@ -80,6 +87,7 @@
             ]
         },
         {
+            "id":"8",
             "title": "How to see orders",
             "category": "Parcels",
             "bodyText": [
@@ -92,6 +100,7 @@
             ]
         },
         {
+            "id":"9",
             "title": "How do I pick a time period?",
             "category": "Salary",
             "bodyText": [
@@ -103,6 +112,7 @@
             ]
         },
         {
+            "id":"10",
             "title": "How do I pick a period?",
             "category": "Statistics",
             "bodyText": [
@@ -115,6 +125,7 @@
             ]
         },
         {
+            "id":"11",
             "title": "How do I pick a list?",
             "category": "Lists",
             "bodyText": [
@@ -126,6 +137,7 @@
             ]
         },
         {
+            "id":"12",
             "title": "How do I pick a list?",
             "category": "Parcels",
             "bodyText": [
@@ -138,6 +150,7 @@
             ]
         },
         {
+            "id":"13",
             "title": "How do I view reports?",
             "category": "Punch Clock",
             "bodyText": [
