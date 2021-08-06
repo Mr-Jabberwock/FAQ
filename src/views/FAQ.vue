@@ -2,16 +2,19 @@
     <div id="faq">
         <navigation-bar></navigation-bar>
         <div class="faq__content">
-            <search-bar></search-bar>
+        <search-bar></search-bar>
         <accordion>
-            <topics>
+            <topics v-for="article in articles" :key="article.title" >
             <!-- This slot will handle the title/header of the accordion and is the part you click on -->
                 <template slot="accordion-trigger">
-                    <h3 class="accordion__title">Item 1</h3>
+                    <h3 class="accordion__title">{{article.punchclock[0].category}}</h3>
                 </template>
                 <!-- This slot will handle all the content that is passed to the accordion -->
                 <template slot="accordion-content">
-                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+                    <div class="accordion-content__itemContent" v-for="title in article.punchclock" :key="title.title">
+                      <p>{{title.title}}</p>
+                       
+                    </div>
                 </template>
             </topics>
 
@@ -46,6 +49,7 @@ import NavigationBar from '../components/NavigationBar'
 import SearchBar from '../components/SearchBar.vue'
 import Accordion from '../components/Accordion.vue'
 import Topics from '../components/Topics.vue'
+import json from "../assets/articles.json"
 
 export default {
   name: 'FAQ',
@@ -54,6 +58,11 @@ export default {
     SearchBar,
     Accordion,
     Topics
+  },
+  data(){
+    return{
+      articles: json.articles
+    }
   }
 }
 
