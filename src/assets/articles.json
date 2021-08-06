@@ -19,7 +19,7 @@
                 "It looks similar to the Punches site, but there are some variations. Mainly at the bottom. This is like a more sophisticated version of the list from the Punches page. What we can see here is the time that a certain employee punched in and the time they punched out. This list however, is for both the employees who are currently punched in, and employees who have punched out. "
             ],
             "images": [
-                "Image1", "Image2"
+                "Image1124", "Image22345"
             ]
         },
         {
@@ -30,7 +30,125 @@
                 "You will then be shown a page where you can enter the information."
             ],
             "images": [
-                "Image1", "Image2"
+                "Image100", "Image212"
+            ]
+        },
+        {
+            "title": "How to select a printer",
+            "category": "Settings",
+            "bodyText": [
+                "The options are the printers connected to the network of your place. You can see which ones are available for use.",
+                "Furthermore you need to state a packing station. That is simply just your own name. It’s company policy that everyone needs to give their name when they print."
+            ],
+            "images": [
+                "Image39", "Image400"
+            ]
+        },
+        {
+            "title": "How to request a leave",
+            "category": "Schedule",
+            "bodyText": [
+                "To request a leave press the button in the top right corner. A pop up will appear where you will need to fill out the basic information regarding the nature of your leave; why you wish to request a leave, when you want it to start and when you want it to end. The pop up will choose the user’s name by default. If you wish to choose a person anyway you can click the “Name” field. Dropdown options will appear, these are the employees. Choose your name to pick yourself for the request leave. ","Additionally at the bottom of the page your name will be added to a series of lines. These are the 'punched in' employees and you see their name and their 'punch in' time in this line. As an admin, you also have the possibility to 'punch out' an employee. This is in case they forgot to punch themselves out or in case something else of that sort goes wrong. The salary type toggle makes it possible for you to toggle your own or someone else's salary between being on commision or being on an hourly rate. The 'Punch Clock' list on the top right side indicates your 10 most recent 'punch outs'. The most recent one will be at the top. Furthermore you can search for the names of people who are 'punched in' in the search bar.",
+                "You must pick a reason for the leave. To pick a leave simply click on the “Reason”, you will get options to pick for your leave request.",
+                "You must pick a start and end date for your leave. Simply click on the “Start date” and “End date” field for the leave period.",
+                "Once the information has been filled out, you may press the “request leave” button in the bottom right corner. "
+             ],
+            "images": [
+                "Image34", "Image47"
+            ]
+        },
+        {
+            "title": "How do I create a new route?",
+            "category": "Lists",
+            "bodyText": [
+                "By clicking Create pick list in the upper right corner, you’ll see a pop up, which enables you to create a new list.",
+                "Firstly you must choose which company to make the pick list for. n/ Secondly you must pick out which packages to add to the list. Each carrier has a number to the right of their names. The number shows how many packages that the specific carrier has available. You can manually choose which ones you want added to the list. By checking off a box you get the list of the available packages for that specific company."
+            ],
+            "images": [
+                "Image2", "Image6"
+            ]
+        },
+        {
+            "title": "How do I see the infromation of a serial number?",
+            "category": "Serial Number",
+            "bodyText": [
+                "On the serial number page you can search for a serial number of a specific item. (At first the page is empty. You must first pick a serial number to get information.)",
+                "To get the information of a serial number, click on the “Search” field. You will be given a drop down with options of serial numbers. You can also write in the search field to filter/search for a specific serial number."
+            ],
+            "images": [
+                "Image16", "Image23"
+            ]
+        },
+        {
+            "title": "How to see orders",
+            "category": "Parcels",
+            "bodyText": [
+                "In the parcels page you can see information of orders and shipments. You will also be able to work and complete tasks with orders and shipments eg. print information, edit, lock etc.",
+                "On the top left you can choose to work with orders or shipments.",
+                "On the right side you can see 4 counters. Here you can see the current numbers and total sum of the statuses: New, Pick, Pack and Locked all of which are color coded according to the status they belong to. The number above is the current number, while the number below is the total sum."
+             ],
+            "images": [
+                "Image14", "Image98"
+            ]
+        },
+        {
+            "title": "How do I pick a time period?",
+            "category": "Salary",
+            "bodyText": [
+                "To see your salary report, you first need to pick a period of time for the system to search in. You can manually pick a start- and end date, or you can make a rough estimate on the period you want to search on by picking a specific month. Once you’ve picked your search period, press apply.",
+                "You can clear the time period by clicking on the X beside the date in start- and end date fields."    
+            ],
+            "images": [
+                "Image10", "Image22"
+            ]
+        },
+        {
+            "title": "How do I pick a period?",
+            "category": "Statistics",
+            "bodyText": [
+                "To view the list of statistical data, first pick a period. A period can be picked from the period date range. You can pick a specific period from the list, or you can click on Date range to get the option to choose a period between two dates.",
+                "Press Apply to fetch the statistics for the period.",
+                "To see the specifics of any given list item, simply press the item."
+             ],
+            "images": [
+                "Image7", "Image9"
+            ]
+        },
+        {
+            "title": "How do I pick a list?",
+            "category": "Lists",
+            "bodyText": [
+                "This is the first list you see when you go into the page. The Pick list site is a list of lists. Each list item is in themselves a list. Each list is an array of orders that needs to be picked up by a wagon in the store room and shipped together.",
+                "The search bar allows you to search for the ID of a pick list."
+            ],
+            "images": [
+                "Image2", "Image6"
+            ]
+        },
+        {
+            "title": "How do I pick a list?",
+            "category": "Parcels",
+            "bodyText": [
+                "If you wish to create a new shipment you can click on the Create shipment button on the right. You will then be shown the create shipment page.You will start with the delivery section where you can choose the sender country, recipient country, delivery company and shipping method.",
+                "To choose the sender country, click the dropdown for Sender country and hover over the option you wish, and click on it to choose the country the sender is from.",
+                "To choose the recipient country, click the dropdown for Recipient country and hover over the option you wish, and click on it to choose the country the recipient is from."
+             ],
+            "images": [
+                "Image2", "Image6"
+            ]
+        },
+        {
+            "title": "How do I view reports?",
+            "category": "Punch Clock",
+            "bodyText": [
+                "To view a report go to the Report page.",
+                "Like with the Validation page, the “Report” page is not different from the others except in regards to the content of the list at the bottom of the page.",
+                "The “Report” list keeps track of employees' work. By clicking on the arrow to the left you can see the details of the employees’ work history for the chosen period. ",
+                "The details include what kind of work was done, when it was done, the duration, the number of orders they handled in the time frame and the information about the parcels they handled in the period."
+
+            ],
+            "images": [
+                "Image2", "Image6"
             ]
         }
   ]

@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="navigation">
     <div class="container">
     <div>
     <ul class="subject_list">
@@ -29,6 +29,10 @@ export default{
 </script>
 
 <style>
+.navigation{
+   position: fixed;
+   width: 30%;
+}
 .container{
    border-left: lightgrey solid 2px;
    display: inline-block;
