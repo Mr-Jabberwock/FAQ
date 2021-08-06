@@ -6,7 +6,8 @@
         <accordion>
             <topics>
             <!-- This slot will handle the title/header of the accordion and is the part you click on -->
-                <template slot="accordion-trigger" v-if="punchClockSearched">
+                <!-- <template slot="accordion-trigger" v-if="punchClockSearched"> -->
+                <template slot="accordion-trigger" >
                     <h2 class="accordion__title">Punch Clock</h2>
                 </template>
                 <!-- This slot will handle all the content that is passed to the accordion -->
@@ -20,15 +21,15 @@
                     </div>
                 </template>
             </topics>
-                        <topics>
-            <!-- This slot will handle the title/header of the accordion and is the part you click on -->
+            <topics>
+                <!-- This slot will handle the title/header of the accordion and is the part you click on -->
                 <template slot="accordion-trigger">
-                    <h2 class="accordion__title">Users</h2>
+                    <h2 class="accordion__title">Scan</h2>
                 </template>
                 <!-- This slot will handle all the content that is passed to the accordion -->
                 <template slot="accordion-content">
                     <div class="accordion-content__itemContent" 
-                    v-for="article in articlesForUsers" 
+                    v-for="article in articlesForScan" 
                     :key="article.title"
                     @click="goToArticle(article.title)">
                       <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
@@ -37,46 +38,14 @@
                 </template>
             </topics>
             <topics>
-            <!-- This slot will handle the title/header of the accordion and is the part you click on -->
+                <!-- This slot will handle the title/header of the accordion and is the part you click on -->
                 <template slot="accordion-trigger">
-                    <h2 class="accordion__title">Settings</h2>
+                    <h2 class="accordion__title">Trophies</h2>
                 </template>
                 <!-- This slot will handle all the content that is passed to the accordion -->
                 <template slot="accordion-content">
                     <div class="accordion-content__itemContent" 
-                    v-for="article in articlesForSettings" 
-                    :key="article.title"
-                    @click="goToArticle(article.title)">
-                      <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
-                       <p class="accordion-content__itemText">{{article.bodyText[0]}}</p>
-                    </div>
-                </template>
-            </topics>
-            <topics>
-            <!-- This slot will handle the title/header of the accordion and is the part you click on -->
-                <template slot="accordion-trigger">
-                    <h2 class="accordion__title">Schedule</h2>
-                </template>
-                <!-- This slot will handle all the content that is passed to the accordion -->
-                <template slot="accordion-content">
-                    <div class="accordion-content__itemContent" 
-                    v-for="article in articlesForSchedule" 
-                    :key="article.title"
-                    @click="goToArticle(article.title)">
-                      <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
-                       <p class="accordion-content__itemText">{{article.bodyText[0]}}</p>
-                    </div>
-                </template>
-            </topics>
-            <topics>
-            <!-- This slot will handle the title/header of the accordion and is the part you click on -->
-                <template slot="accordion-trigger">
-                    <h2 class="accordion__title">Serial Number</h2>
-                </template>
-                <!-- This slot will handle all the content that is passed to the accordion -->
-                <template slot="accordion-content">
-                    <div class="accordion-content__itemContent" 
-                    v-for="article in articlesForSerialNumber" 
+                    v-for="article in articlesForTrophies" 
                     :key="article.title"
                     @click="goToArticle(article.title)">
                       <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
@@ -103,6 +72,38 @@
             <topics>
             <!-- This slot will handle the title/header of the accordion and is the part you click on -->
                 <template slot="accordion-trigger">
+                    <h2 class="accordion__title">Serial Number</h2>
+                </template>
+                <!-- This slot will handle all the content that is passed to the accordion -->
+                <template slot="accordion-content">
+                    <div class="accordion-content__itemContent" 
+                    v-for="article in articlesForSerialNumber" 
+                    :key="article.title"
+                    @click="goToArticle(article.title)">
+                      <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
+                       <p class="accordion-content__itemText">{{article.bodyText[0]}}</p>
+                    </div>
+                </template>
+            </topics>
+            <topics>
+            <!-- This slot will handle the title/header of the accordion and is the part you click on -->
+                <template slot="accordion-trigger">
+                    <h2 class="accordion__title">Users</h2>
+                </template>
+                <!-- This slot will handle all the content that is passed to the accordion -->
+                <template slot="accordion-content">
+                    <div class="accordion-content__itemContent" 
+                    v-for="article in articlesForUsers" 
+                    :key="article.title"
+                    @click="goToArticle(article.title)">
+                      <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
+                       <p class="accordion-content__itemText">{{article.bodyText[0]}}</p>
+                    </div>
+                </template>
+            </topics>
+            <topics>
+            <!-- This slot will handle the title/header of the accordion and is the part you click on -->
+                <template slot="accordion-trigger">
                     <h2 class="accordion__title">Salary</h2>
                 </template>
                 <!-- This slot will handle all the content that is passed to the accordion -->
@@ -117,9 +118,25 @@
                 </template>
             </topics>
             <topics>
-                <!-- This slot will handle the title/header of the accordion and is the part you click on -->
+            <!-- This slot will handle the title/header of the accordion and is the part you click on -->
                 <template slot="accordion-trigger">
-                    <h2 class="accordion__title">Scan</h2>
+                    <h2 class="accordion__title">Lists</h2>
+                </template>
+                <!-- This slot will handle all the content that is passed to the accordion -->
+                <template slot="accordion-content">
+                    <div class="accordion-content__itemContent" 
+                    v-for="article in articlesForLists" 
+                    :key="article.title"
+                    @click="goToArticle(article.title)">
+                      <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
+                       <p class="accordion-content__itemText">{{article.bodyText[0]}}</p>
+                    </div>
+                </template>
+            </topics>
+            <topics>
+            <!-- This slot will handle the title/header of the accordion and is the part you click on -->
+                <template slot="accordion-trigger">
+                    <h2 class="accordion__title">Statistics</h2>
                 </template>
                 <!-- This slot will handle all the content that is passed to the accordion -->
                 <template slot="accordion-content">
@@ -132,16 +149,47 @@
                     </div>
                 </template>
             </topics>
-
             <topics>
-                <!-- This slot will handle the title/header of the accordion and is the part you click on -->
+            <!-- This slot will handle the title/header of the accordion and is the part you click on -->
                 <template slot="accordion-trigger">
-                    <h2 class="accordion__title">Trophies</h2>
+                    <h2 class="accordion__title">Dashboards</h2>
                 </template>
                 <!-- This slot will handle all the content that is passed to the accordion -->
                 <template slot="accordion-content">
                     <div class="accordion-content__itemContent" 
-                    v-for="article in articlesForLists" 
+                    v-for="article in articlesForDashboard" 
+                    :key="article.title"
+                    @click="goToArticle(article.title)">
+                      <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
+                       <p class="accordion-content__itemText">{{article.bodyText[0]}}</p>
+                    </div>
+                </template>
+            </topics>
+            <topics>
+            <!-- This slot will handle the title/header of the accordion and is the part you click on -->
+                <template slot="accordion-trigger">
+                    <h2 class="accordion__title">Schedule</h2>
+                </template>
+                <!-- This slot will handle all the content that is passed to the accordion -->
+                <template slot="accordion-content">
+                    <div class="accordion-content__itemContent" 
+                    v-for="article in articlesForSchedule" 
+                    :key="article.title"
+                    @click="goToArticle(article.title)">
+                      <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
+                       <p class="accordion-content__itemText">{{article.bodyText[0]}}</p>
+                    </div>
+                </template>
+            </topics>
+            <topics>
+            <!-- This slot will handle the title/header of the accordion and is the part you click on -->
+                <template slot="accordion-trigger">
+                    <h2 class="accordion__title">Settings</h2>
+                </template>
+                <!-- This slot will handle all the content that is passed to the accordion -->
+                <template slot="accordion-content">
+                    <div class="accordion-content__itemContent" 
+                    v-for="article in articlesForSettings" 
                     :key="article.title"
                     @click="goToArticle(article.title)">
                       <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
@@ -190,9 +238,59 @@ export default {
           return article.category === "Punch Clock";
         });
       },
+      articlesForScan(){
+        return this.articles.filter(function(article) {
+          return article.category === "Scan";
+        });
+      },
+      articlesForTrophies(){
+        return this.articles.filter(function(article) {
+          return article.category === "Trophies";
+        });
+      },
+      articlesForParcels(){
+        return this.articles.filter(function(article) {
+          return article.category === "Parcels";
+        });
+      },
+      articlesForSerialNumber(){
+        return this.articles.filter(function(article) {
+          return article.category === "Serial Number";
+        });
+      },
       articlesForUsers(){
         return this.articles.filter(function(article) {
           return article.category === "Users";
+        });
+      },
+      articlesForSalary(){
+        return this.articles.filter(function(article) {
+          return article.category === "Salary";
+        });
+      },
+      articlesForLists(){
+        return this.articles.filter(function(article) {
+          return article.category === "Lists";
+        });
+      },
+      articlesForStatistics(){
+        return this.articles.filter(function(article) {
+          return article.category === "Statistics";
+        });
+      },
+      articlesForDashboard(){
+        return this.articles.filter(function(article) {
+          return article.category === "Dashboard";
+        });
+      },
+      articlesForSchedule(){
+        return this.articles.filter(function(article) {
+          return article.category === "Schedule";
+        });
+      },
+      articlesForSettings(){
+        return this.articles.filter(function(article) {
+          return article.category === "Settings";
         });
       }
   },
@@ -219,13 +317,14 @@ export default {
 }
 
 #faq{
-    display: grid;
-    grid-template-columns: 30% auto;
     font-family: "Avenir", Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #2c3e50;
     margin-top: 60px;
+}
+.faq__content{
+    padding-left: 30%;
 }
 .accordion__title{
     margin-left: 5%;
@@ -241,6 +340,14 @@ export default {
 .accordion-content__itemContent{
     cursor: pointer;
     border: 1px solid #ebebeb;
-    position: relative;
+    margin-left: -2.5rem;
+}
+.accordion-content__itemTitle{
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.accordion-content__itemText{
+    margin-left: 4rem;
+    margin-right: 4rem;
 }
 </style>

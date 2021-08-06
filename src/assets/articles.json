@@ -163,6 +163,39 @@
             "images": [
                 "Image2", "Image6"
             ]
+        },
+        {
+            "id":"14",
+            "title": "How do I scan?",
+            "category": "Scan",
+            "bodyText": [
+                "Use your phone to scan the QR-code"
+            ],
+            "images": [
+                "Image1234", "Image657"
+            ]
+        },
+        {
+            "id":"15",
+            "title": "How do I use the Dashboard?",
+            "category": "Dashboard",
+            "bodyText": [
+                "It is under work"
+            ],
+            "images": [
+                "Image9874", "Image5632"
+            ]
+        },
+        {
+            "id":"16",
+            "title": "How do I get trophies?",
+            "category": "Trophies",
+            "bodyText": [
+                "Use your phone to scan the QR-code"
+            ],
+            "images": [
+                "Image1234", "Image657"
+            ]
         }
   ]
 }
