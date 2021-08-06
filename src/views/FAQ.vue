@@ -4,20 +4,32 @@
         <div class="faq__content">
         <search-bar></search-bar>
         <accordion>
-            <topics v-for="article in articles" :key="article.title" >
+            <topics>
             <!-- This slot will handle the title/header of the accordion and is the part you click on -->
                 <template slot="accordion-trigger">
-                    <h3 class="accordion__title">{{article.punchclock[0].category}}</h3>
+                    <h2 class="accordion__title">Punch Clock</h2>
                 </template>
                 <!-- This slot will handle all the content that is passed to the accordion -->
                 <template slot="accordion-content">
-                    <div class="accordion-content__itemContent" v-for="title in article.punchclock" :key="title.title">
-                      <p>{{title.title}}</p>
-                       
+                    <div class="accordion-content__itemContent" v-for="article in articlesForPunchClock" :key="article.title">
+                      <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
+                       <p class="accordion-content__itemText">{{article.bodyText[0]}}</p>
                     </div>
                 </template>
             </topics>
-
+                        <topics>
+            <!-- This slot will handle the title/header of the accordion and is the part you click on -->
+                <template slot="accordion-trigger">
+                    <h2 class="accordion__title">Users</h2>
+                </template>
+                <!-- This slot will handle all the content that is passed to the accordion -->
+                <template slot="accordion-content">
+                    <div class="accordion-content__itemContent" v-for="article in articlesForUsers" :key="article.title">
+                      <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
+                       <p class="accordion-content__itemText">{{article.bodyText[0]}}</p>
+                    </div>
+                </template>
+            </topics>
             <topics>
                 <!-- This slot will handle the title/header of the accordion and is the part you click on -->
                 <template slot="accordion-trigger">
@@ -63,6 +75,18 @@ export default {
     return{
       articles: json.articles
     }
+  },
+  computed: {
+      articlesForPunchClock() {
+        return this.articles.filter(function(article) {
+          return article.category === "Punch Clock";
+        });
+      },
+      articlesForUsers(){
+        return this.articles.filter(function(article) {
+          return article.category === "Users";
+        });
+      }
   }
 }
 

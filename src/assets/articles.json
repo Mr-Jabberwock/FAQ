@@ -10,6 +10,28 @@
             "images": [
                 "Image1", "Image2"
             ]
+        },
+        {
+            "title": "How to validate",
+            "category": "Punch Clock",
+            "bodyText": [
+                "Head over to the Validation page.",
+                "It looks similar to the Punches site, but there are some variations. Mainly at the bottom. This is like a more sophisticated version of the list from the Punches page. What we can see here is the time that a certain employee punched in and the time they punched out. This list however, is for both the employees who are currently punched in, and employees who have punched out. "
+            ],
+            "images": [
+                "Image1", "Image2"
+            ]
+        },
+        {
+            "title": "How to create a new user",
+            "category": "Users",
+            "bodyText": [
+                "To create a new user click on the “Create user” button on the right side of the page.",
+                "You will then be shown a page where you can enter the information."
+            ],
+            "images": [
+                "Image1", "Image2"
+            ]
         }
   ]
 }
