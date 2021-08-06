@@ -11,7 +11,10 @@
                 </template>
                 <!-- This slot will handle all the content that is passed to the accordion -->
                 <template slot="accordion-content">
-                    <div class="accordion-content__itemContent" v-for="article in articlesForPunchClock" :key="article.title">
+                    <div class="accordion-content__itemContent" 
+                    v-for="article in articlesForPunchClock" 
+                    :key="article.title"
+                    @click="goToArticle(article.id)">
                       <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
                       <p class="accordion-content__itemText">{{article.bodyText[0]}}</p>
                     </div>
@@ -100,7 +103,6 @@ export default {
         
         for (const iterator of this.articlesForPunchClock) {
           console.log(iterator.title)
-          
         }
         console.log(this.sumOfText)
         return this.articlesForPunchClock[0].title.includes(this.searchCriteria);

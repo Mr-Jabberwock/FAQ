@@ -75,6 +75,7 @@ export default {
 
 .accordion__content{
     background-color: white;
+    width: auto;
 }
 
 .accordion__trigger {
