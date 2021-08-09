@@ -7,7 +7,7 @@
             <topics>
             <!-- This slot will handle the title/header of the accordion and is the part you click on -->
                 <!-- <template slot="accordion-trigger" v-if="punchClockSearched"> -->
-                <template slot="accordion-trigger" >
+                <template slot="accordion-trigger" v-if="punchClockSearched">
                     <h2 class="accordion__title">Punch Clock</h2>
                 </template>
                 <!-- This slot will handle all the content that is passed to the accordion -->
@@ -220,7 +220,7 @@ export default {
   data(){
     return{
       articles: json.articles,
-      searchCriteria: "",
+      searchCriteria: ""
     }
   },
   methods: {
@@ -234,7 +234,6 @@ export default {
   computed: {
       articlesForPunchClock() {
         return this.articles.filter(function(article) {
-          console.log(article)
           return article.category === "Punch Clock";
         });
       },
@@ -293,14 +292,11 @@ export default {
           return article.category === "Settings";
         });
       },
-
-      punchClockSearched(){
-        for (const iterator of this.articlesForPunchClock) {
-          console.log(iterator.title)
-        }
-        console.log(this.sumOfText)
-        console.lof(this.articlesForPunchClock);
-        return this.articlesForPunchClock[0].title.includes(this.searchCriteria);
+      punchClockSearched() {
+          for (const iterator of this.articlesForPunchClock) {
+            console.log(iterator)
+          }
+          return this.articlesForPunchClock[0].title.includes(this.searchCriteria);
       }
   }
 }
