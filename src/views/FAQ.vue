@@ -226,7 +226,6 @@ export default {
   methods: {
      searchData(data){
         this.searchCriteria = data;
-        console.log(data)
      },
       goToArticle(id) {
         this.$router.push("/articles/" + id);
@@ -235,6 +234,7 @@ export default {
   computed: {
       articlesForPunchClock() {
         return this.articles.filter(function(article) {
+          console.log(article)
           return article.category === "Punch Clock";
         });
       },
@@ -263,14 +263,6 @@ export default {
           return article.category === "Users";
         });
       },
-      punchClockSearched(){
-        
-        for (const iterator of this.articlesForPunchClock) {
-          console.log(iterator.title)
-        }
-        console.log(this.sumOfText)
-        return this.articlesForPunchClock[0].title.includes(this.searchCriteria);
-     },
       articlesForSalary(){
         return this.articles.filter(function(article) {
           return article.category === "Salary";
@@ -300,6 +292,15 @@ export default {
         return this.articles.filter(function(article) {
           return article.category === "Settings";
         });
+      },
+
+      punchClockSearched(){
+        for (const iterator of this.articlesForPunchClock) {
+          console.log(iterator.title)
+        }
+        console.log(this.sumOfText)
+        console.lof(this.articlesForPunchClock);
+        return this.articlesForPunchClock[0].title.includes(this.searchCriteria);
       }
   }
 }
