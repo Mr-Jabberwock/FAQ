@@ -1,15 +1,17 @@
 <template>
-<div><input placeholder="O- Search by keyword" v-model="searchCriteria" v-on:keyup="sendResult"></div>  
+<div><input placeholder="O- Search by keyword" v-model="searchCriteria" v-on:keyup.enter="sendResult"></div>  
 </template>
 
 <script>
 
 export default{
+    
     name: 'SearchBar',
     methods: {
         sendResult(){
             this.$emit("searchCriteria", this.searchCriteria )
-        }
+        },
+
     }
 }
 </script>
