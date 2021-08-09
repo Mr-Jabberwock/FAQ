@@ -2,7 +2,7 @@
     <div id="faq">
         <navigation-bar></navigation-bar>
         <div class="faq__content">
-        <search-bar v-on:searchCriteria="searchData"></search-bar>
+        <search-bar class="faq__searchInput" v-model="searchCriteria" v-on:keyup.enter="searchData()"></search-bar>
         <accordion>
             <topics>
             <!-- This slot will handle the title/header of the accordion and is the part you click on -->
@@ -17,7 +17,10 @@
                     :key="article.id"
                     @click="goToArticle(article.id)">
                       <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
-                      <p class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
+                      <p v-if="article.content[0].bodyText !== '' " 
+                        class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
+                      <p v-else 
+                        class="accordion-content__itemText">{{article.content[1].bodyText}}</p>
                     </div>
                 </template>
             </topics>
@@ -33,7 +36,10 @@
                     :key="article.id"
                     @click="goToArticle(article.id)">
                       <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
-                       <p class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
+                      <p v-if="article.content[0].bodyText !== '' " 
+                        class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
+                      <p v-else 
+                        class="accordion-content__itemText">{{article.content[1].bodyText}}</p>
                     </div>
                 </template>
             </topics>
@@ -49,7 +55,10 @@
                     :key="article.id"
                     @click="goToArticle(article.id)">
                       <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
-                       <p class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
+                      <p v-if="article.content[0].bodyText !== '' " 
+                        class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
+                      <p v-else 
+                        class="accordion-content__itemText">{{article.content[1].bodyText}}</p>
                     </div>
                 </template>
             </topics>
@@ -65,7 +74,10 @@
                     :key="article.id"
                     @click="goToArticle(article.id)">
                       <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
-                       <p class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
+                      <p v-if="article.content[0].bodyText !== '' " 
+                        class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
+                      <p v-else 
+                        class="accordion-content__itemText">{{article.content[1].bodyText}}</p>
                     </div>
                 </template>
             </topics>
@@ -81,7 +93,10 @@
                     :key="article.id"
                     @click="goToArticle(article.id)">
                       <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
-                       <p class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
+                      <p v-if="article.content[0].bodyText !== '' " 
+                        class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
+                      <p v-else 
+                        class="accordion-content__itemText">{{article.content[1].bodyText}}</p>
                     </div>
                 </template>
             </topics>
@@ -97,7 +112,10 @@
                     :key="article.id"
                     @click="goToArticle(article.id)">
                       <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
-                       <p class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
+                      <p v-if="article.content[0].bodyText !== '' " 
+                        class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
+                      <p v-else 
+                        class="accordion-content__itemText">{{article.content[1].bodyText}}</p>
                     </div>
                 </template>
             </topics>
@@ -113,7 +131,10 @@
                     :key="article.id"
                     @click="goToArticle(article.id)">
                       <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
-                       <p class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
+                      <p v-if="article.content[0].bodyText !== '' " 
+                        class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
+                      <p v-else 
+                        class="accordion-content__itemText">{{article.content[1].bodyText}}</p>
                     </div>
                 </template>
             </topics>
@@ -129,7 +150,10 @@
                     :key="article.id"
                     @click="goToArticle(article.id)">
                       <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
-                       <p class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
+                      <p v-if="article.content[0].bodyText !== '' " 
+                        class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
+                      <p v-else 
+                        class="accordion-content__itemText">{{article.content[1].bodyText}}</p>
                     </div>
                 </template>
             </topics>
@@ -145,7 +169,10 @@
                     :key="article.id"
                     @click="goToArticle(article.id)">
                       <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
-                       <p class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
+                      <p v-if="article.content[0].bodyText !== '' " 
+                        class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
+                      <p v-else 
+                        class="accordion-content__itemText">{{article.content[1].bodyText}}</p>
                     </div>
                 </template>
             </topics>
@@ -161,7 +188,10 @@
                     :key="article.id"
                     @click="goToArticle(article.id)">
                       <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
-                       <p class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
+                      <p v-if="article.content[0].bodyText !== '' " 
+                        class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
+                      <p v-else 
+                        class="accordion-content__itemText">{{article.content[1].bodyText}}</p>
                     </div>
                 </template>
             </topics>
@@ -177,7 +207,10 @@
                     :key="article.id"
                     @click="goToArticle(article.id)">
                       <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
-                       <p class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
+                      <p v-if="article.content[0].bodyText !== '' " 
+                        class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
+                      <p v-else 
+                        class="accordion-content__itemText">{{article.content[1].bodyText}}</p>
                     </div>
                 </template>
             </topics>
@@ -193,7 +226,10 @@
                     :key="article.id"
                     @click="goToArticle(article.id)">
                       <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
-                       <p class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
+                      <p v-if="article.content[0].bodyText !== '' " 
+                        class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
+                      <p v-else 
+                        class="accordion-content__itemText">{{article.content[1].bodyText}}</p>
                     </div>
                 </template>
             </topics>
@@ -220,7 +256,7 @@ export default {
   data(){
     return{
       articles: json.articles,
-      searchCriteria: "",
+      searchCriteria: '',
     }
   },
   methods: {
@@ -323,6 +359,7 @@ export default {
 }
 .faq__content{
     padding-left: 30%;
+    max-width: 60%;
 }
 .accordion__title{
     margin-left: 5%;
