@@ -17,7 +17,7 @@
                     :key="article.id"
                     @click="goToArticle(article.id)">
                       <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
-                      <p class="accordion-content__itemText">{{article.bodyText[0]}}</p>
+                      <p class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
                     </div>
                 </template>
             </topics>
@@ -33,7 +33,7 @@
                     :key="article.id"
                     @click="goToArticle(article.id)">
                       <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
-                       <p class="accordion-content__itemText">{{article.bodyText[0]}}</p>
+                       <p class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
                     </div>
                 </template>
             </topics>
@@ -49,7 +49,7 @@
                     :key="article.id"
                     @click="goToArticle(article.id)">
                       <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
-                       <p class="accordion-content__itemText">{{article.bodyText[0]}}</p>
+                       <p class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
                     </div>
                 </template>
             </topics>
@@ -65,7 +65,7 @@
                     :key="article.id"
                     @click="goToArticle(article.id)">
                       <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
-                       <p class="accordion-content__itemText">{{article.bodyText[0]}}</p>
+                       <p class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
                     </div>
                 </template>
             </topics>
@@ -81,7 +81,7 @@
                     :key="article.id"
                     @click="goToArticle(article.id)">
                       <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
-                       <p class="accordion-content__itemText">{{article.bodyText[0]}}</p>
+                       <p class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
                     </div>
                 </template>
             </topics>
@@ -97,7 +97,7 @@
                     :key="article.id"
                     @click="goToArticle(article.id)">
                       <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
-                       <p class="accordion-content__itemText">{{article.bodyText[0]}}</p>
+                       <p class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
                     </div>
                 </template>
             </topics>
@@ -113,7 +113,7 @@
                     :key="article.id"
                     @click="goToArticle(article.id)">
                       <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
-                       <p class="accordion-content__itemText">{{article.bodyText[0]}}</p>
+                       <p class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
                     </div>
                 </template>
             </topics>
@@ -129,7 +129,7 @@
                     :key="article.id"
                     @click="goToArticle(article.id)">
                       <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
-                       <p class="accordion-content__itemText">{{article.bodyText[0]}}</p>
+                       <p class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
                     </div>
                 </template>
             </topics>
@@ -145,7 +145,7 @@
                     :key="article.id"
                     @click="goToArticle(article.id)">
                       <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
-                       <p class="accordion-content__itemText">{{article.bodyText[0]}}</p>
+                       <p class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
                     </div>
                 </template>
             </topics>
@@ -161,7 +161,7 @@
                     :key="article.id"
                     @click="goToArticle(article.id)">
                       <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
-                       <p class="accordion-content__itemText">{{article.bodyText[0]}}</p>
+                       <p class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
                     </div>
                 </template>
             </topics>
@@ -177,7 +177,7 @@
                     :key="article.id"
                     @click="goToArticle(article.id)">
                       <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
-                       <p class="accordion-content__itemText">{{article.bodyText[0]}}</p>
+                       <p class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
                     </div>
                 </template>
             </topics>
@@ -193,7 +193,7 @@
                     :key="article.id"
                     @click="goToArticle(article.id)">
                       <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
-                       <p class="accordion-content__itemText">{{article.bodyText[0]}}</p>
+                       <p class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
                     </div>
                 </template>
             </topics>

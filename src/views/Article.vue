@@ -2,13 +2,13 @@
     <div class="article">
         <h1 class="article__title">{{articleData.title}}</h1>
         <div class="article__content"                     
-        v-for="(text, index) in articleData.bodyText" 
-        :key="text">
+        v-for="content in articleData.content" 
+        :key="content.bodyText">
         <p class="article__bodytext">
-            {{text}}
+            {{content.bodyText}}
         </p>
-        <h2 class="article__image" v-if="articleData.images[index]">
-            {{articleData.images[index]}}
+        <h2 class="article__image">
+            {{content.image}}
         </h2>
         </div>
     </div>
