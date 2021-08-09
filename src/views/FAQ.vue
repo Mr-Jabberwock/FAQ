@@ -256,7 +256,7 @@ export default {
   data(){
     return{
       articles: json.articles,
-      searchCriteria: '',
+      searchCriteria: "",
     }
   },
   methods: {
