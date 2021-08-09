@@ -9,3 +9,4 @@ new Vue({
   router,
   render: h => h(FAQ),
 }).$mount('#app')
+
