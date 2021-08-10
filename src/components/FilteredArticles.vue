@@ -1,6 +1,6 @@
 <template>
  <div class="wrapper"> 
-        <h2>Search keyword: {{searchResult}}</h2>    
+        <h2>Results for: {{searchResult}}</h2>    
         <div class="list-container" v-for="article in filteredArticles" :key="article.id">
                 <div class="list-item" @click="goToArticle(article.title)">
                     <h3 class="list-item__title">{{article.title}}</h3>

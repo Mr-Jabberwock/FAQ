@@ -2,6 +2,7 @@
     <div class="wrapper">
         <NavigationBar></NavigationBar>
         <div class="article">
+            <search-bar class="searchInput"  @searchCriteria="searchData"></search-bar>
             <h1 class="article__title">{{articleData.title}}</h1>
             <div class="article__content"                     
             v-for="content in articleData.content" 
@@ -17,12 +18,14 @@
 </template>
 <script>
 import NavigationBar from '../components/NavigationBar'
+import SearchBar from '../components/SearchBar.vue'
 import json from "../assets/articles.json"
 
 export default {
     name:"Article",
     components: {
-        NavigationBar
+        NavigationBar,
+        SearchBar
     },
     data(){
         return{
@@ -43,6 +46,12 @@ export default {
             return this.articles.find(
                 article => article.title === this.articleURI
             )
+        }
+    },
+    method: {
+        searchData(data){
+            console.log(data);
+            this.$router.push("/search/" + data);
         }
     },
     // method:{
