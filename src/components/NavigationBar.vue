@@ -3,18 +3,18 @@
     <div class="container">
     <div>
     <ul class="subject_list">
-        <li class="subject_list__item">Punch clock</li>
-        <li class="subject_list__item">Scan</li>
-        <li class="subject_list__item">Trophies</li>
-        <li class="subject_list__item">Parcels</li>
-        <li class="subject_list__item">Serial number</li>
-        <li class="subject_list__item">Users</li>
-        <li class="subject_list__item">Salary</li>
-        <li class="subject_list__item">Lists</li>
-        <li class="subject_list__item">Statistics</li>
-        <li class="subject_list__item">Dashboard</li>
-        <li class="subject_list__item">Schedule</li>
-        <li class="subject_list__item">Settings</li>
+        <li class="subject_list__item" :class="{'subject_list__item--active':punchClockActive}"><a class="subject_list__item-link" href="/categories/Punch+Clock">Punch clock</a></li>
+        <li class="subject_list__item" :class="{'subject_list__item--active':scanActive}"><a class="subject_list__item-link" href="/categories/Scan">Scan</a></li>
+        <li class="subject_list__item" :class="{'subject_list__item--active':trophiesActive}"><a class="subject_list__item-link" href="/categories/Trophies">Trophies</a></li>
+        <li class="subject_list__item" :class="{'subject_list__item--active':parcelsActive}"><a class="subject_list__item-link" href="/categories/Parcels">Parcels</a></li>
+        <li class="subject_list__item" :class="{'subject_list__item--active':serialNumberActive}"><a class="subject_list__item-link" href="/categories/Serial+Number">Serial number</a></li>
+        <li class="subject_list__item" :class="{'subject_list__item--active':usersActive}"><a class="subject_list__item-link" href="/categories/Users">Users</a></li>
+        <li class="subject_list__item" :class="{'subject_list__item--active':salaryActive}"><a class="subject_list__item-link" href="/categories/Salary">Salary</a></li>
+        <li class="subject_list__item" :class="{'subject_list__item--active':listsActive}"><a class="subject_list__item-link" href="/categories/Lists">Lists</a></li>
+        <li class="subject_list__item" :class="{'subject_list__item--active':statisticsActive}"><a class="subject_list__item-link" href="/categories/Statistics">Statistics</a></li>
+        <li class="subject_list__item" :class="{'subject_list__item--active':dashboardActive}"><a class="subject_list__item-link" href="/categories/Dashboard">Dashboard</a></li>
+        <li class="subject_list__item" :class="{'subject_list__item--active':scheduleActive}"><a class="subject_list__item-link" href="/categories/Schedule">Schedule</a></li>
+        <li class="subject_list__item" :class="{'subject_list__item--active':settingsActive}"><a class="subject_list__item-link" href="/categories/Settings">Settings</a></li>
     </ul>
     </div>
    </div>
@@ -23,8 +23,12 @@
 </template>
 
 <script>
-export default{
-    name: 'NavigationBar'
+export default {
+    name: 'NavigationBar',
+    data(){
+       return{
+       };
+    }
 }
 </script>
 
@@ -52,5 +56,12 @@ export default{
 
 .subject_list__item:hover{
   padding-left: 20px;
+}
+.subject_list__item-link{
+   text-decoration: none;
+   color: rgb(63, 63, 63);
+}
+.subject_list__item-link:visited{
+   color: rgb(63, 63, 63);
 }
 </style>
