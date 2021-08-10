@@ -9,10 +9,8 @@
                 <p class="article__bodytext">
                     {{content.bodyText}}
                 </p>
-                <h2 v-for="image in content.images" 
-                :key="image" class="article__image">
-                    {{image}}
-                </h2>
+                <img alt="#" v-for="image in content.images" 
+                :key="image" class="article__image" :src="require('../assets/' + image)">
             </div>
         </div>
     </div>
@@ -29,7 +27,7 @@ export default {
     data(){
         return{
             articles: json.articles,
-            articleId: this.$route.params.id
+            articleURI: decodeURIComponent(this.$route.params.id)
         }
     },
     computed: {
@@ -43,10 +41,16 @@ export default {
             //var id = this.articleId;
             console.log(this.articleId);
             return this.articles.find(
-                article => article.id === this.articleId
+                article => article.title === this.articleURI
             )
         }
     },
+    // method:{
+    //   getImage(path){
+    //       var picture = "../assets/" + path;
+    //       return picture 
+    //   }  
+    // },
     watch: {
         $router() {
             this.articleId = this.$route.params.id;
@@ -66,5 +70,9 @@ export default {
     .article{
         padding-left: 30%;
         max-width: 60%;
+    }
+    img{
+        width: 100%;
+        height: 100%;
     }
 </style>

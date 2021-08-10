@@ -6,7 +6,7 @@
             <div class="results__item" 
             v-for="article in dataContent" 
             :key="article.id"
-            @click="goToArticle(article.id)">
+            @click="goToArticle(article.title)">
                 <h3 class="results__itemTitle">{{article.title}}</h3>
                 <p v-if="article.content[0].bodyText !== '' " 
                 class="results__itemText">{{article.content[0].bodyText}}</p>
@@ -43,6 +43,7 @@ export default {
     },
     methods: {
         goToArticle(id) {
+            id= encodeURIComponent(id)
             this.$router.push("/articles/" + id);
         }
     }
@@ -64,5 +65,12 @@ export default {
         cursor: pointer;
         border: 1px solid #ebebeb;
         margin-top:1rem;
+    }
+    .results__itemTitle{
+        margin-left: 3rem;
+    }
+    .results__itemText{
+        margin-left: 4rem;
+        margin-right: 4rem;
     }
 </style>

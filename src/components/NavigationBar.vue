@@ -1,20 +1,83 @@
 <template>
 <div class="navigation">
     <div class="container">
+   <div class="title" >
+      <h1 class="title__text" @click="goToStart">FAQ</h1>
+   </div>
     <div>
     <ul class="subject_list">
-        <li class="subject_list__item" :class="{'subject_list__item--active':punchClockActive}"><a class="subject_list__item-link" href="/categories/Punch+Clock">Punch clock</a></li>
-        <li class="subject_list__item" :class="{'subject_list__item--active':scanActive}"><a class="subject_list__item-link" href="/categories/Scan">Scan</a></li>
-        <li class="subject_list__item" :class="{'subject_list__item--active':trophiesActive}"><a class="subject_list__item-link" href="/categories/Trophies">Trophies</a></li>
-        <li class="subject_list__item" :class="{'subject_list__item--active':parcelsActive}"><a class="subject_list__item-link" href="/categories/Parcels">Parcels</a></li>
-        <li class="subject_list__item" :class="{'subject_list__item--active':serialNumberActive}"><a class="subject_list__item-link" href="/categories/Serial+Number">Serial number</a></li>
-        <li class="subject_list__item" :class="{'subject_list__item--active':usersActive}"><a class="subject_list__item-link" href="/categories/Users">Users</a></li>
-        <li class="subject_list__item" :class="{'subject_list__item--active':salaryActive}"><a class="subject_list__item-link" href="/categories/Salary">Salary</a></li>
-        <li class="subject_list__item" :class="{'subject_list__item--active':listsActive}"><a class="subject_list__item-link" href="/categories/Lists">Lists</a></li>
-        <li class="subject_list__item" :class="{'subject_list__item--active':statisticsActive}"><a class="subject_list__item-link" href="/categories/Statistics">Statistics</a></li>
-        <li class="subject_list__item" :class="{'subject_list__item--active':dashboardActive}"><a class="subject_list__item-link" href="/categories/Dashboard">Dashboard</a></li>
-        <li class="subject_list__item" :class="{'subject_list__item--active':scheduleActive}"><a class="subject_list__item-link" href="/categories/Schedule">Schedule</a></li>
-        <li class="subject_list__item" :class="{'subject_list__item--active':settingsActive}"><a class="subject_list__item-link" href="/categories/Settings">Settings</a></li>
+         <li class="subject_list__item" :class="{active: isActive('Punch Clock')}">
+            <a class="subject_list__item-link"
+            @click="setActive('Punch Clock')"
+            href="/categories/Punch+Clock">Punch clock
+            </a>
+         </li>
+         <li class="subject_list__item" :class="{active: isActive('Scan')}">
+            <a class="subject_list__item-link"
+            @click="setActive('Scan')" 
+            href="/categories/Scan">Scan
+            </a>
+         </li>
+        <li class="subject_list__item" :class="{active: isActive('Trophies')}">
+            <a class="subject_list__item-link"
+            @click="setActive('Trophies')" 
+            href="/categories/Trophies">Trophies
+            </a>
+         </li>
+        <li class="subject_list__item" :class="{active: isActive('Parcels')}">
+            <a class="subject_list__item-link" 
+            @click="setActive('Parcels')"
+            href="/categories/Parcels">Parcels
+            </a>
+         </li>
+        <li class="subject_list__item" :class="{active: isActive('Serial Number')}">
+            <a class="subject_list__item-link" 
+            @click="setActive('Serial Number')"
+            href="/categories/Serial+Number">Serial number
+            </a>
+         </li>
+        <li class="subject_list__item" :class="{active: isActive('Users')}">
+            <a class="subject_list__item-link"
+            @click="setActive('Users')" 
+            href="/categories/Users">Users
+            </a>
+         </li>
+        <li class="subject_list__item" :class="{active: isActive('Salary')}">
+            <a class="subject_list__item-link" 
+            @click="setActive('Salary')"
+            href="/categories/Salary">Salary
+            </a>
+         </li>
+        <li class="subject_list__item" :class="{active: isActive('Lists')}">
+            <a class="subject_list__item-link" 
+            @click="setActive('Lists')"
+            href="/categories/Lists">Lists
+            </a>
+         </li>
+        <li class="subject_list__item" :class="{active: isActive('Statistics')}">
+            <a class="subject_list__item-link" 
+            @click="setActive('Statistics')"
+            href="/categories/Statistics">Statistics
+            </a>
+         </li>
+        <li class="subject_list__item" :class="{active: isActive('Dashboard')}">
+            <a class="subject_list__item-link"
+            @click="setActive('Dashboard')" 
+            href="/categories/Dashboard">Dashboard
+            </a>
+         </li>
+        <li class="subject_list__item" :class="{active: isActive('Schedule')}">
+            <a class="subject_list__item-link"
+             @click="setActive('Schedule')"  
+            href="/categories/Schedule">Schedule
+            </a>
+         </li>
+        <li class="subject_list__item" :class="{active: isActive('Settings')}">
+            <a class="subject_list__item-link" 
+            @click="setActive('Settings')"
+            href="/categories/Settings">Settings
+            </a>
+         </li>
     </ul>
     </div>
    </div>
@@ -23,12 +86,28 @@
 </template>
 
 <script>
+//import categoriesjson from "../assets/categories.json"
 export default {
     name: 'NavigationBar',
     data(){
        return{
+          activeItem: this.$route.params.id.replace("+", ' ')
        };
-    }
+    },
+    methods: {
+      goToStart() {
+            this.$router.push("/");
+      },
+      goToCategory(category) {
+         this.$router.push("/categories/" + category);
+      },
+      isActive(menuItem) {
+         return this.activeItem === menuItem;
+      },
+      setActive(menuItem) {
+         this.activeItem = menuItem;
+      }
+   }
 }
 </script>
 
@@ -54,14 +133,21 @@ export default {
    color: rgb(63, 63, 63);
 }
 
-.subject_list__item:hover{
+.active, .subject_list__item:hover{
   padding-left: 20px;
 }
+
 .subject_list__item-link{
    text-decoration: none;
    color: rgb(63, 63, 63);
 }
 .subject_list__item-link:visited{
-   color: rgb(63, 63, 63);
+   color: inherit;
+}
+.active, .subject_list__item-link:hover{
+   color: aquamarine;
+}
+.title__text:hover{
+   cursor: pointer;
 }
 </style>

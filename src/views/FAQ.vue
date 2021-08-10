@@ -15,7 +15,7 @@
                     <div class="accordion-content__itemContent" 
                     v-for="article in articlesForPunchClock" 
                     :key="article.id"
-                    @click="goToArticle(article.id)">
+                    @click="goToArticle(article.title)">
                       <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
                       <p v-if="article.content[0].bodyText !== '' " 
                         class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
@@ -34,7 +34,7 @@
                     <div class="accordion-content__itemContent" 
                     v-for="article in articlesForScan" 
                     :key="article.id"
-                    @click="goToArticle(article.id)">
+                    @click="goToArticle(article.title)">
                       <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
                       <p v-if="article.content[0].bodyText !== '' " 
                         class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
@@ -53,7 +53,7 @@
                     <div class="accordion-content__itemContent" 
                     v-for="article in articlesForTrophies" 
                     :key="article.id"
-                    @click="goToArticle(article.id)">
+                    @click="goToArticle(article.title)">
                       <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
                       <p v-if="article.content[0].bodyText !== '' " 
                         class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
@@ -72,7 +72,7 @@
                     <div class="accordion-content__itemContent" 
                     v-for="article in articlesForParcels" 
                     :key="article.id"
-                    @click="goToArticle(article.id)">
+                    @click="goToArticle(article.title)">
                       <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
                       <p v-if="article.content[0].bodyText !== '' " 
                         class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
@@ -91,7 +91,7 @@
                     <div class="accordion-content__itemContent" 
                     v-for="article in articlesForSerialNumber" 
                     :key="article.id"
-                    @click="goToArticle(article.id)">
+                    @click="goToArticle(article.title)">
                       <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
                       <p v-if="article.content[0].bodyText !== '' " 
                         class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
@@ -110,7 +110,7 @@
                     <div class="accordion-content__itemContent" 
                     v-for="article in articlesForUsers" 
                     :key="article.id"
-                    @click="goToArticle(article.id)">
+                    @click="goToArticle(article.title)">
                       <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
                       <p v-if="article.content[0].bodyText !== '' " 
                         class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
@@ -129,7 +129,7 @@
                     <div class="accordion-content__itemContent" 
                     v-for="article in articlesForSalary" 
                     :key="article.id"
-                    @click="goToArticle(article.id)">
+                    @click="goToArticle(article.title)">
                       <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
                       <p v-if="article.content[0].bodyText !== '' " 
                         class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
@@ -148,7 +148,7 @@
                     <div class="accordion-content__itemContent" 
                     v-for="article in articlesForLists" 
                     :key="article.id"
-                    @click="goToArticle(article.id)">
+                    @click="goToArticle(article.title)">
                       <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
                       <p v-if="article.content[0].bodyText !== '' " 
                         class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
@@ -167,7 +167,7 @@
                     <div class="accordion-content__itemContent" 
                     v-for="article in articlesForStatistics" 
                     :key="article.id"
-                    @click="goToArticle(article.id)">
+                    @click="goToArticle(article.title)">
                       <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
                       <p v-if="article.content[0].bodyText !== '' " 
                         class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
@@ -186,7 +186,7 @@
                     <div class="accordion-content__itemContent" 
                     v-for="article in articlesForDashboard" 
                     :key="article.id"
-                    @click="goToArticle(article.id)">
+                    @click="goToArticle(article.title)">
                       <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
                       <p v-if="article.content[0].bodyText !== '' " 
                         class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
@@ -205,7 +205,7 @@
                     <div class="accordion-content__itemContent" 
                     v-for="article in articlesForSchedule" 
                     :key="article.id"
-                    @click="goToArticle(article.id)">
+                    @click="goToArticle(article.title)">
                       <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
                       <p v-if="article.content[0].bodyText !== '' " 
                         class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
@@ -224,7 +224,7 @@
                     <div class="accordion-content__itemContent" 
                     v-for="article in articlesForSettings" 
                     :key="article.id"
-                    @click="goToArticle(article.id)">
+                    @click="goToArticle(article.title)">
                       <h3 class="accordion-content__itemTitle">{{article.title}}</h3>
                       <p v-if="article.content[0].bodyText !== '' " 
                         class="accordion-content__itemText">{{article.content[0].bodyText}}</p>
@@ -264,6 +264,7 @@ export default {
        this.$router.push("/search/" + data);
      },
       goToArticle(id) {
+        id = encodeURIComponent(id);
         this.$router.push("/articles/" + id);
     }
   },
