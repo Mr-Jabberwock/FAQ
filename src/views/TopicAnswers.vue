@@ -2,7 +2,8 @@
     <div class="wrapper">
         <navigation-bar></navigation-bar>
         <div class="results">
-            <h1 class="category">{{category}}</h1>
+            <search-bar class="searchInput" v-model="searchCriteria" @searchCriteria="searchData"></search-bar>
+            <h2 class="category">{{category}}</h2>
             <div class="results__item" 
             v-for="article in dataContent" 
             :key="article.id"
@@ -18,12 +19,14 @@
 </template>
 <script>
 import NavigationBar from '../components/NavigationBar.vue'
+import SearchBar from '../components/SearchBar.vue'
 import json from "../assets/articles.json"
 
 export default {
     name:"TopicAnswers",
     components: {
-        NavigationBar
+        NavigationBar,
+        SearchBar
         
     },
     data(){
@@ -45,6 +48,11 @@ export default {
         goToArticle(id) {
             id = encodeURIComponent(id)
             this.$router.push("/articles/" + id);
+        },
+        searchData(data){
+            this.searchResult = data;
+            this.componentKey += 1;
+            this.$router.push("/search/" + data);
         }
     }
 }

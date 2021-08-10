@@ -1,8 +1,10 @@
 <template>
     <div class="wrapper">
         <navigation-bar></navigation-bar>
-         <search-bar class="searchInput" v-model="searchCriteria" @searchCriteria="searchData"></search-bar>
-         <filtered-articles :key="componentKey"/>
+        <div class="search-result-content">
+            <search-bar class="searchInput" v-model="searchCriteria" @searchCriteria="searchData"></search-bar>
+            <filtered-articles class="results" :key="componentKey"/>
+        </div>
     </div>
 </template>
 
@@ -20,7 +22,8 @@ export default{
     },
     data(){
        return{
-            componentKey: 0
+            componentKey: 0,
+            searchWord: this.$route.params.id
        }
     },
     methods:{
@@ -34,8 +37,14 @@ export default{
 </script>
 
 <style scoped>
+ .wrapper{
+    font-family: "Avenir", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
+    margin-top: 60px;
+}
 .searchInput{
-    margin-bottom: 20px;
-    padding-left: 25%;
+    padding-left: 30%;
 }
 </style>

@@ -2,7 +2,7 @@
     <div id="faq">
         <navigation-bar></navigation-bar>
         <div class="faq__content">
-        <search-bar class="faq__searchInput" v-model="searchCriteria" @searchCriteria="searchData"></search-bar>
+        <search-bar class="faq__searchInput"  @searchCriteria="searchData"></search-bar>
         <accordion>
             <topics>
             <!-- This slot will handle the title/header of the accordion and is the part you click on -->
@@ -255,8 +255,7 @@ export default {
   },
   data(){
     return{
-      articles: json.articles,
-      searchCriteria: ""
+      articles: json.articles
     }
   },
   methods: {

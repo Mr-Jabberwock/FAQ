@@ -1,10 +1,15 @@
 <template>
- <div class="wrapper">
-       
+ <div class="wrapper"> 
+        <h2>Search keyword: {{searchResult}}</h2>    
         <div class="list-container" v-for="article in filteredArticles" :key="article.id">
                 <div class="list-item" @click="goToArticle(article.title)">
-                    <b>{{article.title}}</b>
-                    <p>{{article.content[0].bodyText}}</p>
+                    <h3 class="list-item__title">{{article.title}}</h3>
+                    <p v-if="article.content[0].bodyText !== '' " 
+                        class="list-item__Text">{{article.content[0].bodyText}}
+                    </p>
+                    <p v-else 
+                        class="list-item__Text">{{article.content[1].bodyText}}
+                    </p>
                 </div>
         </div>
 </div>
@@ -60,21 +65,32 @@ export default{
 </script>
 
 <style scoped>
-.list-item{
-    border: 2px solid black;
-    margin-bottom: 15px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-}
-.list-container{
-    width: 50%;
-    margin-left: 25%;
-    
-
-}
 .wrapper{
+    font-family: "Avenir", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
+    margin-top: 60px;
+}
+.list-item{
+    border: 1px solid #ebebeb;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.list-item__title{
+    margin-left: 3rem;
+}
+.list-item__Text{
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+/* .list-container{
+      
+    margin-left:30%;
+} */
+/* .wrapper{
     padding-top: 2%;
 
-}
+} */
 
 </style>
