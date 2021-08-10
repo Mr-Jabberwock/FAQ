@@ -1,6 +1,6 @@
 <template>
     <div class="wrapper">
-        <NavigationBar></NavigationBar>
+        <navigation-bar></navigation-bar>
         <div class="article">
             <search-bar class="searchInput"  @searchCriteria="searchData"></search-bar>
             <h1 class="article__title">{{articleData.title}}</h1>
@@ -20,6 +20,7 @@
 import NavigationBar from '../components/NavigationBar'
 import SearchBar from '../components/SearchBar.vue'
 import json from "../assets/articles.json"
+
 
 export default {
     name:"Article",
@@ -48,7 +49,7 @@ export default {
             )
         }
     },
-    method: {
+    methods: {
         searchData(data){
             console.log(data);
             this.$router.push("/search/" + data);

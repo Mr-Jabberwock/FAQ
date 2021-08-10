@@ -6,7 +6,9 @@
    </div>
     <div>
     <ul class="subject_list">
-         <li class="subject_list__item" :class="{active: isActive('Punch Clock')}">
+       <li v-for="category in categories" 
+       :key="category.id"> {{category.name}}</li>
+         <!-- <li class="subject_list__item" :class="{active: isActive('Punch Clock')}">
             <a class="subject_list__item-link"
             @click="setActive('Punch Clock')"
             href="/categories/Punch+Clock">Punch clock
@@ -77,7 +79,7 @@
             @click="setActive('Settings')"
             href="/categories/Settings">Settings
             </a>
-         </li>
+         </li> -->
     </ul>
     </div>
    </div>
@@ -86,12 +88,14 @@
 </template>
 
 <script>
-//import categoriesjson from "../assets/categories.json"
+import categoriesjson from "../assets/categories.json"
 export default {
     name: 'NavigationBar',
     data(){
        return{
-          activeItem: this.$route.params.id.replace("+", ' ')
+          activeItem: this.$route.params.id.replace("+", ' '),
+          categories: categoriesjson.categories,
+          componentKey: 0
        };
     },
     methods: {

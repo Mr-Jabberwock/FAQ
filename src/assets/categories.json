@@ -1,15 +1,49 @@
 {
     "categories":[
-        "Punch Clock",
-        "Scan",
-        "Trophies",
-        "Parcels",
-        "Serial Number",
-        "Users",
-        "Salary",
-        "Lists",
-        "Statistics",
-        "Dashboard",
-        "Schedule"
+        {
+            "id": 1,
+            "name":"Punch Clock"
+        },
+        {
+            "id": 2,
+            "name":"Scan"
+        },
+        {
+            "id": 3,
+            "name":"Trophies"
+        },
+        {
+            "id": 4,
+            "name":"Parcels"
+        },
+        {
+            "id": 5,
+            "name":"Serial Number"
+        },
+        {
+            "id": 6,
+            "name":"Users"
+        },
+        {
+            "id": 7,
+            "name":"Salary"
+        },
+        {
+            "id": 8,
+            "name":"Lists"
+        },
+        {
+            "id": 9,
+            "name":"Statistics"
+        },
+        {
+            "id": 10,
+            "name":"Dashboard"
+        },
+        {
+            "id": 11,
+            "name":"Schedule"
+        }
+        
     ]
 }

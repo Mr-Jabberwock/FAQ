@@ -2,7 +2,7 @@
     <div class="wrapper">
         <navigation-bar></navigation-bar>
         <div class="search-result-content">
-            <search-bar class="searchInput" v-model="searchCriteria" @searchCriteria="searchData"></search-bar>
+            <search-bar class="searchInput"  @searchCriteria="searchData"></search-bar>
             <filtered-articles class="results" :key="componentKey"/>
         </div>
     </div>
