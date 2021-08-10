@@ -2,7 +2,7 @@
  <div class="wrapper">
        
         <div class="list-container" v-for="article in filteredArticles" :key="article.id">
-                <div class="list-item">
+                <div class="list-item" @click="goToArticle(article.title)">
                     <b>{{article.title}}</b>
                     <p>{{article.content[0].bodyText}}</p>
                 </div>
@@ -23,6 +23,12 @@ export default{
            searchResult: this.$route.params.criteria,
            filteredArticles: []
        }
+    },
+    methods: {
+        goToArticle(id) {
+            id= encodeURIComponent(id)
+            this.$router.push("/articles/" + id);
+        }
     },
     watch: {
         $router() {
