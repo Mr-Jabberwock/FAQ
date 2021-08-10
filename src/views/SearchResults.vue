@@ -1,52 +1,38 @@
 <template>
-    <div>
-        <search-bar v-on:searchCriteria="searchData"></search-bar>
-        <div v-for="article in filteredArticles" :key="article.id">
-            <div class="list-item">
-                {{article.title}}
-            </div>
-        </div>
+    <div class="wrapper">
+         <search-bar class="searchInput" v-model="searchCriteria" @searchCriteria="searchData"></search-bar>
+         <filtered-articles :key="componentKey"/>
     </div>
 </template>
 
 <script>
 import SearchBar from "../components/SearchBar.vue"
-import json from "../assets/articles.json"
+import FilteredArticles from "../components/FilteredArticles.vue"
 
 export default{
     name: "SearchResults",
     components:{
-        SearchBar
+        SearchBar,
+        FilteredArticles
     },
-    data() {
-       return {
-           articles: json.articles,
-           searchResult: this.$route.params.criteria
+    data(){
+       return{
+            componentKey: 0
        }
     },
     methods:{
-        
-    },
-    computed:{
-        filteredArticles(){
-            return this.searchResult;
-
-        }
-
-    }
-    ,
-    watch: {
-        $router() {
-            this.searchResult = this.$route.params.id;
+        searchData(data){
+            this.searchResult = data;
+            this.componentKey += 1;
+            this.$router.push("/search/" + data);
         }
     }
 }
 </script>
 
 <style scoped>
-.list-item{
-    border-bottom: 2px solid black;
-    background-color: lightgrey;
-    width: 50%;
+.searchInput{
+    margin-bottom: 20px;
+    padding-left: 25%;
 }
 </style>

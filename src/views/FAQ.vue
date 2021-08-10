@@ -260,9 +260,9 @@ export default {
     }
   },
   methods: {
-     searchData(data){
+      searchData(data){
        this.$router.push("/search/" + data);
-     },
+      },
       goToArticle(id) {
         this.$router.push("/articles/" + id);
     }
