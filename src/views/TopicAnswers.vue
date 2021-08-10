@@ -43,7 +43,7 @@ export default {
     },
     methods: {
         goToArticle(id) {
-            id= encodeURIComponent(id)
+            id = encodeURIComponent(id)
             this.$router.push("/articles/" + id);
         }
     }
