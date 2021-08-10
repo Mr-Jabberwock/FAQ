@@ -1,5 +1,6 @@
 <template>
     <div class="wrapper">
+        <navigation-bar></navigation-bar>
          <search-bar class="searchInput" v-model="searchCriteria" @searchCriteria="searchData"></search-bar>
          <filtered-articles :key="componentKey"/>
     </div>
@@ -8,12 +9,14 @@
 <script>
 import SearchBar from "../components/SearchBar.vue"
 import FilteredArticles from "../components/FilteredArticles.vue"
+import NavigationBar from "../components/NavigationBar.vue"
 
 export default{
     name: "SearchResults",
     components:{
         SearchBar,
-        FilteredArticles
+        FilteredArticles,
+        NavigationBar
     },
     data(){
        return{
