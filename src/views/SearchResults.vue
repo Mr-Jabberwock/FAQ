@@ -25,10 +25,16 @@ export default{
        }
     },
     methods:{
+        
     },
     computed:{
+        filteredArticles(){
+            return this.searchResult;
 
-    },
+        }
+
+    }
+    ,
     watch: {
         $router() {
             this.searchResult = this.$route.params.id;
