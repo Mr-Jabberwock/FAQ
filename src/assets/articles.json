@@ -101,96 +101,6 @@
                     "images": [
                         "social_proof_task_bem.png"
                     ]
-                },
-                {
-                    "bodyText":"Email: create an email you want to connect the new user with.",
-                    "images": [
-                        "logo.png"
-                    ]
-                },
-                {
-                    "bodyText":"Password: create a password the new user must use to login with. The password must be 8 characters long. The password must also contain a number,  a upper and lower character.",
-                    "images": [
-                        
-                    ]
-                },
-                {
-                    "bodyText":"Repeat password: Please repeat the password entered in the password field. Make sure they match.",
-                    "images": [
-                        "puppies.jpg"
-                    ]
-                },
-                {
-                    "bodyText":"Status: Set the new user’s status. You will be able to pick between active or inactive. ",
-                    "images": [
-                        "logo.png"
-                    ]
-                },
-                {
-                    "bodyText":"(Active users will be able to login and have access to PackShip, while your inactive users will not have access to PackShip) ",
-                    "images": [
-                        
-                    ]
-                },
-                {
-                    "bodyText":"Name: Write the new user’s name (eg. John, Jane, etc.)",
-                    "images": [
-                        "puppies.jpg"
-                    ]
-                },
-                {
-                    "bodyText":"SurName: Write the new user’s surname (eg. Doe, Johnson, etc.)",
-                    "images": [
-                        "puppies.jpg"
-                    ]
-                },
-                {
-                    "bodyText":"Phone: Write the new user’s phone number (eg. 12345678)",
-                    "images": [
-                        "puppies.jpg"
-                    ]
-                },
-                {
-                    "bodyText":"Permission: Give permission to the new user, you can pick multiple options.",
-                    "images": [
-                        "puppies.jpg"
-                    ]
-                },
-                {
-                    "bodyText":"To make a user an admin for a specific permission, click on the checkmark.",
-                    "images": [
-                        "puppies.jpg"
-                    ]
-                },
-                {
-                    "bodyText":"Hourly rate: Here you can type in the payment to the new user based on an hourly rate.",
-                    "images": [
-                        "puppies.jpg"
-                    ]
-                },
-                {
-                    "bodyText":"Commission: Here you can type in the payment to the new user based on commission.",
-                    "images": [
-                        "puppies.jpg"
-                    ]
-                },
-                {
-                    "bodyText":"Social security: Here you can type in the new user’s social security code.",
-                    "images": [
-                        "puppies.jpg"
-                    ]
-                },
-                {
-                    "bodyText":"When all the necessary information is there, you can then press the green “Create user” button in the bottom right to create the new user. You will then be given a message on top of the window, that tells you the user has been created successfully.",
-                    "images": [
-                        
-                    ]
-                },
-                {
-                    "bodyText":"To cancel press the “X” top right, or press anywhere outside the “Create user” page.",
-                    "images": [
-                        
-                    ]
                 }
             ]
         },
@@ -215,7 +125,7 @@
                 {
                     "bodyText":"Throughout the website, there are a few different places, namely in the functions that handle lists, where you can print out content. To do so, you first need to set a printer here in the settings. ",
                     "images":[
-                        "puppies.jpg"
+                        "Printer.jpg"
                     ]
                 },
                 {
@@ -225,13 +135,13 @@
                 {
                     "bodyText":"A4 printers:",
                     "images":[
-                        "logo.png"
+                        "Printer-A4.png"
                     ]
                 },
                 {
                     "bodyText":"Label printers:",
                     "images":[
-                        "logo.png"
+                        "Printer-Label.png"
                     ]
                 },
                 {
@@ -248,19 +158,14 @@
                 {
                     "bodyText": "The page for Company contains vital information about the Beautycos cooperation. This includes information about what to write when sending mail, and when sending invoices.",
                     "images": [
-                        "logo.png"
-                    ]
-                },
-                {
-                    "bodyText":"",
-                    "images":[
-                         "social_proof_task_bem.png"
+                        "Company_Page.png",
+                        "Company_Page2.png"
                     ]
                 },
                 {
                     "bodyText":"By pressing the “Translation” button, you can see possible translations for the addresses and also edit them, if you find them to be incorrect.",
                     "images":[
-                         "social_proof_task_bem.png"
+                         "Company_Page-translation.png"
                     ]
                 }
             ]
@@ -273,7 +178,7 @@
                 {
                     "bodyText": "In Parcels you can see a list of the most common parcel carriers, including GLA, DAO, and PostNord. By picking an item from the drop down list you may see the most essential information about the chosen carrier.",
                     "images": [
-                        "logo.png"
+                        "Parcels_Page.png"
                     ]
                 }
             ]
@@ -286,7 +191,7 @@
                 {
                     "bodyText": "The Address book is a list of the addresses of our Beautycos shops. Aside from the addresses it also contains phone numbers and email addresses, for easy contact. ",
                     "images": [
-                        "logo.png"
+                        "Address_Book.png"
                     ]
                 }
             ]
@@ -299,14 +204,12 @@
                 {
                     "bodyText": "If you wish to add a new address to the list, press the “Create address” button in the top right corner. A pop up will then appear from the right side of the screen.",
                     "images": [
-                        "logo.png"
+                        "Address_Book-Creation.png"
                     ]
                 },
                 {
                     "bodyText": "Fill out the necessary information and press “create address”. The address has now been added to the list. If you’re not interested in doing that, you can just exit the pop up through the “X” in the upper right corner.",
-                    "images": [
-                        "logo.png"
-                    ]
+                    "images": []
                 }
             ]
         },
@@ -318,7 +221,7 @@
                 {
                     "bodyText": "By clicking any of the addresses, you’ll see a pop up window in which you can choose to edit or delete the chosen address. Each address lights up with a blue border when you hover your mouse on them.",
                     "images": [
-                        "logo.png"
+                        "Address_Book-Edit.png"
                     ]
                 },
                 {
@@ -342,7 +245,7 @@
             "content": [
                 {
                     "bodyText": "The serial number site contains information regarding a product checklist and some serial number check boxes.",
-                    "images": []
+                    "images": ["Serial_Number_Page"]
                 }
             ]
         },
@@ -364,7 +267,10 @@
             "content": [
                 {
                     "bodyText": "To request a leave press the button in the top right corner. A pop up will appear where you will need to fill out the basic information regarding the nature of your leave; why you wish to request a leave, when you want it to start and when you want it to end. ",
-                    "images":[]
+                    "images":[
+                        "Schedule.png",
+                        "Schedule-Request.png"
+                    ]
                 },
                 {
                     "bodyText":"The pop up will choose the user’s name by default. If you wish to choose a person anyway you can click the “Name” field. Dropdown options will appear, these are the employees. ",
@@ -373,13 +279,13 @@
                 {
                     "bodyText":"Choose your name to pick yourself for the request leave. ",
                     "images":[
-                        "logo.png"
+                        "Schedule-Request-Name.png"
                     ]
                 },
                 {
                     "bodyText":"You must pick a reason for the leave. To pick a leave simply click on the “Reason”, you will get options to pick for your leave request.",
                     "images":[
-                        "logo.png"
+                        "Schedule-Request-Reason.png"
                     ]
                 },
                 {
@@ -388,11 +294,11 @@
                 },
                 {
                     "bodyText":"Start date",
-                    "images":["logo.png"]
+                    "images":["Schedule-Request-Start.png"]
                 },
                 {
                     "bodyText":"End date",
-                    "images":["logo.png"]
+                    "images":["Schedule-Request-End.png"]
                 },
                 {
                     "bodyText":"Once the information has been filled out, you may press the “request leave” button in the bottom right corner. ",
@@ -496,37 +402,25 @@
         },
         {
             "id":"7",
-            "title": "How do I check a serial number?",
+            "title": "How do I see the infromation of a serial number?",
             "category": "Serial Number",
             "content": [
                 {
-                    "bodyText": "To get the information of a serial number, click on the “Search” field. You will be given a drop down with options of serial numbers. You can also write in the search field to filter/search for a specific serial number.",
+                    "bodyText": "On the serial number page you can search for a serial number of a specific item. (At first the page is empty. You must first pick a serial number to get information.)",
                     "images": [
                         "puppies.jpg"
                     ]
                 },
                 {
-                    "bodyText":" Click on the serial number you want to check, to get the information.",
+                    "bodyText":"To get the information of a serial number, click on the “Search” field. You will be given a drop down with options of serial numbers. You can also write in the search field to filter/search for a specific serial number.",
                     "images":[ 
                         "logo.png"
                     ]
                 },
                 {
-                    "bodyText":"Here you can see which company the item is from, the order and parcel the item is connected to by “Order ID” and “Parcel”, the name of the item under “Product”, the SKU,  the serial number of the item and who scanned the item.",
+                    "bodyText":"",
                     "images":[ 
                         "social_proof_task_bem.png"
-                    ]
-                },
-                {
-                    "bodyText":"You can see the order by clicking on the order ID or parcel number. You will then get sent to the order page for the item.",
-                    "images":[ 
-                        "social_proof_task_bem.png"
-                    ]
-                },
-                {
-                    "bodyText":"(It is possible to scan an item and get more than one result for a serial number. This should not happen and can be caused by human error.)",
-                    "images":[ 
-                        
                     ]
                 }
 
@@ -534,187 +428,24 @@
         },
         {
             "id":"8",
-            "title": "How do I see orders?",
+            "title": "How to see orders",
             "category": "Parcels",
             "content": [
                 {
-                    "bodyText": "",
+                    "bodyText": "In the parcels page you can see information of orders and shipments. You will also be able to work and complete tasks with orders and shipments eg. print information, edit, lock etc.",
                     "images":[
                         "logo.png"
                     ]
                 },
                 {
+                    "bodyText":"On the top left you can choose to work with orders or shipments.",
+                    "images": [
+                        "social_proof_task_bem.png"
+                    ]
+                },
+                {
                     "bodyText":"On the right side you can see 4 counters. Here you can see the current numbers and total sum of the statuses: New, Pick, Pack and Locked all of which are color coded according to the status they belong to. The number above is the current number, while the number below is the total sum.",
-                    "images": [
-                        
-                    ]
-                },
-                {
-                    "bodyText":"(The orders marked with a pencil mean that the order has been edited.)",
-                    "images": [
-
-                    ]
-                },
-                {
-                    "bodyText":"You will be able to search for a specific order by using the search bar. Enter the key word and then press the “Enter” key.",
-                    "images": [
-                        "puppies.jpg"
-                    ]
-                },
-                {
-                    "bodyText":"You will also be able to filter the orders by locked, company, status and shipping method.",
-                    "images": [
-                    ]
-                },
-                {
-                    "bodyText":"Just click on the toggle button beneath “Locked”, to get only locked orders.",
-                    "images": [
-                        "logo.png"
-                    ]
-                },
-                {
-                    "bodyText":"To clear the “locked” filter, just click on the toggle button again.",
-                    "images": [
-                    ]
-                },
-                {
-                    "bodyText":"\n",
-                    "images": [
-                    ]
-                },
-                {
-                    "bodyText":"For company, status and shipping method, you will get dropdown options.",
-                    "images": [
-                    ]
-                },
-                {
-                    "bodyText":"Filter by company:",
-                    "images": [
-                        "social_proof_task_bem.png"
-                    ]
-                },
-                {
-                    "bodyText":"Filter by status:",
-                    "images": [
-                        "social_proof_task_bem.png"
-                    ]
-                },
-                {
-                    "bodyText":"You can also filter by status by clicking on one of the counters.",
-                    "images": [
-                    ]
-                },
-                {
-                    "bodyText":"Filter by shipping method:",
-                    "images": [
-                        "puppies.jpg"
-                    ]
-                },
-                {
-                    "bodyText":"To clear a filter click on the “X” in the dropdown box.",
-                    "images": [
-                        "puppies.jpg"
-                    ]
-                },
-                {
-                    "bodyText":"You can also sort the orders by ascending or descending, by clicking on the “Order ID” or “Order date” on top of the order table.",
-                    "images": [
-                        "puppies.jpg"
-                    ]
-                },
-                {
-                    "bodyText":"When you hover over the 3 dots for an order, you get different action options.",
-                    "images": [
-                        "puppies.jpg"
-                    ]
-                },
-                {
-                    "bodyText":"View details: “View details” shows you the information of the chosen order. Where you can also perform different action for the order eg. edit, download, locking, change shipping method etc.",
-                    "images": [
-                        "social_proof_task_bem.png"
-                    ]
-                },
-                {
-                    "bodyText":"Copy URL: Copies the url of an order, so that you are able to paste the url of the order.",
-                    "images": [
-                        
-                    ]
-                },
-                {
-                    "bodyText":"Open CMS:  If you want to see the order with your own CMS, you can click on “Open CMS”.",
-                    "images": [
-                        
-                    ]
-                },
-                {
-                    "bodyText":"Print: Here you can choose to print the order on papir. You will get three options: “Parcel order”, “Return Label” and “Shipping Label”.",
-                    "images": [
-                        
-                    ]
-                },
-                {
-                    "bodyText":"Parcel Order: Is where you print the prices, etc..",
-                    "images": [
-                        
-                    ]
-                },
-                {
-                    "bodyText":"Return Label: Prints the return label. If the customer wants to return the product, the user can print the return label for the customer, which they can attach.",
-                    "images": [
-                        
-                    ]
-                },
-                {
-                    "bodyText":"Shipping Label: Here you will print a new tracking number that you can attach on the order, the old information of the order will still be kept. You will be prompted with a window where you can choose shipping methods.",
-                    "images": [
-                        
-                    ]
-                },
-                {
-                    "bodyText":"(NB: make sure you have entered a printer and packing station, or it will give you an error.)",
-                    "images": [
-                    ]
-                },
-                {
-                    "bodyText":"\n",
-                    "images": [
-                    ]
-                },
-                {
-                    "bodyText":"Download: If a digital copy is needed you can choose to download. You will get the same options as “Print”.",
-                    "images": [
-                        "puppies.jpg"
-                    ]
-                },
-                {
-                    "bodyText":"(NB: make sure you have entered a printer and packing station, or it will give you an error.)",
-                    "images": [
-                        "puppies.jpg"
-                    ]
-                },
-                {
-                    "bodyText":"\n",
-                    "images": [
-                    
-                    ]
-                },
-                {
-                    "bodyText":"If you are super admin, you can change the status of an order quickly here if needed. But it is not recommended.",
-                    "images": [
-                        "logo.png"
-                    ]
-                },
-                {
-                    "bodyText":"You will always be able to change the page of the order table. The page picker is always on the screen at the bottom regardless if you are at the top, middle or bottom of the table. ",
-                    "images": [
-                        "logo.png"
-                    ]
-                },
-                {
-                    "bodyText":"You can click on the arrows to change the page, or choose a specific page by entering the number you wish to see in the field with the left number. ",
-                    "images": [
-                        "logo.png"
-                    ]
+                    "images": []
                 }
             ]
         },
@@ -2316,7 +2047,232 @@
                     ]
                 }
             ]
-        }
+        },
+        {
+            "id":"7",
+            "title": "How do I check a serial number?",
+            "category": "Serial Number",
+            "content": [
+                {
+                    "bodyText": "To get the information of a serial number, click on the “Search” field. You will be given a drop down with options of serial numbers. You can also write in the search field to filter/search for a specific serial number.",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText":" Click on the serial number you want to check, to get the information.",
+                    "images":[ 
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText":"Here you can see which company the item is from, the order and parcel the item is connected to by “Order ID” and “Parcel”, the name of the item under “Product”, the SKU,  the serial number of the item and who scanned the item.",
+                    "images":[ 
+                        "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText":"You can see the order by clicking on the order ID or parcel number. You will then get sent to the order page for the item.",
+                    "images":[ 
+                        "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText":"(It is possible to scan an item and get more than one result for a serial number. This should not happen and can be caused by human error.)",
+                    "images":[ 
+                        
+                    ]
+                }
 
+            ]
+        },
+        {
+            "id":"8",
+            "title": "How do I see orders?",
+            "category": "Parcels",
+            "content": [
+                {
+                    "bodyText": "",
+                    "images":[
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText":"On the right side you can see 4 counters. Here you can see the current numbers and total sum of the statuses: New, Pick, Pack and Locked all of which are color coded according to the status they belong to. The number above is the current number, while the number below is the total sum.",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText":"(The orders marked with a pencil mean that the order has been edited.)",
+                    "images": [
+
+                    ]
+                },
+                {
+                    "bodyText":"You will be able to search for a specific order by using the search bar. Enter the key word and then press the “Enter” key.",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText":"You will also be able to filter the orders by locked, company, status and shipping method.",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText":"Just click on the toggle button beneath “Locked”, to get only locked orders.",
+                    "images": [
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText":"To clear the “locked” filter, just click on the toggle button again.",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText":"\n",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText":"For company, status and shipping method, you will get dropdown options.",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText":"Filter by company:",
+                    "images": [
+                        "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText":"Filter by status:",
+                    "images": [
+                        "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText":"You can also filter by status by clicking on one of the counters.",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText":"Filter by shipping method:",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText":"To clear a filter click on the “X” in the dropdown box.",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText":"You can also sort the orders by ascending or descending, by clicking on the “Order ID” or “Order date” on top of the order table.",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText":"When you hover over the 3 dots for an order, you get different action options.",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText":"View details: “View details” shows you the information of the chosen order. Where you can also perform different action for the order eg. edit, download, locking, change shipping method etc.",
+                    "images": [
+                        "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText":"Copy URL: Copies the url of an order, so that you are able to paste the url of the order.",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText":"Open CMS:  If you want to see the order with your own CMS, you can click on “Open CMS”.",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText":"Print: Here you can choose to print the order on papir. You will get three options: “Parcel order”, “Return Label” and “Shipping Label”.",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText":"Parcel Order: Is where you print the prices, etc..",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText":"Return Label: Prints the return label. If the customer wants to return the product, the user can print the return label for the customer, which they can attach.",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText":"Shipping Label: Here you will print a new tracking number that you can attach on the order, the old information of the order will still be kept. You will be prompted with a window where you can choose shipping methods.",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText":"(NB: make sure you have entered a printer and packing station, or it will give you an error.)",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText":"\n",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText":"Download: If a digital copy is needed you can choose to download. You will get the same options as “Print”.",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText":"(NB: make sure you have entered a printer and packing station, or it will give you an error.)",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText":"\n",
+                    "images": [
+                    
+                    ]
+                },
+                {
+                    "bodyText":"If you are super admin, you can change the status of an order quickly here if needed. But it is not recommended.",
+                    "images": [
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText":"You will always be able to change the page of the order table. The page picker is always on the screen at the bottom regardless if you are at the top, middle or bottom of the table. ",
+                    "images": [
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText":"You can click on the arrows to change the page, or choose a specific page by entering the number you wish to see in the field with the left number. ",
+                    "images": [
+                        "logo.png"
+                    ]
+                }
+            ]
+        }
+ 
+        
   ]
 }
