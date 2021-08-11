@@ -3,7 +3,7 @@
         <navigation-bar></navigation-bar>
         <div class="search-result-content">
             <search-bar class="searchInput"  @searchCriteria="searchData"></search-bar>
-            <filtered-articles class="results" :key="componentKey"/>
+            <filtered-articles class="results"/>
         </div>
     </div>
 </template>
@@ -22,14 +22,14 @@ export default{
     },
     data(){
        return{
-            componentKey: 0,
+            // componentKey: 0,
             searchWord: this.$route.params.id
        }
     },
     methods:{
         searchData(data){
             this.searchResult = data;
-            this.componentKey += 1;
+            // this.componentKey += 1;
             this.$router.push("/search/" + data);
         }
     }
