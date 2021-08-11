@@ -6,6 +6,10 @@
    </div>
     <div>
     <ul class="subject_list">
+       <!-- <li class="subject_list__item" v-for="category in categories" 
+       :key="category.id"> {{category.name}}</li> -->
+         <li class="subject_list__item"  @click="setActive('Punch Clock')" :class="{active: isActive('Punch Clock')}">
+            Punch Clock
          <li class="subject_list__item" @click="setActive('Scan')" :class="{active: isActive('Scan')}">
            Scan
          </li>
@@ -62,6 +66,7 @@ export default {
             this.$router.push("/");
       },
       goToCategory(category) {
+         this.componentKey++;
          this.$router.push("/categories/" + category);
       },
       isActive(menuItem) {
