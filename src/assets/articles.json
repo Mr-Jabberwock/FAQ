@@ -52,9 +52,7 @@
                 },
                 {
                     "bodyText":"By pressing on a specific time period, you can edit it. If you made an incorrect edit, you can press on the curved arrow to go back to what the time was before the edit. Press on the submit button to submit the change or press the delete button, to delete the employees whole work history. ",
-                    "images": [
-                        ""
-                    ]
+                    "images": []
                 }
             ]
         },
@@ -71,9 +69,7 @@
                 },
                 {
                     "bodyText":"The week picker, goes back one year of your work history. ",
-                    "images": [
-                        ""
-                    ]
+                    "images": []
                 }
             ]
         },
@@ -140,9 +136,7 @@
                 },
                 {
                     "bodyText": "There are two types of printers you need to choose; an A4 printer and a Label printer. Choose the printer closest to you. By clicking on the dropdown field you will be able to see the available printers.",
-                    "images":[
-                        ""
-                    ]
+                    "images":[]
                 },
                 {
                     "bodyText":"A4 printers:",
@@ -158,9 +152,7 @@
                 },
                 {
                     "bodyText":"The options are the printers connected to the network of your place. You can see which ones are available for use. Furthermore you need to state a packing station. That is simply just your own name. It’s company policy that everyone needs to give their name when they print.",
-                    "images":[
-                        ""
-                    ]
+                    "images":[]
                 }
             ]
         },
@@ -247,21 +239,15 @@
                 },
                 {
                     "bodyText": "To update the information, change the information that needs to be updated and press “update address”. ",
-                    "images": [
-                        ""
-                    ]
+                    "images": []
                 },
                 {
                     "bodyText": "To delete an item, press “delete address”",
-                    "images": [
-                        ""
-                    ]
+                    "images": []
                 },
                 {
                     "bodyText": "If you wish to cancel, simply just exit the pop up through the X in the upper right corner.",
-                    "images": [
-                        ""
-                    ]
+                    "images": []
                 }
             ]
         },
@@ -272,9 +258,7 @@
             "content": [
                 {
                     "bodyText": "The serial number site contains information regarding a product checklist and some serial number check boxes.",
-                    "images": [
-                        ""
-                    ]
+                    "images": []
                 }
             ]
         },
@@ -285,35 +269,126 @@
             "content": [
                 {
                     "bodyText": "The about page contains information on the release and current version of the web app you are currently using. ",
+                    "images": []
+                }
+            ]
+        },
+        {
+            "id":"",
+            "title": "How to request a leave",
+            "category": "Schedule",
+            "content": [
+                {
+                    "bodyText": "To request a leave press the button in the top right corner. A pop up will appear where you will need to fill out the basic information regarding the nature of your leave; why you wish to request a leave, when you want it to start and when you want it to end. ",
+                    "images":[]
+                },
+                {
+                    "bodyText":"The pop up will choose the user’s name by default. If you wish to choose a person anyway you can click the “Name” field. Dropdown options will appear, these are the employees. ",
+                    "images": []
+                },
+                {
+                    "bodyText":"Choose your name to pick yourself for the request leave. ",
+                    "images":[
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText":"You must pick a reason for the leave. To pick a leave simply click on the “Reason”, you will get options to pick for your leave request.",
+                    "images":[
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText":"You must pick a start and end date for your leave. Simply click on the “Start date” and “End date” field for the leave period.",
+                    "images":[]
+                },
+                {
+                    "bodyText":"Start date",
+                    "images":["logo.png"]
+                },
+                {
+                    "bodyText":"End date",
+                    "images":["logo.png"]
+                },
+                {
+                    "bodyText":"Once the information has been filled out, you may press the “request leave” button in the bottom right corner. ",
+                    "images":["logo.png"]
+                },
+                {
+                    "bodyText":"If you wish to cancel the request, simply just press “X” in the top right corner",
+                    "images":[]
+                },
+                {
+                    "bodyText":"You can also check it off as a half day if needed. Simply click on the checkbox with the text: “Is a half day?”",
+                    "images":["logo.png"]
+                },
+                {
+                    "bodyText":"Additionally you can write a note if needed, by simply clicking on the “Note” field and write your note.",
+                    "images":["logo.png"]
+                },
+                {
+                    "bodyText":"Once a leave has been requested a coloured block will be filling out the requested days. A text will appear on the coloured block, telling you the reason for the leave. The blocks are colour coded, matching whatever reason of leave that has been chosen. ",
+                    "images":[]
+                },
+                {
+                    "bodyText":"The “Your days off” box on the left shows a small list of your most immediate days of and requests for days off. ",
+                    "images":["logo.png"]
+                },
+                {
+                    "bodyText":"",
+                    "images":["logo.png"]
+                },
+                {
+                    "bodyText":"Striped coloured block means that a leave has been requested, but not yet accepted by the supervisor. ",
+                    "images":[]
+                }
+            ]
+        },
+        {
+            "id":"6",
+            "title": "How to get an overview of all employees most immediate days off (Admins only)",
+            "category": "Schedule",
+            "content": [
+                {
+                    "bodyText": "To get an overview of the employees requested and approved days off , press “Overview” at the top of the screen. This will show you a series of rows. Each row represents an employee and their requested or approved days off. Here you can also see that the blocks in the rows are colour coded, matching the reasons.",
                     "images": [
-                        ""
+                        "logo.png"
                     ]
                 }
             ]
         },
         {
-            "id":"5",
-            "title": "How to request a leave",
+            "id":"6",
+            "title": "How to approve or reject a leave request (Admins only)",
             "category": "Schedule",
             "content": [
                 {
-                    "bodyText": "You must pick a reason for the leave. To pick a leave simply click on the “Reason”, you will get options to pick for your leave request.",
-                    "images":[
-                        "social_proof_task_bem.png"
-                    ]
+                    "bodyText": "To approve or reject a leave there are a few different options:",
+                    "images": []
                 },
                 {
-                    "bodyText":"You must pick a start and end date for your leave. Simply click on the “Start date” and “End date” field for the leave period.",
+                    "bodyText": "1. First go into the overview mentioned before. Find the employee and the specific request for a leave. Click on the request. A pop up will appear from the right side of the screen. It will show you the details of the request; start and end date, reason and any potential notes.",
                     "images": [
                         "logo.png"
                     ]
                 },
                 {
-                    "bodyText":"Once the information has been filled out, you may press the “request leave” button in the bottom right corner. ",
-                    "images":[
-
-                    ]
+                    "bodyText": "At the bottom right are three options; save leave, approve leave, delete leave. While in here, you can also edit the date, reason or notes.",
+                    "images": []
+                },
+                {
+                    "bodyText": "2. Go into the approval tab (next to the Overview tab). A list of the requests for leave with their start and end dates, and reasons for the leave can be seen here.",
+                    "images": ["logo.png"]
+                },
+                {
+                    "bodyText": "Press on a list item to get to the pop up mentioned in option one, or hover on the three dots that can be found on the right side of each list item. By hovering on the dots three options will show; edit, approve and reject. ",
+                    "images": ["logo.png"]
+                },
+                {
+                    "bodyText": "Edit will open the same pop up window mentioned before. Approve and reject will directly, after a confirmation, approve or reject the request for a leave.",
+                    "images": []
                 }
+
             ]
         },
         {
@@ -380,9 +455,7 @@
                 },
                 {
                     "bodyText":"On the right side you can see 4 counters. Here you can see the current numbers and total sum of the statuses: New, Pick, Pack and Locked all of which are color coded according to the status they belong to. The number above is the current number, while the number below is the total sum.",
-                    "images": [
-
-                    ]
+                    "images": []
                 }
             ]
         },
@@ -398,7 +471,19 @@
                     ]
                 },
                 {
-                    "bodyText":"You can clear the time period by clicking on the X beside the date in start- and end date fields.",
+                    "bodyText":"",
+                    "images":[ 
+                        "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText":"Start date:",
+                    "images":[ 
+                        "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText":"End date:",
                     "images":[ 
                         "social_proof_task_bem.png"
                     ]
