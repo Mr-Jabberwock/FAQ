@@ -460,7 +460,7 @@
             ]
         },
         {
-            "id":"9",
+            "id":"",
             "title": "How do I pick a time period?",
             "category": "Salary",
             "content": [
@@ -487,12 +487,60 @@
                     "images":[ 
                         "social_proof_task_bem.png"
                     ]
+                },
+                {
+                    "bodyText":"Picking a month:",
+                    "images":[ 
+                        "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText":"You can clear the time period by clicking on the X beside the date in start- and end date fields.",
+                    "images":[]
                 }
             ]
         },
         {
-            "id":"10",
-            "title": "How do I pick a period?",
+            "id":"",
+            "title": "How do I overwiew the salary information?",
+            "category": "Salary",
+            "content": [
+                {
+                    "bodyText": "Once you’ve chosen the search period, a list will appear with the requested information.",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText":"By clicking on a specific list item, you may choose to click one of the two buttons on the bottom right. By pressing “View details”, you may see the specifics of the individual list item.",
+                    "images": [
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText":"By pressing “Download CSV”, you may download the specifics of a chosen list item as a CSV file (like an Excel document).",
+                    "images": [
+                        "logo.png"
+                    ]
+                }
+            ]
+        },
+        {
+            "id":"",
+            "title": "How to get the information on multible list items",
+            "category": "Salary",
+            "content": [
+                {
+                    "bodyText": "By, while viewing the list on the salary report page, press and hold the Ctrl button on your keyboard and click on multiple list items you wish to see. This allows you to view or download the specifics of multiple list items at the same time",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                }
+            ]
+        },
+        {
+            "id":"",
+            "title": "How to pick a period",
             "category": "Statistics",
             "content": [
                 {
@@ -502,16 +550,62 @@
                     ]
                 },
                 {
-                    "bodyText":"Press Apply to fetch the statistics for the period.",
-                    "images":[ 
-                        
+                    "bodyText": "",
+                    "images": [
+                        "puppies.jpg"
                     ]
                 },
                 {
-                    "bodyText":"To see the specifics of any given list item, simply press the item.",
+                    "bodyText": "Press Apply to fetch the statistics for the period.",
                     "images": [
-                        "social_proof_task_bem.png"
+                        "puppies.jpg"
                     ]
+                },
+                {
+                    "bodyText": "To see the specifics of any given list item, simply press the item.",
+                    "images": []
+                }
+            ]
+        },
+        {
+            "id":"",
+            "title": "How to toggle the currency",
+            "category": "Statistics",
+            "content": [
+                {
+                    "bodyText": "On the top right there is a toggle switch, which allows you to hide everything in the statistics that has to do with money and sensitive data. Simply just click the “Currency” toggle and you will hide the sensitive data",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                }
+            ]
+        },
+        {
+            "id":"",
+            "title": "How to view the packers",
+            "category": "Statistics",
+            "content": [
+                {
+                    "bodyText": "To view the statistics for the packers, simply just press “Packers” in the top left corner.",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText": "The packer page is, in many ways, the same as the pickers page, but there are some essential differences. ",
+                    "images": []
+                },
+                {
+                    "bodyText": "First of all, when picking the time frame, you cannot make a rough estimate of a week or a month like you could on the pickers page. You can only choose a specific time frame like when we picked “Date range” on the pickers page.",
+                    "images": ["puppies.jpg"]
+                },
+                {
+                    "bodyText": "Secondly, on the list of the packers all of the information is the same as the information displayed in the pickers list, however each list item is colour coded. Employees who have done their assignments in less than 35 hours are marked with red, and the ones who worked for more than 35 hours are marked with green.",
+                    "images": []
+                },
+                {
+                    "bodyText": "The Purpose of this is to get an overview of who is putting the most effort into their work. It can be an indication of an employee's motivation to quit, and that gives the company a heads up in regards to finding a potential replacement.",
+                    "images": ["puppies.jpg"]
                 }
             ]
         },
@@ -528,9 +622,191 @@
                 },
                 {
                     "bodyText":"The search bar allows you to search for the ID of a pick list.",
+                    "images": []
+                }
+            ]
+        },
+        {
+            "id":"",
+            "title": "How to create a new route",
+            "category": "Lists",
+            "content": [
+                {
+                    "bodyText": "By clicking Create pick list in the upper right corner, you’ll see a pop up, which enables you to create a new list.",
                     "images": [
-                        "logo.png"
+                        "puppies.jpg"
                     ]
+                },
+                {
+                    "bodyText":"Firstly you must choose which company to make the pick list for.",
+                    "images": []
+                },
+                {
+                    "bodyText":"Secondly you must pick out which packages to add to the list. Each carrier has a number to the right of their names. The number shows how many packages that the specific carrier has available. You can manually choose which ones you want added to the list. By checking off a box you get the list of the available packages for that specific company.",
+                    "images": ["puppies.jpg"]
+                },
+                {
+                    "bodyText":"It is perfectly possible to cross out multiple boxes at the same time",
+                    "images": ["puppies.jpg"]
+                },
+                {
+                    "bodyText":"Select the products that you want to add to the list. By removing the check mark from the “Order ID” box at the top of the list, everything will be unchecked. When you’re ready to create the list, click “Create pick list”",
+                    "images": ["puppies.jpg"]
+                }
+            ]
+        },
+        {
+            "id":"",
+            "title": "How to view the details of a pick list",
+            "category": "Lists",
+            "content": [
+                {
+                    "bodyText": "To see the details of a specific pick list, simply find the list item that you wish to see. There are two main ways to see the specifics of the order list.",
+                    "images": []
+                },
+                {
+                    "bodyText":"1. simply just click on the list item.",
+                    "images": []
+                },
+                {
+                    "bodyText":"2. At the right side of the list item is a symbol of three dots. Hover over it, and click “View”.",
+                    "images": []
+                },
+                {
+                    "bodyText":"A pop up will appear in the right side of the screen, which will contain the detailed information for the specific pick list",
+                    "images": ["puppies.jpg"]
+                }
+            ]
+        },
+        {
+            "id":"",
+            "title": "How to print out a pick list",
+            "category": "Lists",
+            "content": [
+                {
+                    "bodyText": "To print the details of a specific pick list, simply find the list item that you wish to print. At the right side of the list item is a symbol of three dots. Hover over it, and click “Print”. This will print the pick list for the specific list item",
+                    "images": []
+                }
+            ]
+        },
+        {
+            "id":"",
+            "title": "The Collect lists",
+            "category": "Lists",
+            "content": [
+                {
+                    "bodyText": "The purpose of the collect list items is to serve as receipts of sorts. When the truck drivers pick up products from us for delivery we get a “Collect list” as evidence that they have picked up the products.",
+                    "images": []
+                },
+                {
+                    "bodyText": "To view the list of Collect lists, press “Collect Lists” at the top of the screen.",
+                    "images": ["puppies.jpg"]
+                },
+                {
+                    "bodyText": "To find a specific collect list, the lists can be searched by ID in the search field",
+                    "images": ["puppies.jpg"]
+                }
+            ]
+        },
+        {
+            "id":"",
+            "title": "How to download or print a collect list",
+            "category": "Lists",
+            "content": [
+                {
+                    "bodyText": "At each list item, on the right side, is a symbol consisting of three dots. By hovering over the symbol, you will see the option to either “Download” or “Print” the given collect list.",
+                    "images": []
+                }
+            ]
+        },
+        {
+            "id":"",
+            "title": "How to add a new collect list",
+            "category": "Lists",
+            "content": [
+                {
+                    "bodyText": "To add a new collect list press the “Create collect list”. A pop up will appear on the right side of the screen. Firstly choose the company to which you want to add to the new list. Press on the checkbox of the name of the carrier whose items you wish to add to the list. Unlike in the case of pick lists, you cannot choose multiple carriers here. ",
+                    "images": []
+                },
+                {
+                    "bodyText": "Select the products that you want to add to the list. By removing the check mark from the “Order ID” box at the top of the list, everything will be unchecked. ",
+                    "images": []
+                },
+                {
+                    "bodyText": "The main difference between the “Create Collect” list menu and the “Create Pick” list menu is the “List name” text field at the bottom of the “Create Collect” list screen. Use it to add a name to the “Collect list”.",
+                    "images": []
+                },
+                {
+                    "bodyText": "When you’re ready to create the list, press “Create Collect list”",
+                    "images": []
+                }
+            ]
+        },
+        {
+            "id":"",
+            "title": "The Bulk invoicing page",
+            "category": "Lists",
+            "content": [
+                {
+                    "bodyText": "When shipping products to foreign countries it happens in what we call bulks. Don’t be fooled by the name. A bulk can just as well consist of a single order. At the moment we only ship to Greenland and Norway, though the list of countries in the menu contain a far more expansive array of countries than just Greenland and Norway. The idea of bulk shipping is that we ship orders. An order can consist of a single or multiple products. ",
+                    "images": []
+                },
+                {
+                    "bodyText": "To get to the Bulk Invoicing list, click “Bulk Invoicing” at the top of the screen. ",
+                    "images": ["image.jpg"]
+                }
+            ]
+        },
+        {
+            "id":"",
+            "title": "How to create a bulk invoice",
+            "category": "Lists",
+            "content": [
+                {
+                    "bodyText": "To create a new bulk, start out by choosing the country you want to ship to, and then pick the carrier. The carriers have been pre-assigned. Each carrier on the list has a number next to them. This is the number of orders in the specific bulk. Press “Create bulk invoicing” and confirm the creation. ",
+                    "images": ["image.jpg"]
+                }
+            ]
+        },
+        {
+            "id":"",
+            "title": "How to view bulk invoice information",
+            "category": "Lists",
+            "content": [
+                {
+                    "bodyText": "To view bulk invoice information, first find the bulk you would like to see the information of.",
+                    "images": ["image.jpg"]
+                },
+                {
+                    "bodyText": "Then do one of the following:",
+                    "images": []
+                },
+                {
+                    "bodyText": "1. Go to the right side of the list item, and hover on the symbol of the three dots. Click on “view”",
+                    "images": []
+                },
+                {
+                    "bodyText": "2. Simply just click the list item itself.",
+                    "images": []
+                },
+                {
+                    "bodyText": "A pop up will appear on the right side of the screen.",
+                    "images": ["image.jpg"]
+                },
+                {
+                    "bodyText": "On the top left side is information about the bulk. The ID, the date it was created and the employee that created the bulk. To the right is information about the number of orders in the bulk, the name of the company from where the bulk comes and the name of the carrier. Underneath that is a list of the orders which make up the bulk.",
+                    "images": []
+                }
+            ]
+        },
+        {
+            "id":"",
+            "title": "How to print out the bulk information",
+            "category": "Lists",
+            "content": [
+                {
+                    "bodyText": "When viewing the list of bulks, simply find the bulk you wish to print. Then go to the right side of the bulks list item, and hover over the three dots symbol. Then press “Print”.",
+                    "images": []
                 }
             ]
         },
