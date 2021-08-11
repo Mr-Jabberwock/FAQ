@@ -30,7 +30,7 @@ export default{
         searchData(data){
             this.searchResult = data;
             // this.componentKey += 1;
-            this.$router.push("/search/" + data);
+            this.$router.push("/search/" + data).catch(()=>{});
         }
     }
 }
@@ -43,6 +43,10 @@ export default{
     -moz-osx-font-smoothing: grayscale;
     color: #2c3e50;
     margin-top: 60px;
+}
+.search-result-content{
+    padding-left: 30%;
+    max-width: 60%;
 }
 
 </style>
