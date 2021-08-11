@@ -8,79 +8,40 @@
     <ul class="subject_list">
        <!-- <li class="subject_list__item" v-for="category in categories" 
        :key="category.id"> {{category.name}}</li> -->
-         <li class="subject_list__item" :class="{active: isActive('Punch Clock')}"
-         @click="goToCategory('Punch+Clock')">
-            <!-- <a class="subject_list__item-link"
-            @click="setActive('Punch Clock')"
-            href="/categories/Punch+Clock">Punch clock
-            </a> -->
+         <li class="subject_list__item"  @click="setActive('Punch Clock')" :class="{active: isActive('Punch Clock')}">
             Punch Clock
+         <li class="subject_list__item" @click="setActive('Scan')" :class="{active: isActive('Scan')}">
+           Scan
          </li>
-         <li class="subject_list__item" :class="{active: isActive('Scan')}">
-            <a class="subject_list__item-link"
-            @click="setActive('Scan')" 
-            href="/categories/Scan">Scan
-            </a>
+        <li class="subject_list__item" @click="setActive('Trophies')"  :class="{active: isActive('Trophies')}">
+           Trophies
          </li>
-        <li class="subject_list__item" :class="{active: isActive('Trophies')}">
-            <a class="subject_list__item-link"
-            @click="setActive('Trophies')" 
-            href="/categories/Trophies">Trophies
-            </a>
+        <li class="subject_list__item" @click="setActive('Parcels')" :class="{active: isActive('Parcels')}">
+           Parcels
          </li>
-        <li class="subject_list__item" :class="{active: isActive('Parcels')}">
-            <a class="subject_list__item-link" 
-            @click="setActive('Parcels')"
-            href="/categories/Parcels">Parcels
-            </a>
+        <li class="subject_list__item" @click="setActive('Serial Number')" :class="{active: isActive('Serial Number')}">
+            Serial Number
          </li>
-        <li class="subject_list__item" :class="{active: isActive('Serial Number')}">
-            <a class="subject_list__item-link" 
-            @click="setActive('Serial Number')"
-            href="/categories/Serial+Number">Serial number
-            </a>
+        <li class="subject_list__item" @click="setActive('Users')"  :class="{active: isActive('Users')}">
+            Users
          </li>
-        <li class="subject_list__item" :class="{active: isActive('Users')}">
-            <a class="subject_list__item-link"
-            @click="setActive('Users')" 
-            href="/categories/Users">Users
-            </a>
+        <li class="subject_list__item" @click="setActive('Salary')" :class="{active: isActive('Salary')}">
+            Salary
          </li>
-        <li class="subject_list__item" :class="{active: isActive('Salary')}">
-            <a class="subject_list__item-link" 
-            @click="setActive('Salary')"
-            href="/categories/Salary">Salary
-            </a>
+        <li class="subject_list__item" @click="setActive('Lists')" :class="{active: isActive('Lists')}">
+            Lists
          </li>
-        <li class="subject_list__item" :class="{active: isActive('Lists')}">
-            <a class="subject_list__item-link" 
-            @click="setActive('Lists')"
-            href="/categories/Lists">Lists
-            </a>
+        <li class="subject_list__item" @click="setActive('Statistics')" :class="{active: isActive('Statistics')}">
+            Statistics
          </li>
-        <li class="subject_list__item" :class="{active: isActive('Statistics')}">
-            <a class="subject_list__item-link" 
-            @click="setActive('Statistics')"
-            href="/categories/Statistics">Statistics
-            </a>
+        <li class="subject_list__item" @click="setActive('Dashboard')"  :class="{active: isActive('Dashboard')}">
+            Dashboard
          </li>
-        <li class="subject_list__item" :class="{active: isActive('Dashboard')}">
-            <a class="subject_list__item-link"
-            @click="setActive('Dashboard')" 
-            href="/categories/Dashboard">Dashboard
-            </a>
+        <li class="subject_list__item" @click="setActive('Schedule')"  :class="{active: isActive('Schedule')}">
+            Schedule
          </li>
-        <li class="subject_list__item" :class="{active: isActive('Schedule')}">
-            <a class="subject_list__item-link"
-             @click="setActive('Schedule')"  
-            href="/categories/Schedule">Schedule
-            </a>
-         </li>
-        <li class="subject_list__item" :class="{active: isActive('Settings')}">
-            <a class="subject_list__item-link" 
-            @click="setActive('Settings')"
-            href="/categories/Settings">Settings
-            </a>
+        <li class="subject_list__item" @click="setActive('Settings')" :class="{active: isActive('Settings')}">
+            Settings
          </li>
     </ul>
     </div>
@@ -111,8 +72,8 @@ export default {
       isActive(menuItem) {
          return this.activeItem === menuItem;
       },
-      setActive(menuItem) {
-         this.activeItem = menuItem;
+      setActive(category) {
+         this.$router.push("/categories/" + category);
       }
    }
 }
