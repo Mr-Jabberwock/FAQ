@@ -1,5 +1,5 @@
 <template>
-<div><input placeholder="O- Search by keyword" v-model="searchCriteria" v-on:keyup.enter="sendResult"></div>  
+<div><input placeholder="O- Search by keyword" v-on:keyup.enter="sendResult"></div>  
 </template>
 
 <script>
