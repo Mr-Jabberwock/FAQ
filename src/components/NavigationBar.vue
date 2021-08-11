@@ -6,13 +6,15 @@
    </div>
     <div>
     <ul class="subject_list">
-       <li v-for="category in categories" 
-       :key="category.id"> {{category.name}}</li>
-         <!-- <li class="subject_list__item" :class="{active: isActive('Punch Clock')}">
-            <a class="subject_list__item-link"
+       <!-- <li class="subject_list__item" v-for="category in categories" 
+       :key="category.id"> {{category.name}}</li> -->
+         <li class="subject_list__item" :class="{active: isActive('Punch Clock')}"
+         @click="goToCategory('Punch+Clock')">
+            <!-- <a class="subject_list__item-link"
             @click="setActive('Punch Clock')"
             href="/categories/Punch+Clock">Punch clock
-            </a>
+            </a> -->
+            Punch Clock
          </li>
          <li class="subject_list__item" :class="{active: isActive('Scan')}">
             <a class="subject_list__item-link"
@@ -79,7 +81,7 @@
             @click="setActive('Settings')"
             href="/categories/Settings">Settings
             </a>
-         </li> -->
+         </li>
     </ul>
     </div>
    </div>
@@ -103,6 +105,7 @@ export default {
             this.$router.push("/");
       },
       goToCategory(category) {
+         this.componentKey++;
          this.$router.push("/categories/" + category);
       },
       isActive(menuItem) {
