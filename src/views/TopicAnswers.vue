@@ -23,12 +23,6 @@ export default {
         SearchBar,
         CategoryArticles
         
-    },
-    watch:{
-        $route (){
-           this.componentKey += 1;
-        }
-
     }
 }
 </script>

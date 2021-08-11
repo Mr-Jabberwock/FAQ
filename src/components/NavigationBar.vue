@@ -6,41 +6,51 @@
    </div>
     <div>
     <ul class="subject_list">
-       <!-- <li class="subject_list__item" v-for="category in categories" 
-       :key="category.id"> {{category.name}}</li> -->
-         <li class="subject_list__item"  @click="setActive('Punch Clock')" :class="{active: isActive('Punch Clock')}">
+         <li class="subject_list__item"  @click="goToCategory('Punch Clock')" :class="{active: isActive('Punch Clock')}" 
+         :key="$route.fullPath">
             Punch Clock
-         <li class="subject_list__item" @click="setActive('Scan')" :class="{active: isActive('Scan')}">
+         <li class="subject_list__item" @click="goToCategory('Scan')" :class="{active: isActive('Scan')}"
+         :key="$route.fullPath">
            Scan
          </li>
-        <li class="subject_list__item" @click="setActive('Trophies')"  :class="{active: isActive('Trophies')}">
+        <li class="subject_list__item" @click="goToCategory('Trophies')"  :class="{active: isActive('Trophies')}"
+        :key="$route.fullPath">
            Trophies
          </li>
-        <li class="subject_list__item" @click="setActive('Parcels')" :class="{active: isActive('Parcels')}">
+        <li class="subject_list__item" @click="goToCategory('Parcels')" :class="{active: isActive('Parcels')}"
+        :key="$route.fullPath">
            Parcels
          </li>
-        <li class="subject_list__item" @click="setActive('Serial Number')" :class="{active: isActive('Serial Number')}">
+        <li class="subject_list__item" @click="goToCategory('Serial Number')" :class="{active: isActive('Serial Number')}"
+        :key="$route.fullPath">
             Serial Number
          </li>
-        <li class="subject_list__item" @click="setActive('Users')"  :class="{active: isActive('Users')}">
+        <li class="subject_list__item" @click="goToCategory('Users')"  :class="{active: isActive('Users')}"
+        :key="$route.fullPath">
             Users
          </li>
-        <li class="subject_list__item" @click="setActive('Salary')" :class="{active: isActive('Salary')}">
+        <li class="subject_list__item" @click="goToCategory('Salary')" :class="{active: isActive('Salary')}"
+        :key="$route.fullPath">
             Salary
          </li>
-        <li class="subject_list__item" @click="setActive('Lists')" :class="{active: isActive('Lists')}">
+        <li class="subject_list__item" @click="goToCategory('Lists')" :class="{active: isActive('Lists')}"
+        :key="$route.fullPath">
             Lists
          </li>
-        <li class="subject_list__item" @click="setActive('Statistics')" :class="{active: isActive('Statistics')}">
+        <li class="subject_list__item" @click="goToCategory('Statistics')" :class="{active: isActive('Statistics')}"
+        :key="$route.fullPath">
             Statistics
          </li>
-        <li class="subject_list__item" @click="setActive('Dashboard')"  :class="{active: isActive('Dashboard')}">
+        <li class="subject_list__item" @click="goToCategory('Dashboard')"  :class="{active: isActive('Dashboard')}"
+        :key="$route.fullPath">
             Dashboard
          </li>
-        <li class="subject_list__item" @click="setActive('Schedule')"  :class="{active: isActive('Schedule')}">
+        <li class="subject_list__item" @click="goToCategory('Schedule')"  :class="{active: isActive('Schedule')}"
+        :key="$route.fullPath">
             Schedule
          </li>
-        <li class="subject_list__item" @click="setActive('Settings')" :class="{active: isActive('Settings')}">
+        <li class="subject_list__item" @click="goToCategory('Settings')" :class="{active: isActive('Settings')}"
+        :key="$route.fullPath">
             Settings
          </li>
     </ul>
@@ -66,7 +76,6 @@ export default {
             this.$router.push("/");
       },
       goToCategory(category) {
-         this.componentKey++;
          this.$router.push("/categories/" + category);
       },
       isActive(menuItem) {
@@ -103,18 +112,9 @@ export default {
 
 .active, .subject_list__item:hover{
   padding-left: 20px;
+  color: aquamarine;
 }
 
-.subject_list__item-link{
-   text-decoration: none;
-   color: rgb(63, 63, 63);
-}
-.subject_list__item-link:visited{
-   color: inherit;
-}
-.active, .subject_list__item-link:hover{
-   color: aquamarine;
-}
 .title__text:hover{
    cursor: pointer;
 }
