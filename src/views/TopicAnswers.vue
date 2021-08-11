@@ -23,6 +23,17 @@ export default {
         SearchBar,
         CategoryArticles
         
+    },
+    methods:{
+        searchData(data){
+            this.$router.push("/search/" + data);
+        }
+    },
+    watch:{
+        $route (){
+           this.componentKey += 1;
+        }
+
     }
 }
 </script>

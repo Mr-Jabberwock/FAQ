@@ -1,18 +1,14 @@
 <template>
-<div><input placeholder="O- Search by keyword" v-on:keyup.enter="sendResult"></div>  
+<div>
+    <input placeholder="O- Search by keyword" v-on:keyup.enter="$emit('searchCriteria', $event.target.value )">
+</div>  
 </template>
 
 <script>
 
 export default{
     
-    name: 'SearchBar',
-    methods: {
-        sendResult(){
-            this.$emit("searchCriteria", this.searchCriteria )
-        },
-
-    }
+    name: 'SearchBar'
 }
 </script>
 
