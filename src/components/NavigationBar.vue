@@ -61,13 +61,12 @@
 </template>
 
 <script>
-import categoriesjson from "../assets/categories.json"
+
 export default {
     name: 'NavigationBar',
     data(){
        return{
           activeItem: this.$route.params.id.replace("+", ' '),
-          categories: categoriesjson.categories,
           componentKey: 0
        };
     },
