@@ -8,16 +8,14 @@
                 {
                     "bodyText": "The big green 'Punch in' button is a toggle switch. Press it to start your shift. When you do so it will turn red and the text will say 'Punch out'.",
                     "images": [
-                        "logo.png",
-                        "social_proof_task_bem.png"
+                        "Punch_In.png",
+                        "Punch_Out.png"
                         
                     ]
                 },
                 {
                     "bodyText": "Additionally at the bottom of the page your name will be added to a series of lines. These are the 'punched in' employees and you see their name and their 'punch in' time in this line. As an admin, you also have the possibility to 'punch out' an employee. This is in case they forgot to punch themselves out or in case something else of that sort goes wrong. The salary type toggle makes it possible for you to toggle your own or someone else's salary between being on commision or being on an hourly rate. The 'Punch Clock' list on the top right side indicates your 10 most recent 'punch outs'. The most recent one will be at the top. Furthermore you can search for the names of people who are 'punched in' in the search bar.",
-                    "images": [
-                        "logo.png"
-                    ]
+                    "images": []
                 }
             ]
         },
@@ -29,32 +27,79 @@
                 {
                     "bodyText": "Head over to the Validation page.",
                     "images": [
-                        "logo.png"
+                        "Validation_Page.png",
+                        "Validation_Page-Overview.png"
+
                     ]
                 },
                 {
                     "bodyText":"It looks similar to the Punches site, but there are some variations. Mainly at the bottom. This is like a more sophisticated version of the list from the Punches page. What we can see here is the time that a certain employee punched in and the time they punched out. This list however, is for both the employees who are currently punched in, and employees who have punched out. ",
                     "images": [
-                        "social_proof_task_bem.png"
+                        "Validation_Page-Overview2.png"
                     ]
+                },
+                {
+                    "bodyText":"Bear in mind that this only applies to employees who have their salary type set to be on an hourly rate. This makes it possible to check both those who have forgotten to “punch out”, and those who have “punched out”, but have a time longer than what seems normal. By pressing on the arrow to the left of the name of an employee, you can see their “punch ins” and “outs” for the selected period:",
+                    "images": [
+                        "Validation_Page-Overview2.png"
+                    ]
+                },
+                {
+                    "bodyText":"By pressing on a specific time period, you can edit it. If you made an incorrect edit, you can press on the curved arrow to go back to what the time was before the edit. Press on the submit button to submit the change or press the delete button, to delete the employees whole work history. ",
+                    "images": []
                 }
             ]
         },
         {
             "id":"3",
-            "title": "How to create a new user",
-            "category": "Users",
+            "title": "How to sort in the time frame of checkouts",
+            "category": "Punch Clock",
             "content": [
                 {
-                    "bodyText": "To create a new user click on the “Create user” button on the right side of the page.",
+                    "bodyText": "For this purpose we will be using the date picker:",
                     "images":[
+                        "Time_Sort.png"
+                    ]
+                },
+                {
+                    "bodyText":"The week picker, goes back one year of your work history. ",
+                    "images": []
+                }
+            ]
+        },
+        {
+            "id":"4",
+            "title": "How to view reports",
+            "category": "Punch Clock",
+            "content": [
+                {
+                    "bodyText": "To view a report go to the “Report” page.",
+                    "images":[
+                        "Report_Page.png"
+                    ]
+                },
+                {
+                    "bodyText":"Like with the “Validation” page, the “Report” page is not different from the others except in regards to the content of the list at the bottom of the page.",
+                    "images": [
+                        "Report_Page-Overview.png"
+                    ]
+                },
+                {
+                    "bodyText":"The “Report” list keeps track of employees' work. By clicking on the arrow to the left you can see the details of the employees’ work history for the chosen period.",
+                    "images": [
+                        "Report_Page-Overview2.png"
+                    ]
+                },
+                {
+                    "bodyText":"The details include what kind of work was done, when it was done, the duration, the number of orders they handled in the time frame and the information about the parcels they handled in the period. When the “Parcels” button is blue it can be pressed. When it is grey it cannot. By pressing a button when it is blue (meaning that the number of parcels handled in this period is not 0), a pop up will appear on the right side of the screen:",
+                    "images": [
                         "social_proof_task_bem.png"
                     ]
                 },
                 {
-                    "bodyText":"You will then be shown a page where you can enter the information.",
+                    "bodyText":"The information given here is the company the parcel was handled for, the start time, the end time, duration and the orders that parcel consist of. By pressing the number of an order, you will be redirected to the parcels page where you can view information on this individual order.",
                     "images": [
-                        "logo.png"
+                        "social_proof_task_bem.png"
                     ]
                 },
                 {
@@ -150,53 +195,284 @@
             ]
         },
         {
-            "id":"4",
-            "title": "How to select a printer",
+            "id":"5",
+            "title": "How to search in the timeframe of the work history",
+            "category": "Punch Clock",
+            "content": [
+                {
+                    "bodyText": "Use the date pickers or make a rough estimate with the week picker.",
+                    "images":[
+                        "Report_Page-Timeframe-search"
+                    ]
+                }
+            ]
+        },
+        {
+            "id":"",
+            "title": "How to select a printer (for admins)",
             "category": "Settings",
             "content": [
                 {
-                    "bodyText":"",
+                    "bodyText":"Throughout the website, there are a few different places, namely in the functions that handle lists, where you can print out content. To do so, you first need to set a printer here in the settings. ",
                     "images":[
                         "puppies.jpg"
                     ]
                 },
                 {
-                    "bodyText": "The options are the printers connected to the network of your place. You can see which ones are available for use.",
+                    "bodyText": "There are two types of printers you need to choose; an A4 printer and a Label printer. Choose the printer closest to you. By clicking on the dropdown field you will be able to see the available printers.",
+                    "images":[]
+                },
+                {
+                    "bodyText":"A4 printers:",
                     "images":[
-                        "social_proof_task_bem.png"
+                        "logo.png"
                     ]
                 },
                 {
-                    "bodyText":"Furthermore you need to state a packing station. That is simply just your own name. It’s company policy that everyone needs to give their name when they print.",
+                    "bodyText":"Label printers:",
                     "images":[
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText":"The options are the printers connected to the network of your place. You can see which ones are available for use. Furthermore you need to state a packing station. That is simply just your own name. It’s company policy that everyone needs to give their name when they print.",
+                    "images":[]
+                }
+            ]
+        },
+        {
+            "id":"",
+            "title": "The company page",
+            "category": "Settings",
+            "content": [
+                {
+                    "bodyText": "The page for Company contains vital information about the Beautycos cooperation. This includes information about what to write when sending mail, and when sending invoices.",
+                    "images": [
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText":"",
+                    "images":[
+                         "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText":"By pressing the “Translation” button, you can see possible translations for the addresses and also edit them, if you find them to be incorrect.",
+                    "images":[
+                         "social_proof_task_bem.png"
+                    ]
+                }
+            ]
+        },
+        {
+            "id":"",
+            "title": "The parcels page",
+            "category": "Settings",
+            "content": [
+                {
+                    "bodyText": "In Parcels you can see a list of the most common parcel carriers, including GLA, DAO, and PostNord. By picking an item from the drop down list you may see the most essential information about the chosen carrier.",
+                    "images": [
                         "logo.png"
                     ]
                 }
             ]
         },
         {
-            "id":"5",
-            "title": "How to request a leave",
-            "category": "Schedule",
+            "id":"",
+            "title": "The address book page",
+            "category": "Settings",
             "content": [
                 {
-                    "bodyText": "You must pick a reason for the leave. To pick a leave simply click on the “Reason”, you will get options to pick for your leave request.",
-                    "images":[
-                        "social_proof_task_bem.png"
+                    "bodyText": "The Address book is a list of the addresses of our Beautycos shops. Aside from the addresses it also contains phone numbers and email addresses, for easy contact. ",
+                    "images": [
+                        "logo.png"
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id":"",
+            "title": "How to add an address",
+            "category": "Settings",
+            "content": [
                 {
-                    "bodyText":"You must pick a start and end date for your leave. Simply click on the “Start date” and “End date” field for the leave period.",
+                    "bodyText": "If you wish to add a new address to the list, press the “Create address” button in the top right corner. A pop up will then appear from the right side of the screen.",
                     "images": [
                         "logo.png"
                     ]
                 },
                 {
-                    "bodyText":"Once the information has been filled out, you may press the “request leave” button in the bottom right corner. ",
-                    "images":[
-
+                    "bodyText": "Fill out the necessary information and press “create address”. The address has now been added to the list. If you’re not interested in doing that, you can just exit the pop up through the “X” in the upper right corner.",
+                    "images": [
+                        "logo.png"
                     ]
                 }
+            ]
+        },
+        {
+            "id":"",
+            "title": "How to edit or delete an address",
+            "category": "Settings",
+            "content": [
+                {
+                    "bodyText": "By clicking any of the addresses, you’ll see a pop up window in which you can choose to edit or delete the chosen address. Each address lights up with a blue border when you hover your mouse on them.",
+                    "images": [
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText": "To update the information, change the information that needs to be updated and press “update address”. ",
+                    "images": []
+                },
+                {
+                    "bodyText": "To delete an item, press “delete address”",
+                    "images": []
+                },
+                {
+                    "bodyText": "If you wish to cancel, simply just exit the pop up through the X in the upper right corner.",
+                    "images": []
+                }
+            ]
+        },
+        {
+            "id":"",
+            "title": "The Serial number page",
+            "category": "Settings",
+            "content": [
+                {
+                    "bodyText": "The serial number site contains information regarding a product checklist and some serial number check boxes.",
+                    "images": []
+                }
+            ]
+        },
+        {
+            "id":"",
+            "title": "The About page",
+            "category": "Settings",
+            "content": [
+                {
+                    "bodyText": "The about page contains information on the release and current version of the web app you are currently using. ",
+                    "images": []
+                }
+            ]
+        },
+        {
+            "id":"",
+            "title": "How to request a leave",
+            "category": "Schedule",
+            "content": [
+                {
+                    "bodyText": "To request a leave press the button in the top right corner. A pop up will appear where you will need to fill out the basic information regarding the nature of your leave; why you wish to request a leave, when you want it to start and when you want it to end. ",
+                    "images":[]
+                },
+                {
+                    "bodyText":"The pop up will choose the user’s name by default. If you wish to choose a person anyway you can click the “Name” field. Dropdown options will appear, these are the employees. ",
+                    "images": []
+                },
+                {
+                    "bodyText":"Choose your name to pick yourself for the request leave. ",
+                    "images":[
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText":"You must pick a reason for the leave. To pick a leave simply click on the “Reason”, you will get options to pick for your leave request.",
+                    "images":[
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText":"You must pick a start and end date for your leave. Simply click on the “Start date” and “End date” field for the leave period.",
+                    "images":[]
+                },
+                {
+                    "bodyText":"Start date",
+                    "images":["logo.png"]
+                },
+                {
+                    "bodyText":"End date",
+                    "images":["logo.png"]
+                },
+                {
+                    "bodyText":"Once the information has been filled out, you may press the “request leave” button in the bottom right corner. ",
+                    "images":["logo.png"]
+                },
+                {
+                    "bodyText":"If you wish to cancel the request, simply just press “X” in the top right corner",
+                    "images":[]
+                },
+                {
+                    "bodyText":"You can also check it off as a half day if needed. Simply click on the checkbox with the text: “Is a half day?”",
+                    "images":["logo.png"]
+                },
+                {
+                    "bodyText":"Additionally you can write a note if needed, by simply clicking on the “Note” field and write your note.",
+                    "images":["logo.png"]
+                },
+                {
+                    "bodyText":"Once a leave has been requested a coloured block will be filling out the requested days. A text will appear on the coloured block, telling you the reason for the leave. The blocks are colour coded, matching whatever reason of leave that has been chosen. ",
+                    "images":[]
+                },
+                {
+                    "bodyText":"The “Your days off” box on the left shows a small list of your most immediate days of and requests for days off. ",
+                    "images":["logo.png"]
+                },
+                {
+                    "bodyText":"",
+                    "images":["logo.png"]
+                },
+                {
+                    "bodyText":"Striped coloured block means that a leave has been requested, but not yet accepted by the supervisor. ",
+                    "images":[]
+                }
+            ]
+        },
+        {
+            "id":"6",
+            "title": "How to get an overview of all employees most immediate days off (Admins only)",
+            "category": "Schedule",
+            "content": [
+                {
+                    "bodyText": "To get an overview of the employees requested and approved days off , press “Overview” at the top of the screen. This will show you a series of rows. Each row represents an employee and their requested or approved days off. Here you can also see that the blocks in the rows are colour coded, matching the reasons.",
+                    "images": [
+                        "logo.png"
+                    ]
+                }
+            ]
+        },
+        {
+            "id":"6",
+            "title": "How to approve or reject a leave request (Admins only)",
+            "category": "Schedule",
+            "content": [
+                {
+                    "bodyText": "To approve or reject a leave there are a few different options:",
+                    "images": []
+                },
+                {
+                    "bodyText": "1. First go into the overview mentioned before. Find the employee and the specific request for a leave. Click on the request. A pop up will appear from the right side of the screen. It will show you the details of the request; start and end date, reason and any potential notes.",
+                    "images": [
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText": "At the bottom right are three options; save leave, approve leave, delete leave. While in here, you can also edit the date, reason or notes.",
+                    "images": []
+                },
+                {
+                    "bodyText": "2. Go into the approval tab (next to the Overview tab). A list of the requests for leave with their start and end dates, and reasons for the leave can be seen here.",
+                    "images": ["logo.png"]
+                },
+                {
+                    "bodyText": "Press on a list item to get to the pop up mentioned in option one, or hover on the three dots that can be found on the right side of each list item. By hovering on the dots three options will show; edit, approve and reject. ",
+                    "images": ["logo.png"]
+                },
+                {
+                    "bodyText": "Edit will open the same pop up window mentioned before. Approve and reject will directly, after a confirmation, approve or reject the request for a leave.",
+                    "images": []
+                }
+
             ]
         },
         {
@@ -443,7 +719,7 @@
             ]
         },
         {
-            "id":"9",
+            "id":"",
             "title": "How do I pick a time period?",
             "category": "Salary",
             "content": [
@@ -454,16 +730,76 @@
                     ]
                 },
                 {
-                    "bodyText":"You can clear the time period by clicking on the X beside the date in start- and end date fields.",
+                    "bodyText":"",
                     "images":[ 
                         "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText":"Start date:",
+                    "images":[ 
+                        "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText":"End date:",
+                    "images":[ 
+                        "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText":"Picking a month:",
+                    "images":[ 
+                        "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText":"You can clear the time period by clicking on the X beside the date in start- and end date fields.",
+                    "images":[]
+                }
+            ]
+        },
+        {
+            "id":"",
+            "title": "How do I overwiew the salary information?",
+            "category": "Salary",
+            "content": [
+                {
+                    "bodyText": "Once you’ve chosen the search period, a list will appear with the requested information.",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText":"By clicking on a specific list item, you may choose to click one of the two buttons on the bottom right. By pressing “View details”, you may see the specifics of the individual list item.",
+                    "images": [
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText":"By pressing “Download CSV”, you may download the specifics of a chosen list item as a CSV file (like an Excel document).",
+                    "images": [
+                        "logo.png"
                     ]
                 }
             ]
         },
         {
-            "id":"10",
-            "title": "How do I pick a period?",
+            "id":"",
+            "title": "How to get the information on multible list items",
+            "category": "Salary",
+            "content": [
+                {
+                    "bodyText": "By, while viewing the list on the salary report page, press and hold the Ctrl button on your keyboard and click on multiple list items you wish to see. This allows you to view or download the specifics of multiple list items at the same time",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                }
+            ]
+        },
+        {
+            "id":"",
+            "title": "How to pick a period",
             "category": "Statistics",
             "content": [
                 {
@@ -473,16 +809,62 @@
                     ]
                 },
                 {
-                    "bodyText":"Press Apply to fetch the statistics for the period.",
-                    "images":[ 
-                        
+                    "bodyText": "",
+                    "images": [
+                        "puppies.jpg"
                     ]
                 },
                 {
-                    "bodyText":"To see the specifics of any given list item, simply press the item.",
+                    "bodyText": "Press Apply to fetch the statistics for the period.",
                     "images": [
-                        "social_proof_task_bem.png"
+                        "puppies.jpg"
                     ]
+                },
+                {
+                    "bodyText": "To see the specifics of any given list item, simply press the item.",
+                    "images": []
+                }
+            ]
+        },
+        {
+            "id":"",
+            "title": "How to toggle the currency",
+            "category": "Statistics",
+            "content": [
+                {
+                    "bodyText": "On the top right there is a toggle switch, which allows you to hide everything in the statistics that has to do with money and sensitive data. Simply just click the “Currency” toggle and you will hide the sensitive data",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                }
+            ]
+        },
+        {
+            "id":"",
+            "title": "How to view the packers",
+            "category": "Statistics",
+            "content": [
+                {
+                    "bodyText": "To view the statistics for the packers, simply just press “Packers” in the top left corner.",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText": "The packer page is, in many ways, the same as the pickers page, but there are some essential differences. ",
+                    "images": []
+                },
+                {
+                    "bodyText": "First of all, when picking the time frame, you cannot make a rough estimate of a week or a month like you could on the pickers page. You can only choose a specific time frame like when we picked “Date range” on the pickers page.",
+                    "images": ["puppies.jpg"]
+                },
+                {
+                    "bodyText": "Secondly, on the list of the packers all of the information is the same as the information displayed in the pickers list, however each list item is colour coded. Employees who have done their assignments in less than 35 hours are marked with red, and the ones who worked for more than 35 hours are marked with green.",
+                    "images": []
+                },
+                {
+                    "bodyText": "The Purpose of this is to get an overview of who is putting the most effort into their work. It can be an indication of an employee's motivation to quit, and that gives the company a heads up in regards to finding a potential replacement.",
+                    "images": ["puppies.jpg"]
                 }
             ]
         },
@@ -499,9 +881,191 @@
                 },
                 {
                     "bodyText":"The search bar allows you to search for the ID of a pick list.",
+                    "images": []
+                }
+            ]
+        },
+        {
+            "id":"",
+            "title": "How to create a new route",
+            "category": "Lists",
+            "content": [
+                {
+                    "bodyText": "By clicking Create pick list in the upper right corner, you’ll see a pop up, which enables you to create a new list.",
                     "images": [
-                        "logo.png"
+                        "puppies.jpg"
                     ]
+                },
+                {
+                    "bodyText":"Firstly you must choose which company to make the pick list for.",
+                    "images": []
+                },
+                {
+                    "bodyText":"Secondly you must pick out which packages to add to the list. Each carrier has a number to the right of their names. The number shows how many packages that the specific carrier has available. You can manually choose which ones you want added to the list. By checking off a box you get the list of the available packages for that specific company.",
+                    "images": ["puppies.jpg"]
+                },
+                {
+                    "bodyText":"It is perfectly possible to cross out multiple boxes at the same time",
+                    "images": ["puppies.jpg"]
+                },
+                {
+                    "bodyText":"Select the products that you want to add to the list. By removing the check mark from the “Order ID” box at the top of the list, everything will be unchecked. When you’re ready to create the list, click “Create pick list”",
+                    "images": ["puppies.jpg"]
+                }
+            ]
+        },
+        {
+            "id":"",
+            "title": "How to view the details of a pick list",
+            "category": "Lists",
+            "content": [
+                {
+                    "bodyText": "To see the details of a specific pick list, simply find the list item that you wish to see. There are two main ways to see the specifics of the order list.",
+                    "images": []
+                },
+                {
+                    "bodyText":"1. simply just click on the list item.",
+                    "images": []
+                },
+                {
+                    "bodyText":"2. At the right side of the list item is a symbol of three dots. Hover over it, and click “View”.",
+                    "images": []
+                },
+                {
+                    "bodyText":"A pop up will appear in the right side of the screen, which will contain the detailed information for the specific pick list",
+                    "images": ["puppies.jpg"]
+                }
+            ]
+        },
+        {
+            "id":"",
+            "title": "How to print out a pick list",
+            "category": "Lists",
+            "content": [
+                {
+                    "bodyText": "To print the details of a specific pick list, simply find the list item that you wish to print. At the right side of the list item is a symbol of three dots. Hover over it, and click “Print”. This will print the pick list for the specific list item",
+                    "images": []
+                }
+            ]
+        },
+        {
+            "id":"",
+            "title": "The Collect lists",
+            "category": "Lists",
+            "content": [
+                {
+                    "bodyText": "The purpose of the collect list items is to serve as receipts of sorts. When the truck drivers pick up products from us for delivery we get a “Collect list” as evidence that they have picked up the products.",
+                    "images": []
+                },
+                {
+                    "bodyText": "To view the list of Collect lists, press “Collect Lists” at the top of the screen.",
+                    "images": ["puppies.jpg"]
+                },
+                {
+                    "bodyText": "To find a specific collect list, the lists can be searched by ID in the search field",
+                    "images": ["puppies.jpg"]
+                }
+            ]
+        },
+        {
+            "id":"",
+            "title": "How to download or print a collect list",
+            "category": "Lists",
+            "content": [
+                {
+                    "bodyText": "At each list item, on the right side, is a symbol consisting of three dots. By hovering over the symbol, you will see the option to either “Download” or “Print” the given collect list.",
+                    "images": []
+                }
+            ]
+        },
+        {
+            "id":"",
+            "title": "How to add a new collect list",
+            "category": "Lists",
+            "content": [
+                {
+                    "bodyText": "To add a new collect list press the “Create collect list”. A pop up will appear on the right side of the screen. Firstly choose the company to which you want to add to the new list. Press on the checkbox of the name of the carrier whose items you wish to add to the list. Unlike in the case of pick lists, you cannot choose multiple carriers here. ",
+                    "images": []
+                },
+                {
+                    "bodyText": "Select the products that you want to add to the list. By removing the check mark from the “Order ID” box at the top of the list, everything will be unchecked. ",
+                    "images": []
+                },
+                {
+                    "bodyText": "The main difference between the “Create Collect” list menu and the “Create Pick” list menu is the “List name” text field at the bottom of the “Create Collect” list screen. Use it to add a name to the “Collect list”.",
+                    "images": []
+                },
+                {
+                    "bodyText": "When you’re ready to create the list, press “Create Collect list”",
+                    "images": []
+                }
+            ]
+        },
+        {
+            "id":"",
+            "title": "The Bulk invoicing page",
+            "category": "Lists",
+            "content": [
+                {
+                    "bodyText": "When shipping products to foreign countries it happens in what we call bulks. Don’t be fooled by the name. A bulk can just as well consist of a single order. At the moment we only ship to Greenland and Norway, though the list of countries in the menu contain a far more expansive array of countries than just Greenland and Norway. The idea of bulk shipping is that we ship orders. An order can consist of a single or multiple products. ",
+                    "images": []
+                },
+                {
+                    "bodyText": "To get to the Bulk Invoicing list, click “Bulk Invoicing” at the top of the screen. ",
+                    "images": ["image.jpg"]
+                }
+            ]
+        },
+        {
+            "id":"",
+            "title": "How to create a bulk invoice",
+            "category": "Lists",
+            "content": [
+                {
+                    "bodyText": "To create a new bulk, start out by choosing the country you want to ship to, and then pick the carrier. The carriers have been pre-assigned. Each carrier on the list has a number next to them. This is the number of orders in the specific bulk. Press “Create bulk invoicing” and confirm the creation. ",
+                    "images": ["image.jpg"]
+                }
+            ]
+        },
+        {
+            "id":"",
+            "title": "How to view bulk invoice information",
+            "category": "Lists",
+            "content": [
+                {
+                    "bodyText": "To view bulk invoice information, first find the bulk you would like to see the information of.",
+                    "images": ["image.jpg"]
+                },
+                {
+                    "bodyText": "Then do one of the following:",
+                    "images": []
+                },
+                {
+                    "bodyText": "1. Go to the right side of the list item, and hover on the symbol of the three dots. Click on “view”",
+                    "images": []
+                },
+                {
+                    "bodyText": "2. Simply just click the list item itself.",
+                    "images": []
+                },
+                {
+                    "bodyText": "A pop up will appear on the right side of the screen.",
+                    "images": ["image.jpg"]
+                },
+                {
+                    "bodyText": "On the top left side is information about the bulk. The ID, the date it was created and the employee that created the bulk. To the right is information about the number of orders in the bulk, the name of the company from where the bulk comes and the name of the carrier. Underneath that is a list of the orders which make up the bulk.",
+                    "images": []
+                }
+            ]
+        },
+        {
+            "id":"",
+            "title": "How to print out the bulk information",
+            "category": "Lists",
+            "content": [
+                {
+                    "bodyText": "When viewing the list of bulks, simply find the bulk you wish to print. Then go to the right side of the bulks list item, and hover over the three dots symbol. Then press “Print”.",
+                    "images": []
                 }
             ]
         },
