@@ -30,7 +30,7 @@ export default{
         searchData(data){
             this.searchResult = data;
             // this.componentKey += 1;
-            this.$router.push("/search/" + data);
+            this.$router.push("/search/" + data).catch(()=>{});
         }
     }
 }

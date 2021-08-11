@@ -6,51 +6,50 @@
    </div>
     <div>
     <ul class="subject_list">
-         <li class="subject_list__item"  @click="goToCategory('Punch Clock')" :class="{active: isActive('Punch Clock')}" 
-         :key="$route.fullPath">
+         <li class="subject_list__item"  @click="goToCategory('Punch Clock')" :class="{active: isActive('Punch Clock')}" >
             Punch Clock
          <li class="subject_list__item" @click="goToCategory('Scan')" :class="{active: isActive('Scan')}"
-         :key="$route.fullPath">
+         >
            Scan
          </li>
         <li class="subject_list__item" @click="goToCategory('Trophies')"  :class="{active: isActive('Trophies')}"
-        :key="$route.fullPath">
+        >
            Trophies
          </li>
         <li class="subject_list__item" @click="goToCategory('Parcels')" :class="{active: isActive('Parcels')}"
-        :key="$route.fullPath">
+        >
            Parcels
          </li>
         <li class="subject_list__item" @click="goToCategory('Serial Number')" :class="{active: isActive('Serial Number')}"
-        :key="$route.fullPath">
+        >
             Serial Number
          </li>
         <li class="subject_list__item" @click="goToCategory('Users')"  :class="{active: isActive('Users')}"
-        :key="$route.fullPath">
+        >
             Users
          </li>
         <li class="subject_list__item" @click="goToCategory('Salary')" :class="{active: isActive('Salary')}"
-        :key="$route.fullPath">
+        >
             Salary
          </li>
         <li class="subject_list__item" @click="goToCategory('Lists')" :class="{active: isActive('Lists')}"
-        :key="$route.fullPath">
+        >
             Lists
          </li>
         <li class="subject_list__item" @click="goToCategory('Statistics')" :class="{active: isActive('Statistics')}"
-        :key="$route.fullPath">
+        >
             Statistics
          </li>
         <li class="subject_list__item" @click="goToCategory('Dashboard')"  :class="{active: isActive('Dashboard')}"
-        :key="$route.fullPath">
+        >
             Dashboard
          </li>
         <li class="subject_list__item" @click="goToCategory('Schedule')"  :class="{active: isActive('Schedule')}"
-        :key="$route.fullPath">
+        >
             Schedule
          </li>
         <li class="subject_list__item" @click="goToCategory('Settings')" :class="{active: isActive('Settings')}"
-        :key="$route.fullPath">
+        >
             Settings
          </li>
     </ul>
@@ -66,17 +65,18 @@ export default {
     name: 'NavigationBar',
     data(){
        return{
-          activeItem: this.$route.params.id.replace("+", ' '),
-          categories: categoriesjson.categories,
-          componentKey: 0
+          activeItem: this.$route.params.id,
+          categories: categoriesjson.categories
        };
     },
     methods: {
       goToStart() {
-            this.$router.push("/");
+            if(this.activeItem !== ""){
+               this.$router.push("/").catch(()=>{});
+            }
       },
       goToCategory(category) {
-         this.$router.push("/categories/" + category);
+         this.$router.push("/categories/" + category).catch(()=>{});
       },
       isActive(menuItem) {
          return this.activeItem === menuItem;
