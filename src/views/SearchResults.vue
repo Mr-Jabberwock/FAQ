@@ -44,5 +44,9 @@ export default{
     color: #2c3e50;
     margin-top: 60px;
 }
+.search-result-content{
+    padding-left: 30%;
+    max-width: 60%;
+}
 
 </style>
