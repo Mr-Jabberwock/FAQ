@@ -29,7 +29,6 @@ export default ({
     computed: {
         dataContent() {
             var result = this.category;
-            console.log(result);
             return this.articles.filter(function(article) {
                 return article.category === result;
         });

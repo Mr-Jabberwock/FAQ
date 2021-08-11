@@ -42,13 +42,11 @@ export default{
         
     },
     created() {
-        console.log("Created")
         var textOfArticle;
         this.articles.forEach(article => {
             article.content.forEach(text =>{
                 textOfArticle += article.title;
                 textOfArticle += text.bodyText;
-                console.log(this.searchResult.toUpperCase(), textOfArticle.toUpperCase())
 
             })
             if(textOfArticle.toUpperCase().includes(this.searchResult.toUpperCase())){

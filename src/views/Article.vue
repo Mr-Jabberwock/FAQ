@@ -43,7 +43,6 @@ export default {
         // },
         articleData(){
             //var id = this.articleId;
-            console.log(this.articleId);
             return this.articles.find(
                 article => article.title === this.articleURI
             )
@@ -51,7 +50,6 @@ export default {
     },
     methods: {
         searchData(data){
-            console.log(data);
             this.$router.push("/search/" + data);
         }
     },

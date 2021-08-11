@@ -60,13 +60,12 @@
 </template>
 
 <script>
-import categoriesjson from "../assets/categories.json"
+
 export default {
     name: 'NavigationBar',
     data(){
        return{
-          activeItem: this.$route.params.id,
-          categories: categoriesjson.categories
+          activeItem: this.$route.params.id
        };
     },
     methods: {
