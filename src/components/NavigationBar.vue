@@ -104,6 +104,7 @@ export default {
 
 }
 .subject_list__item{
+   cursor: pointer;
    padding-bottom: 10px;
    margin-top: 10px;
    color: rgb(63, 63, 63);

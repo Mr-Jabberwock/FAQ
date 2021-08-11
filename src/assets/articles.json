@@ -56,6 +56,96 @@
                     "images": [
                         "logo.png"
                     ]
+                },
+                {
+                    "bodyText":"Email: create an email you want to connect the new user with.",
+                    "images": [
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText":"Password: create a password the new user must use to login with. The password must be 8 characters long. The password must also contain a number,  a upper and lower character.",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText":"Repeat password: Please repeat the password entered in the password field. Make sure they match.",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText":"Status: Set the new user’s status. You will be able to pick between active or inactive. ",
+                    "images": [
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText":"(Active users will be able to login and have access to PackShip, while your inactive users will not have access to PackShip) ",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText":"Name: Write the new user’s name (eg. John, Jane, etc.)",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText":"SurName: Write the new user’s surname (eg. Doe, Johnson, etc.)",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText":"Phone: Write the new user’s phone number (eg. 12345678)",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText":"Permission: Give permission to the new user, you can pick multiple options.",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText":"To make a user an admin for a specific permission, click on the checkmark.",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText":"Hourly rate: Here you can type in the payment to the new user based on an hourly rate.",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText":"Commission: Here you can type in the payment to the new user based on commission.",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText":"Social security: Here you can type in the new user’s social security code.",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText":"When all the necessary information is there, you can then press the green “Create user” button in the bottom right to create the new user. You will then be given a message on top of the window, that tells you the user has been created successfully.",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText":"To cancel press the “X” top right, or press anywhere outside the “Create user” page.",
+                    "images": [
+                        
+                    ]
                 }
             ]
         },
@@ -130,25 +220,37 @@
         },
         {
             "id":"7",
-            "title": "How do I see the infromation of a serial number?",
+            "title": "How do I check a serial number?",
             "category": "Serial Number",
             "content": [
                 {
-                    "bodyText": "On the serial number page you can search for a serial number of a specific item. (At first the page is empty. You must first pick a serial number to get information.)",
+                    "bodyText": "To get the information of a serial number, click on the “Search” field. You will be given a drop down with options of serial numbers. You can also write in the search field to filter/search for a specific serial number.",
                     "images": [
                         "puppies.jpg"
                     ]
                 },
                 {
-                    "bodyText":"To get the information of a serial number, click on the “Search” field. You will be given a drop down with options of serial numbers. You can also write in the search field to filter/search for a specific serial number.",
+                    "bodyText":" Click on the serial number you want to check, to get the information.",
                     "images":[ 
                         "logo.png"
                     ]
                 },
                 {
-                    "bodyText":"",
+                    "bodyText":"Here you can see which company the item is from, the order and parcel the item is connected to by “Order ID” and “Parcel”, the name of the item under “Product”, the SKU,  the serial number of the item and who scanned the item.",
                     "images":[ 
                         "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText":"You can see the order by clicking on the order ID or parcel number. You will then get sent to the order page for the item.",
+                    "images":[ 
+                        "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText":"(It is possible to scan an item and get more than one result for a serial number. This should not happen and can be caused by human error.)",
+                    "images":[ 
+                        
                     ]
                 }
 
@@ -156,25 +258,186 @@
         },
         {
             "id":"8",
-            "title": "How to see orders",
+            "title": "How do I see orders?",
             "category": "Parcels",
             "content": [
                 {
-                    "bodyText": "In the parcels page you can see information of orders and shipments. You will also be able to work and complete tasks with orders and shipments eg. print information, edit, lock etc.",
+                    "bodyText": "",
                     "images":[
                         "logo.png"
                     ]
                 },
                 {
-                    "bodyText":"On the top left you can choose to work with orders or shipments.",
+                    "bodyText":"On the right side you can see 4 counters. Here you can see the current numbers and total sum of the statuses: New, Pick, Pack and Locked all of which are color coded according to the status they belong to. The number above is the current number, while the number below is the total sum.",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText":"(The orders marked with a pencil mean that the order has been edited.)",
+                    "images": [
+
+                    ]
+                },
+                {
+                    "bodyText":"You will be able to search for a specific order by using the search bar. Enter the key word and then press the “Enter” key.",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText":"You will also be able to filter the orders by locked, company, status and shipping method.",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText":"Just click on the toggle button beneath “Locked”, to get only locked orders.",
+                    "images": [
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText":"To clear the “locked” filter, just click on the toggle button again.",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText":"\n",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText":"For company, status and shipping method, you will get dropdown options.",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText":"Filter by company:",
                     "images": [
                         "social_proof_task_bem.png"
                     ]
                 },
                 {
-                    "bodyText":"On the right side you can see 4 counters. Here you can see the current numbers and total sum of the statuses: New, Pick, Pack and Locked all of which are color coded according to the status they belong to. The number above is the current number, while the number below is the total sum.",
+                    "bodyText":"Filter by status:",
                     "images": [
-
+                        "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText":"You can also filter by status by clicking on one of the counters.",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText":"Filter by shipping method:",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText":"To clear a filter click on the “X” in the dropdown box.",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText":"You can also sort the orders by ascending or descending, by clicking on the “Order ID” or “Order date” on top of the order table.",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText":"When you hover over the 3 dots for an order, you get different action options.",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText":"View details: “View details” shows you the information of the chosen order. Where you can also perform different action for the order eg. edit, download, locking, change shipping method etc.",
+                    "images": [
+                        "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText":"Copy URL: Copies the url of an order, so that you are able to paste the url of the order.",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText":"Open CMS:  If you want to see the order with your own CMS, you can click on “Open CMS”.",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText":"Print: Here you can choose to print the order on papir. You will get three options: “Parcel order”, “Return Label” and “Shipping Label”.",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText":"Parcel Order: Is where you print the prices, etc..",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText":"Return Label: Prints the return label. If the customer wants to return the product, the user can print the return label for the customer, which they can attach.",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText":"Shipping Label: Here you will print a new tracking number that you can attach on the order, the old information of the order will still be kept. You will be prompted with a window where you can choose shipping methods.",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText":"(NB: make sure you have entered a printer and packing station, or it will give you an error.)",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText":"\n",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText":"Download: If a digital copy is needed you can choose to download. You will get the same options as “Print”.",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText":"(NB: make sure you have entered a printer and packing station, or it will give you an error.)",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText":"\n",
+                    "images": [
+                    
+                    ]
+                },
+                {
+                    "bodyText":"If you are super admin, you can change the status of an order quickly here if needed. But it is not recommended.",
+                    "images": [
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText":"You will always be able to change the page of the order table. The page picker is always on the screen at the bottom regardless if you are at the top, middle or bottom of the table. ",
+                    "images": [
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText":"You can click on the arrows to change the page, or choose a specific page by entering the number you wish to see in the field with the left number. ",
+                    "images": [
+                        "logo.png"
                     ]
                 }
             ]
@@ -356,6 +619,1140 @@
                     ]
                 }
             ]
+        },
+        {
+            "id":"17",
+            "title": "How do I search for users",
+            "category": "Users",
+            "content": [
+                {
+                    "bodyText": "In the users page you will be able to search for specific user(s) with the search bar on the page.",
+                    "images": [
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText":"To be able to find the specific user, write in the keyword and hit enter. ",
+                    "images": [
+                        "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText":"You can also sort users by name, status, permissions or email by pressing on either name, status permissions or email on the top of the table.",
+                    "images": [
+                        "social_proof_task_bem.png"
+                    ]
+                }
+            ]
+        },
+        {
+            "id":"18",
+            "title": "How do I edit a user?",
+            "category": "Users",
+            "content": [
+                {
+                    "bodyText": "To edit a user hover over the 3 dots on the chosen user. Then press on edit.",
+                    "images": [
+                        "puppies.jpg"
+                        
+                    ]
+                },
+                {
+                    "bodyText": "You will then receive the “Create user” page, but with the information of the chosen user in the corresponding fields.",
+                    "images": [
+                        "puppies.jpg"   
+                    ]
+                },
+                {
+                    "bodyText": "Here you can make the changes and press the green “edit user” button in the bottom right, to save the changes. You will then be given a message on top of the window, that tells you the user has been edited successfully.",
+                    "images": [
+                          
+                    ]
+                },
+                {
+                    "bodyText": "To cancel press the “X” top right, or press anywhere outside the “Edit” page",
+                    "images": [
+                          
+                    ]
+                }
+            ]
+        },
+        {
+            "id":"19",
+            "title": "How do I delete a user?",
+            "category": "Users",
+            "content": [
+                {
+                    "bodyText": "Hover over the 3 dots on the specific user, and press “Delete”. ",
+                    "images": [
+                        "logo.png"   
+                    ]
+                },
+                {
+                    "bodyText": "You will then be prompted with a message that asks you “Are you sure?”",
+                    "images": [
+                        "logo.png"   
+                    ]
+                },
+                {
+                    "bodyText": "Press “Yes, remove user” to remove user. You will be given a message that the user was deleted successfully.",
+                    "images": [ 
+                    ]
+                }
+            ]
+        },
+        {
+            "id":"20",
+            "title": "How do I view a user's information",
+            "category": "Users",
+            "content": [
+                {
+                    "bodyText": "To view a user’s information simply click on the specific user’s row, or hover over to the 3 dots and press “view”",
+                    "images": [
+                        "puppies.jpg"  
+                    ]
+                },
+                {
+                    "bodyText": "You can now see all of the user’s information.",
+                    "images": [
+                        "social_proof_task_bem.png"  
+                    ]
+                }
+            ]
+        },
+        {
+            "id":"21",
+            "title": "How do I view the details of an order?",
+            "category": "Parcels",
+            "content": [
+                {
+                    "bodyText": "When you hover over the 3 dots for an order, you get different action options. Click on view details",
+                    "images": [
+                        "logo.png"
+                        
+                    ]
+                },
+                {
+                    "bodyText": "\n",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText": "“View details” shows you the information of the chosen order. Where you can also perform different actions for the order eg. edit, download, locking, change shipping method etc.",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText": "Here you have different pages: “Shipping details”, “Order summary”, “Order lock”, “Tracking history”, “Status history” and “Order log”.",
+                    "images": [
+                        "puppies.jpg" 
+                    ]
+                },
+                {
+                    "bodyText": "You also have the ability to copy url, open CMS, print and download in the details page like on the order page with table of orders.",
+                    "images": [
+                        "puppies.jpg" 
+                    ]
+                },
+                {
+                    "bodyText": "The button on the left locks or unlocks the order depending on the lock status on the order.",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText": "When trying to unlock you will be prompted with the message “Are you sure?”. You can choose between “No” to cancel or “Yes, unlock order” to unlock the order. ",
+                    "images": [
+                        "puppies.jpg" 
+                    ]
+                },
+                {
+                    "bodyText": "If you choose “Yes”, you get a message on top of the window, telling you the order has been unlocked. The “Unlock order” button will then change to “Lock order”",
+                    "images": [
+                        "puppies.jpg" 
+                    ]
+                },
+                {
+                    "bodyText": "To lock an order you must click on the “Lock order” button. You will then get a prompt textfield. You are required to write a reason for the locking.",
+                    "images": [
+                        "puppies.jpg" 
+                    ]
+                },
+                {
+                    "bodyText": "To cancel click the “Cancel” button or click the “Lock order” button. The prompt has a check to see if text is empty, an error message will be shown at the top of the window telling you to try to lock the order without text.",
+                    "images": [
+                        "puppies.jpg" 
+                    ]
+                },
+                {
+                    "bodyText": "A message will be shown at the top of the window telling you the order has been locked.",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText": "Locking and unlocking will be logged in the “Order log” page.",
+                    "images": [
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText": "\n",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText": "Shipping details",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText": "Here you will be able to see billing address, shipping address, payment information and shipping method of the order, and make changes to the order if needed.",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText": "The emails, telephone numbers, address and country are hyperlinks. You can click on them for fast access to functions. They act like shortcuts for customer service. ",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText": "For emails, you can send an email to the  email address attached to the billing address or shipping address.",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText": "For telephone numbers, you can call the number. You will be prompted with a message to choose the program for the call.",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText": "You can also click on the addresses and country. A new tab will be made and show you the location of the address or country in google maps.",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText": "\n",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText": "By clicking on “Edit shipping address” you can edit the information of the order.",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText": "Here you can enter the changes or cancel by hitting the red “Cancel”. You can save the changes by hitting the green “Submit” button. You will be prompted with a message “Are you sure?” ",
+                    "images": [
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText": "You can then choose “Yes, save it” to save or “no” to cancel. If you choose “Yes, save it”, you get a message at the top of the window that tells whether update changes are successful or failed.",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText": "\n",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText": "Under “Shipping method” you can choose or change the company that will do the shipping.",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText": "An email will be sent every time a shipping method has been chosen.",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText": "\n",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText": "Order summary",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText": "Here you can see a short summary of the order. You will be able to see the product, prices, weights etc.",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText": "Order lock",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText": "Here you can see who created the latest lock and read the lock note.",
+                    "images": [
+                        "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText": "Tracking history",
+                    "images": [
+                    
+                    ]
+                },
+                {
+                    "bodyText": "Here you can see the history of the order. You can see where the order has been and which delivery company, tracking, date it has been packed etc.",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText": "It is here you will be able to track the history of the order. ",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText": "You can click on the tracking number to see the progress of the order. You will be redirected to a page that shows you the orders page.",
+                    "images": [
+
+                    ]
+                },
+                {
+                    "bodyText": "You can also click on the icon of the delivery company, to see the progress of the order on the delivery company’s page.",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText": "Status history",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText": "Here you will be able to see the history of the status of the order, where you can see changes to addresses, email, phone number etc.. All of the status messages are automatic. ",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText": "You are also able to write comments at the top of the “Status history” tab. Enter your comment in the textfield and hit submit. You will be prompted with a message that says “Are you sure?”",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText": "To cancel click “No” or “Yes, save comment” to submit the comment. You will get a message at the top of the windows telling you if the submission was successful or has failed.",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText": "\n",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText": "Order log",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText": "Here you can see the history of changes to the order. The difference between Status history and Order log is that the Order log solely logs changes made through PackShip.",
+                    "images": [
+                        "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText": "You will also be able to see the comments you made in the “Status history” tab.",
+                    "images": [
+                        "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText": "You can also filter the Order log by clicking on the field at the top of the Order log. You will get dropdown options you want to filter the history by. Choose the option you want to filter by by clicking the option and then hit enter.",
+                    "images": [
+                        "social_proof_task_bem.png",
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText": "You can also write in the field if you want to filter the option, or to make it more manageable.",
+                    "images": [
+                        "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText": "To clear the filter, click on the field again and then remove the text by either hitting backspace or hit escape for a quick remove.",
+                    "images": [
+                    ]
+                }
+            ]
+        },
+        {
+            "id":"22",
+            "title": "How do I see shipments?",
+            "category": "Parcels",
+            "content": [
+                {
+                    "bodyText": "To see the shipments. Click on the shipments tab at the top. It is besides Order.",
+                    "images": [
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText": "Here you can see the information of the different shipments. You will be able to see the ID, address, recipient etc. for each shipment. Each row represents a shipment.",
+                    "images": [
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText": "Just like the Order page, you are able to change the page by clicking the arrows or entering a specific number at the bottom of the screen.",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText": "\n",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText": "You can search for a specific shipment by entering a keyword in the search bar on the left.",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText": "The dropdown on the right can be used for printing return labels for a shop quickly, without having to do it manually. ",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText": "Click on the drop down to choose from which shop you want to print from.",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText": "Then hover over the chosen shop and click on it.",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText": "\n",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText": "You can filter the results/table by company, country, delivery company, shipping method and when it was created.",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText": "\n",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText": "For company, click on the dropdown and choose the company by hovering over the one you wish to see and click on it.",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText": "For delivery company, click on the dropdown and choose the delivery company by hovering over the one you wish to see and click on it.",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText": "For shipping method, click on the dropdown and choose the shipping method by hovering over the one you wish to see and click on it.",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText": "\n",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText": "(NB: you have to pick a delivery company before you can see options for the “Shipping method” filter.)",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText": "\n",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText": "For created, click on the dropdown and choose a starting date and end date to get the shipments created within the chosen periode.",
+                    "images": [
+                        "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText": "To clear a filter click on the “X” within the dropdown field.",
+                    "images": [
+                        "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText": "You are able to sort the results by clicking on the column labels at the top of the table.",
+                    "images": [
+                        "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText": "If you need to see the tracking of a shipment, you can click on the tracking number of a shipment. A new tab will be opened going to the PackShip tracking page for the track number/shipment.",
+                    "images": [  
+                    ]
+                },
+                {
+                    "bodyText": "If you wish to use the delivery company’s tracking page, you can press their name or logo instead, to get the tracking for the shipment on the delivery company’s page.",
+                    "images": [  
+                    ]
+                }
+            ]
+        },
+        {
+            "id":"23",
+            "title": "How do I create a shipment?",
+            "category": "Parcels",
+            "content": [
+                {
+                    "bodyText": "If you wish to create a new shipment you can click on the Create shipment button on the right. You will then be shown the create shipment page.",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText": "You will start with the delivery section where you can choose the sender country, recipient country, delivery company and shipping method.",
+                    "images": [
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText": "To choose the sender country, click the dropdown for Sender country and hover over the option you wish, and click on it to choose the country the sender is from.",
+                    "images": [
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText": "To choose the delivery company, click the dropdown for “Delivery company” and hover over the option you wish, and click on it to choose the company that will do the shipment.",
+                    "images": [
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText": "To choose the shipping method, click the dropdown for “Shipping method” and hover over the option you wish, and click on it to choose the method the company shall do.",
+                    "images": [
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText": "(NB: you have to pick a delivery company before you can see the options for the shipping method.)",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText": "\n",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText": "The most essential countries we ship to are Denmark, United Kingdom, Germany, Norway and Sweden. Your options in package carriers vary based on whatever country you may choose to ship to. ",
+                    "images": [
+                        "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText": "Depending on the delivery company and shipping method, you may need to enter/choose additional information.",
+                    "images": [
+                        "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText": "Click on the “Next” button when you are done choosing. ",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText": "Click on the “X”  or outside of the “Create shipment” page/window if you wish to cancel creating the shipment and back to the “Shipments” page.",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText": "You will then go to the sender section. Here you will need to enter the sender’s information.",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText": "Here you must enter the information manually, or you can click on the 3 dots in the “Sender name” section” for entering all of the information quickly.",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText": "If you wish to go back to the “Delivery”section, you can click the “Back” button to go back to the “Delivery” section.",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText": "You will be shown a dropdown.",
+                    "images": [
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText": "Clicking on the dropdown will show you the options.",
+                    "images": [
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText": "Click on the option you wish to choose, to fill out all of the fields.",
+                    "images": [
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText": "You can save the option as default if you wish the information to be automatically filled, if you go back or make a change in the previous section. Just on the part that says “Save as default sender address”.",
+                    "images": [
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText": "To remove the sender as default just click to the same part again that now says “Remove default sender address”.",
+                    "images": [
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText": "When you have entered the information, click the “Next” button. You will go to the recipient section.",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText": "(Make sure the sender address is valid. If the address is not valid, PackShip will throw you an error.)",
+                    "images": [
+                        "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText": "Here you must enter all of the necessary recipient’s information. ",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText": "If you wish to go back to the “Sender” section, you can click the “Back” button to go back to the “Sender” section.",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText": "\n",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText": "You can enter all of the information manually, or like the sender section you can click on the 3 dots in the “Recipient first name” field, and quickly fill out the fields in the recipient section.",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText": "You will be shown a dropdown field.",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText": "Clicking on the dropdown will show the options.",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText": "Choose the option that is the recipient to fill out the information.",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText": "(Make sure the addresses, postal code and city are valid. PackShip will throw an error if they are not.)",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText": "Click on “Create” when you are done choosing the information. You will be shown 3 options: “Email”, “Print” and “Download”.",
+                    "images": [
+                        "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText": "You prompted for every option.",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText": "Email: you will be prompted with a new screen. Here you can see the title, language the email will be written in, the email address the email wil, be sent to, the name of the one who will receive the email, and the subject of the email.",
+                    "images": [
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText": " You can make changes if needed. Simply to just click on the field you wish to change and enter the necessary changes. For language, click the dropdown, and choose the language you wish to switch to.",
+                    "images": [
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText": "When you are ready and have entered all of the information, click on the “Yes, send it” button. You will get a message on top of the window that tells you were successful or something has failed. ",
+                    "images": [
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText": "If successful an email will be sent to the designated email address and the shipment will be created.",
+                    "images": [
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText": "\n",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText": "If you wish to cancel, you can click on “Back” to go back or cancel, if you decide not to create a new shipment.",
+                    "images": [
+
+                    ]
+                },
+                {
+                    "bodyText": "Print",
+                    "images": [
+
+                    ]
+                },
+                {
+                    "bodyText": "If you wish to print the created shipment, click on “Print”. You will be shown a new window with the text “Are you sure?”. Here you must pick a printer to print the created shipment.",
+                    "images": [
+                        "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText": "Click on the dropdown beneath the text that says “Label printer”. You will be able to see all of the available printers.",
+                    "images": [
+                        "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText": "When you have picked a printer, you can press the “Yes, print it” button to print and create the new shipment. A message will be shown at the top of the windows telling you if you were successful or something has failed.",
+                    "images": [
+                        "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText": "\n",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText": "You can click “No”, if you wish to cancel.",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText": "\n",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText": "Download",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText": "If you wish to download the shipment as a pdf file, you can click on “Download”.",
+                    "images": [
+                    ]
+                },
+                {
+                    "bodyText": "You will be prompted with a new window with the title “Are you sure?”.",
+                    "images": [
+                        "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText": "beneath the text “Title” is there a text field. Here you can change the title of the shipment you are creating. PackShip will give you a default title, depending on the shipping method you choose and what you entered in reference.",
+                    "images": [
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText": "\n",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText": "When you are satisfied with the title, click the “Yes, download it” to create the shipment and download a pdf file of the shipment. You will get a message at the top of the window telling you if you were successful or something has failed.",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText": "\n",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText": "You can click “No”, if you wish to cancel.",
+                    "images": [
+                        
+                    ]
+                }
+            ]
+        },
+        {
+            "id":"24",
+            "title": "What can I do with the a shipment?",
+            "category": "Parcels",
+            "content": [
+                {
+                    "bodyText": "If you hover over the 3 dots for a shipment ( a row on the table), you will be shown the following actions:",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText": "Details: to see the details of a shipment.",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText": "Open: to open a pdf for the shipment label for the shipment.",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText": "Print: to print the shipment label for the shipment",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText": "Download: to download the shipment label for the shipment",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText": "Create new: to create a new shipment with the same information  of the shipment your mouse is hovering over.",
+                    "images": [
+                        "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText": "NB!",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText": "Some shipments will have a “Cancel” action.",
+                    "images": [
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText": "Some delivery companies may have a different business model and can charge you within a period of time after you have created the shipment. You can cancel the shipment if you do not wish to be charged.",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText": "\n",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText": "Details",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText": "You can click on “Details” to see the details of a shipment. ",
+                    "images": [
+                        "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText": "You can also simply click on the shipment/row to see the details.",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText": "In the details page you will be able to see the information for the sender, recipient and shipment.",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText": "Each piece of information in blue with an underline are hyperlinks, that you can click on.",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText": "Clicking on the sender- or recipient's name will make a google search using the names as the keywords.",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText": "Clicking on the sender- or recipient's address will show you the location through google maps.",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText": "Clicking on the sender- or recipient's country will show you the country through google maps.",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText": "Clicking on the sender- or recipient's phone number will call the number. You will be prompted to pick which software to use for the call.",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText": "Clicking on the sender- or recipient's email will open a draft for an email to the sender- or recipient's email. It will open your standard email application.",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText": "Clicking the logo or shipment method in the shipment section will open a new tab and direct you to the delivery company’s tracking page for tracking the shipment.",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText": "Clicking on the tracking number will direct you to the PackShip tracking page.",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText": "(NB: Some shipments will have a fourth section to the right of the shipment section, if you have tied a shipment with a packshop.)",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText": "\n",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText": "In the details page you will also be able to perform “Open”, “Download” and “Create new” like on the shipment page with the shipment table.",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText": "\n",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText": "Open, Print and Download",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText": "Open",
+                    "images": [
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText": "You can click on “Open” to open a pdf for the shipment. A new tab will be open and you will be shown the information of the shipment’s label.",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText": "Print",
+                    "images": [
+                        "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText": "You can click on print to print the shipment label. You will be prompted to pick a printer.",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText": "Here you will be shown a dropdown. Clicking on the downdrop will show you the printers available.",
+                    "images": [
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText": "Click on the printer to choose the printer you wish to print the shipment label from.",
+                    "images": [
+                        "puppies.jpg",
+                        "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText": "When you have chosen a printer click the “Yes, print it” button to start printing.",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText": "You can press  the “No” button to cancel the print. ",
+                    "images": [
+                        
+                    ]
+                },
+                {
+                    "bodyText": "Download",
+                    "images": [
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText": "You can click on “Download” to download the shipment’s label in pdf format. You will be prompted to either download or save the file. When saving, you can choose where you wish to save the file on your computer.",
+                    "images": [
+                        
+                    ]
+                }
+            ]
+        },
+        {
+            "id":"25",
+            "title": "How do I create a copy of a shipment",
+            "category": "Parcels",
+            "content": [
+                {
+                    "bodyText": "You can click on “Create new” to make a new shipment with the same information from your chosen shipment.",
+                    "images": [
+                        
+                        
+                    ]
+                },
+                {
+                    "bodyText": "\n",
+                    "images": [
+                    
+                        
+                    ]
+                },
+                {
+                    "bodyText": "Depending on the type of the shipment or shipping method. You may or may not have the option “Return label” and “Shipping label”.",
+                    "images": [
+                        "puppies.jpg"
+                        
+                    ]
+                },
+                {
+                    "bodyText": "You will be shown the “Create shipment” page with all of the information of your chosen shipment.",
+                    "images": [
+                        "puppies.jpg"
+                        
+                    ]
+                },
+                {
+                    "bodyText": "You can see if it’s a return or normal shipping label by the shipment’s title at top left.",
+                    "images": [
+                        "puppies.jpg"
+                        
+                    ]
+                },
+                {
+                    "bodyText": "Return label:",
+                    "images": [
+                        "social_proof_task_bem.png"
+                        
+                    ]
+                },
+                {
+                    "bodyText": "Shipping label:",
+                    "images": [
+                        "social_proof_task_bem.png"
+                        
+                    ]
+                },
+                {
+                    "bodyText": "In the page you will be able to edit and change the information if needed.",
+                    "images": [
+                        "social_proof_task_bem.png"
+                        
+                    ]
+                },
+                {
+                    "bodyText": "The page’s function works exactly like you are creating a new shipment. The difference is that you will start on the “Recipient” section, and have information filled out. You can click on The “Back” button to go to the previous section just like when you are creating a whole new shipment.",
+                    "images": [
+                        
+                        
+                    ]
+                },
+                {
+                    "bodyText": "The previous sections can also be edited and changed if needed. ",
+                    "images": [
+                        
+                        
+                    ]
+                },
+                {
+                    "bodyText": "Create functions identically as when you are creating a whole new shipment. You will still get 3 options: “Email”, “Print” and “Download”",
+                    "images": [
+                        
+                        
+                    ]
+                },
+                {
+                    "bodyText": "\n",
+                    "images": [
+                        
+                        
+                    ]
+                },
+                {
+                    "bodyText": "Also here you can click on “X” or outside of the “Create shipment” page/window, to cancel and go back to the shipments page.",
+                    "images": [
+                        
+                        
+                    ]
+                }
+            ]
         }
+
   ]
 }
