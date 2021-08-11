@@ -37,22 +37,165 @@
                     "images": [
                         "social_proof_task_bem.png"
                     ]
+                },
+                {
+                    "bodyText":"",
+                    "images": [
+                        "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText":"Bear in mind that this only applies to employees who have their salary type set to be on an hourly rate. This makes it possible to check both those who have forgotten to “punch out”, and those who have “punched out”, but have a time longer than what seems normal. By pressing on the arrow to the left of the name of an employee, you can see their “punch ins” and “outs” for the selected period:",
+                    "images": [
+                        "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText":"By pressing on a specific time period, you can edit it. If you made an incorrect edit, you can press on the curved arrow to go back to what the time was before the edit. Press on the submit button to submit the change or press the delete button, to delete the employees whole work history. ",
+                    "images": [
+                        ""
+                    ]
                 }
             ]
         },
         {
             "id":"3",
-            "title": "How to create a new user",
-            "category": "Users",
+            "title": "How to sort in the time frame of checkouts",
+            "category": "Punch Clock",
             "content": [
                 {
-                    "bodyText": "To create a new user click on the “Create user” button on the right side of the page.",
+                    "bodyText": "For this purpose we will be using the date picker:",
                     "images":[
                         "social_proof_task_bem.png"
                     ]
                 },
                 {
-                    "bodyText":"You will then be shown a page where you can enter the information.",
+                    "bodyText":"The week picker, goes back one year of your work history. ",
+                    "images": [
+                        ""
+                    ]
+                }
+            ]
+        },
+        {
+            "id":"4",
+            "title": "How to view reports",
+            "category": "Punch Clock",
+            "content": [
+                {
+                    "bodyText": "To view a report go to the “Report” page.",
+                    "images":[
+                        "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText":"Like with the “Validation” page, the “Report” page is not different from the others except in regards to the content of the list at the bottom of the page.",
+                    "images": [
+                        "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText":"The “Report” list keeps track of employees' work. By clicking on the arrow to the left you can see the details of the employees’ work history for the chosen period.",
+                    "images": [
+                        "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText":"The details include what kind of work was done, when it was done, the duration, the number of orders they handled in the time frame and the information about the parcels they handled in the period. When the “Parcels” button is blue it can be pressed. When it is grey it cannot. By pressing a button when it is blue (meaning that the number of parcels handled in this period is not 0), a pop up will appear on the right side of the screen:",
+                    "images": [
+                        "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText":"The information given here is the company the parcel was handled for, the start time, the end time, duration and the orders that parcel consist of. By pressing the number of an order, you will be redirected to the parcels page where you can view information on this individual order.",
+                    "images": [
+                        "social_proof_task_bem.png"
+                    ]
+                }
+            ]
+        },
+        {
+            "id":"5",
+            "title": "How to search in the timeframe of the work history",
+            "category": "Punch Clock",
+            "content": [
+                {
+                    "bodyText": "Use the date pickers or make a rough estimate with the week picker.",
+                    "images":[
+                        "social_proof_task_bem.png"
+                    ]
+                }
+            ]
+        },
+        {
+            "id":"",
+            "title": "How to select a printer (for admins)",
+            "category": "Settings",
+            "content": [
+                {
+                    "bodyText":"Throughout the website, there are a few different places, namely in the functions that handle lists, where you can print out content. To do so, you first need to set a printer here in the settings. ",
+                    "images":[
+                        "puppies.jpg"
+                    ]
+                },
+                {
+                    "bodyText": "There are two types of printers you need to choose; an A4 printer and a Label printer. Choose the printer closest to you. By clicking on the dropdown field you will be able to see the available printers.",
+                    "images":[
+                        ""
+                    ]
+                },
+                {
+                    "bodyText":"A4 printers:",
+                    "images":[
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText":"Label printers:",
+                    "images":[
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText":"The options are the printers connected to the network of your place. You can see which ones are available for use. Furthermore you need to state a packing station. That is simply just your own name. It’s company policy that everyone needs to give their name when they print.",
+                    "images":[
+                        ""
+                    ]
+                }
+            ]
+        },
+        {
+            "id":"",
+            "title": "The company page",
+            "category": "Settings",
+            "content": [
+                {
+                    "bodyText": "The page for Company contains vital information about the Beautycos cooperation. This includes information about what to write when sending mail, and when sending invoices.",
+                    "images": [
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText":"",
+                    "images":[
+                         "social_proof_task_bem.png"
+                    ]
+                },
+                {
+                    "bodyText":"By pressing the “Translation” button, you can see possible translations for the addresses and also edit them, if you find them to be incorrect.",
+                    "images":[
+                         "social_proof_task_bem.png"
+                    ]
+                }
+            ]
+        },
+        {
+            "id":"",
+            "title": "The parcels page",
+            "category": "Settings",
+            "content": [
+                {
+                    "bodyText": "In Parcels you can see a list of the most common parcel carriers, including GLA, DAO, and PostNord. By picking an item from the drop down list you may see the most essential information about the chosen carrier.",
                     "images": [
                         "logo.png"
                     ]
@@ -60,26 +203,90 @@
             ]
         },
         {
-            "id":"4",
-            "title": "How to select a printer",
+            "id":"",
+            "title": "The address book page",
             "category": "Settings",
             "content": [
                 {
-                    "bodyText":"",
-                    "images":[
-                        "puppies.jpg"
-                    ]
-                },
-                {
-                    "bodyText": "The options are the printers connected to the network of your place. You can see which ones are available for use.",
-                    "images":[
-                        "social_proof_task_bem.png"
-                    ]
-                },
-                {
-                    "bodyText":"Furthermore you need to state a packing station. That is simply just your own name. It’s company policy that everyone needs to give their name when they print.",
-                    "images":[
+                    "bodyText": "The Address book is a list of the addresses of our Beautycos shops. Aside from the addresses it also contains phone numbers and email addresses, for easy contact. ",
+                    "images": [
                         "logo.png"
+                    ]
+                }
+            ]
+        },
+        {
+            "id":"",
+            "title": "How to add an address",
+            "category": "Settings",
+            "content": [
+                {
+                    "bodyText": "If you wish to add a new address to the list, press the “Create address” button in the top right corner. A pop up will then appear from the right side of the screen.",
+                    "images": [
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText": "Fill out the necessary information and press “create address”. The address has now been added to the list. If you’re not interested in doing that, you can just exit the pop up through the “X” in the upper right corner.",
+                    "images": [
+                        "logo.png"
+                    ]
+                }
+            ]
+        },
+        {
+            "id":"",
+            "title": "How to edit or delete an address",
+            "category": "Settings",
+            "content": [
+                {
+                    "bodyText": "By clicking any of the addresses, you’ll see a pop up window in which you can choose to edit or delete the chosen address. Each address lights up with a blue border when you hover your mouse on them.",
+                    "images": [
+                        "logo.png"
+                    ]
+                },
+                {
+                    "bodyText": "To update the information, change the information that needs to be updated and press “update address”. ",
+                    "images": [
+                        ""
+                    ]
+                },
+                {
+                    "bodyText": "To delete an item, press “delete address”",
+                    "images": [
+                        ""
+                    ]
+                },
+                {
+                    "bodyText": "If you wish to cancel, simply just exit the pop up through the X in the upper right corner.",
+                    "images": [
+                        ""
+                    ]
+                }
+            ]
+        },
+        {
+            "id":"",
+            "title": "The Serial number page",
+            "category": "Settings",
+            "content": [
+                {
+                    "bodyText": "The serial number site contains information regarding a product checklist and some serial number check boxes.",
+                    "images": [
+                        ""
+                    ]
+                }
+            ]
+        },
+        {
+            "id":"",
+            "title": "The About page",
+            "category": "Settings",
+            "content": [
+                {
+                    "bodyText": "The about page contains information on the release and current version of the web app you are currently using. ",
+                    "images": [
+                        ""
                     ]
                 }
             ]
