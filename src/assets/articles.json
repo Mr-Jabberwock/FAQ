@@ -402,7 +402,7 @@
                 {
                     "bodyText":"You can see the order by clicking on the order ID or parcel number. You will then get sent to the order page for the item.",
                     "images":[ 
-                        "social_proof_task_bem.png"
+                        "Serial_Number-Details2.png"
                     ]
                 },
                 {
@@ -415,29 +415,6 @@
             ]
         },
         {
-            "id":"19",
-            "title": "How to see orders",
-            "category": "Parcels",
-            "content": [
-                {
-                    "bodyText": "In the parcels page you can see information of orders and shipments. You will also be able to work and complete tasks with orders and shipments eg. print information, edit, lock etc.",
-                    "images":[
-                        "logo.png"
-                    ]
-                },
-                {
-                    "bodyText":"On the top left you can choose to work with orders or shipments.",
-                    "images": [
-                        "social_proof_task_bem.png"
-                    ]
-                },
-                {
-                    "bodyText":"On the right side you can see 4 counters. Here you can see the current numbers and total sum of the statuses: New, Pick, Pack and Locked all of which are color coded according to the status they belong to. The number above is the current number, while the number below is the total sum.",
-                    "images": []
-                }
-            ]
-        },
-        {
             "id":"20",
             "title": "How do I pick a time period?",
             "category": "Salary",
@@ -445,31 +422,31 @@
                 {
                     "bodyText": "To see your salary report, you first need to pick a period of time for the system to search in. You can manually pick a start- and end date, or you can make a rough estimate on the period you want to search on by picking a specific month. Once you’ve picked your search period, press apply.",
                     "images": [
-                        "social_proof_task_bem.png"
+                        "Salary.png"
                     ]
                 },
                 {
                     "bodyText":"",
                     "images":[ 
-                        "social_proof_task_bem.png"
+                        "Salary2.png"
                     ]
                 },
                 {
                     "bodyText":"Start date:",
                     "images":[ 
-                        "social_proof_task_bem.png"
+                        "Salary-DateStart.png"
                     ]
                 },
                 {
                     "bodyText":"End date:",
                     "images":[ 
-                        "social_proof_task_bem.png"
+                        "Salary_DateEnd.png"
                     ]
                 },
                 {
                     "bodyText":"Picking a month:",
                     "images":[ 
-                        "social_proof_task_bem.png"
+                        "Salary_MonthPicker.png"
                     ]
                 },
                 {
@@ -486,19 +463,19 @@
                 {
                     "bodyText": "Once you’ve chosen the search period, a list will appear with the requested information.",
                     "images": [
-                        "puppies.jpg"
+                        "Salary_Search_Period.png"
                     ]
                 },
                 {
                     "bodyText":"By clicking on a specific list item, you may choose to click one of the two buttons on the bottom right. By pressing “View details”, you may see the specifics of the individual list item.",
                     "images": [
-                        "logo.png"
+                        "Salary_Search_Period-Details.png"
                     ]
                 },
                 {
                     "bodyText":"By pressing “Download CSV”, you may download the specifics of a chosen list item as a CSV file (like an Excel document).",
                     "images": [
-                        "logo.png"
+                        "Salary_Search_Period-Download.png"
                     ]
                 }
             ]
@@ -511,7 +488,7 @@
                 {
                     "bodyText": "By, while viewing the list on the salary report page, press and hold the Ctrl button on your keyboard and click on multiple list items you wish to see. This allows you to view or download the specifics of multiple list items at the same time",
                     "images": [
-                        "puppies.jpg"
+                        "Salary_Search_Period-Select.png"
                     ]
                 }
             ]
@@ -524,19 +501,14 @@
                 {
                     "bodyText": "To view the list of statistical data, first pick a period. A period can be picked from the period date range. You can pick a specific period from the list, or you can click on Date range to get the option to choose a period between two dates.",
                     "images": [
-                        "puppies.jpg"
-                    ]
-                },
-                {
-                    "bodyText": "",
-                    "images": [
-                        "puppies.jpg"
+                        "Statistics_Date_Range.png",
+                        "Statistics_Search_Period.png"
                     ]
                 },
                 {
                     "bodyText": "Press Apply to fetch the statistics for the period.",
                     "images": [
-                        "puppies.jpg"
+                        "Statistics_Search_Overview.png"
                     ]
                 },
                 {
@@ -553,7 +525,7 @@
                 {
                     "bodyText": "On the top right there is a toggle switch, which allows you to hide everything in the statistics that has to do with money and sensitive data. Simply just click the “Currency” toggle and you will hide the sensitive data",
                     "images": [
-                        "puppies.jpg"
+                        "Statistics_Toggle.png"
                     ]
                 }
             ]
@@ -566,7 +538,7 @@
                 {
                     "bodyText": "To view the statistics for the packers, simply just press “Packers” in the top left corner.",
                     "images": [
-                        "puppies.jpg"
+                        "Statistics_Packers.png"
                     ]
                 },
                 {
@@ -575,7 +547,7 @@
                 },
                 {
                     "bodyText": "First of all, when picking the time frame, you cannot make a rough estimate of a week or a month like you could on the pickers page. You can only choose a specific time frame like when we picked “Date range” on the pickers page.",
-                    "images": ["puppies.jpg"]
+                    "images": ["Statistics_Packers-Date_Range.png"]
                 },
                 {
                     "bodyText": "Secondly, on the list of the packers all of the information is the same as the information displayed in the pickers list, however each list item is colour coded. Employees who have done their assignments in less than 35 hours are marked with red, and the ones who worked for more than 35 hours are marked with green.",
@@ -583,7 +555,7 @@
                 },
                 {
                     "bodyText": "The Purpose of this is to get an overview of who is putting the most effort into their work. It can be an indication of an employee's motivation to quit, and that gives the company a heads up in regards to finding a potential replacement.",
-                    "images": ["puppies.jpg"]
+                    "images": ["Statistics_Packers-Overview.png"]
                 }
             ]
         },
@@ -595,7 +567,7 @@
                 {
                     "bodyText": "This is the first list you see when you go into the page. The Pick list site is a list of lists. Each list item is in themselves a list. Each list is an array of orders that needs to be picked up by a wagon in the store room and shipped together.",
                     "images": [
-                        "puppies.jpg"
+                        "Lists_Pick-Lists.png"
                     ]
                 },
                 {
@@ -612,7 +584,7 @@
                 {
                     "bodyText": "By clicking Create pick list in the upper right corner, you’ll see a pop up, which enables you to create a new list.",
                     "images": [
-                        "puppies.jpg"
+                        "Lists_Pick-Lists-Create.png"
                     ]
                 },
                 {
@@ -621,15 +593,15 @@
                 },
                 {
                     "bodyText":"Secondly you must pick out which packages to add to the list. Each carrier has a number to the right of their names. The number shows how many packages that the specific carrier has available. You can manually choose which ones you want added to the list. By checking off a box you get the list of the available packages for that specific company.",
-                    "images": ["puppies.jpg"]
+                    "images": ["Lists_Pick-Lists-Create2.png"]
                 },
                 {
                     "bodyText":"It is perfectly possible to cross out multiple boxes at the same time",
-                    "images": ["puppies.jpg"]
+                    "images": []
                 },
                 {
                     "bodyText":"Select the products that you want to add to the list. By removing the check mark from the “Order ID” box at the top of the list, everything will be unchecked. When you’re ready to create the list, click “Create pick list”",
-                    "images": ["puppies.jpg"]
+                    "images": ["Lists_Pick-Lists-Create3.png"]
                 }
             ]
         },
@@ -652,7 +624,7 @@
                 },
                 {
                     "bodyText":"A pop up will appear in the right side of the screen, which will contain the detailed information for the specific pick list",
-                    "images": ["puppies.jpg"]
+                    "images": ["Lists_Pick-Lists-Details.png"]
                 }
             ]
         },
@@ -678,11 +650,11 @@
                 },
                 {
                     "bodyText": "To view the list of Collect lists, press “Collect Lists” at the top of the screen.",
-                    "images": ["puppies.jpg"]
+                    "images": ["Lists_Collect-Lists.png"]
                 },
                 {
                     "bodyText": "To find a specific collect list, the lists can be searched by ID in the search field",
-                    "images": ["puppies.jpg"]
+                    "images": ["Lists_Collect-Lists-Search.png"]
                 }
             ]
         },
@@ -731,7 +703,7 @@
                 },
                 {
                     "bodyText": "To get to the Bulk Invoicing list, click “Bulk Invoicing” at the top of the screen. ",
-                    "images": ["image.jpg"]
+                    "images": ["Lists_Bulk-Invoicing.png"]
                 }
             ]
         },
@@ -742,7 +714,7 @@
             "content": [
                 {
                     "bodyText": "To create a new bulk, start out by choosing the country you want to ship to, and then pick the carrier. The carriers have been pre-assigned. Each carrier on the list has a number next to them. This is the number of orders in the specific bulk. Press “Create bulk invoicing” and confirm the creation. ",
-                    "images": ["image.jpg"]
+                    "images": ["Lists_Bulk-Invoicing-Filter.png"]
                 }
             ]
         },
@@ -753,7 +725,7 @@
             "content": [
                 {
                     "bodyText": "To view bulk invoice information, first find the bulk you would like to see the information of.",
-                    "images": ["image.jpg"]
+                    "images": ["Lists_Bulk-Invoicing-Overview.png"]
                 },
                 {
                     "bodyText": "Then do one of the following:",
@@ -769,7 +741,7 @@
                 },
                 {
                     "bodyText": "A pop up will appear on the right side of the screen.",
-                    "images": ["image.jpg"]
+                    "images": ["Lists_Bulk-Invoicing-Overview2.png"]
                 },
                 {
                     "bodyText": "On the top left side is information about the bulk. The ID, the date it was created and the employee that created the bulk. To the right is information about the number of orders in the bulk, the name of the company from where the bulk comes and the name of the carrier. Underneath that is a list of the orders which make up the bulk.",
@@ -785,31 +757,6 @@
                 {
                     "bodyText": "When viewing the list of bulks, simply find the bulk you wish to print. Then go to the right side of the bulks list item, and hover over the three dots symbol. Then press “Print”.",
                     "images": []
-                }
-            ]
-        },
-        {
-            "id":"37",
-            "title": "How do I pick a list?",
-            "category": "Parcels",
-            "content": [
-                {
-                    "bodyText": "If you wish to create a new shipment you can click on the Create shipment button on the right. You will then be shown the create shipment page.You will start with the delivery section where you can choose the sender country, recipient country, delivery company and shipping method.",
-                    "images": [
-                        "social_proof_task_bem.png"
-                    ]
-                },
-                {
-                    "bodyText":"To choose the sender country, click the dropdown for Sender country and hover over the option you wish, and click on it to choose the country the sender is from.",
-                    "images": [
-                        "logo.png"
-                    ]
-                },
-                {
-                    "bodyText":"To choose the recipient country, click the dropdown for Recipient country and hover over the option you wish, and click on it to choose the country the recipient is from.",
-                    "images":[
-
-                    ]
                 }
             ]
         },
