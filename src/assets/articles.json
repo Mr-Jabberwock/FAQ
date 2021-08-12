@@ -118,7 +118,7 @@
             ]
         },
         {
-            "id":"",
+            "id":"6",
             "title": "How to select a printer (for admins)",
             "category": "Settings",
             "content": [
@@ -151,7 +151,7 @@
             ]
         },
         {
-            "id":"",
+            "id":"7",
             "title": "The company page",
             "category": "Settings",
             "content": [
@@ -171,7 +171,7 @@
             ]
         },
         {
-            "id":"",
+            "id":"8",
             "title": "The parcels page",
             "category": "Settings",
             "content": [
@@ -184,7 +184,7 @@
             ]
         },
         {
-            "id":"",
+            "id":"9",
             "title": "The address book page",
             "category": "Settings",
             "content": [
@@ -197,7 +197,7 @@
             ]
         },
         {
-            "id":"",
+            "id":"10",
             "title": "How to add an address",
             "category": "Settings",
             "content": [
@@ -214,7 +214,7 @@
             ]
         },
         {
-            "id":"",
+            "id":"11",
             "title": "How to edit or delete an address",
             "category": "Settings",
             "content": [
@@ -239,7 +239,7 @@
             ]
         },
         {
-            "id":"",
+            "id":"12",
             "title": "The Serial number page",
             "category": "Settings",
             "content": [
@@ -250,7 +250,7 @@
             ]
         },
         {
-            "id":"",
+            "id":"13",
             "title": "The About page",
             "category": "Settings",
             "content": [
@@ -261,15 +261,14 @@
             ]
         },
         {
-            "id":"",
+            "id":"14",
             "title": "How to request a leave",
             "category": "Schedule",
             "content": [
                 {
                     "bodyText": "To request a leave press the button in the top right corner. A pop up will appear where you will need to fill out the basic information regarding the nature of your leave; why you wish to request a leave, when you want it to start and when you want it to end. ",
                     "images":[
-                        "Schedule.png",
-                        "Schedule-Request.png"
+                        "Schedule.png"
                     ]
                 },
                 {
@@ -302,7 +301,7 @@
                 },
                 {
                     "bodyText":"Once the information has been filled out, you may press the “request leave” button in the bottom right corner. ",
-                    "images":["logo.png"]
+                    "images":["Schedule-Request.png"]
                 },
                 {
                     "bodyText":"If you wish to cancel the request, simply just press “X” in the top right corner",
@@ -310,11 +309,11 @@
                 },
                 {
                     "bodyText":"You can also check it off as a half day if needed. Simply click on the checkbox with the text: “Is a half day?”",
-                    "images":["logo.png"]
+                    "images":["Schedule_Request-Halfday.png"]
                 },
                 {
                     "bodyText":"Additionally you can write a note if needed, by simply clicking on the “Note” field and write your note.",
-                    "images":["logo.png"]
+                    "images":[]
                 },
                 {
                     "bodyText":"Once a leave has been requested a coloured block will be filling out the requested days. A text will appear on the coloured block, telling you the reason for the leave. The blocks are colour coded, matching whatever reason of leave that has been chosen. ",
@@ -322,11 +321,7 @@
                 },
                 {
                     "bodyText":"The “Your days off” box on the left shows a small list of your most immediate days of and requests for days off. ",
-                    "images":["logo.png"]
-                },
-                {
-                    "bodyText":"",
-                    "images":["logo.png"]
+                    "images":["Schedule_Sickdays.png", "Schedule_Sickdays2.png"]
                 },
                 {
                     "bodyText":"Striped coloured block means that a leave has been requested, but not yet accepted by the supervisor. ",
@@ -335,20 +330,20 @@
             ]
         },
         {
-            "id":"6",
+            "id":"15",
             "title": "How to get an overview of all employees most immediate days off (Admins only)",
             "category": "Schedule",
             "content": [
                 {
                     "bodyText": "To get an overview of the employees requested and approved days off , press “Overview” at the top of the screen. This will show you a series of rows. Each row represents an employee and their requested or approved days off. Here you can also see that the blocks in the rows are colour coded, matching the reasons.",
                     "images": [
-                        "logo.png"
+                        "Schedule_Overview_Page.png"
                     ]
                 }
             ]
         },
         {
-            "id":"6",
+            "id":"16",
             "title": "How to approve or reject a leave request (Admins only)",
             "category": "Schedule",
             "content": [
@@ -359,7 +354,7 @@
                 {
                     "bodyText": "1. First go into the overview mentioned before. Find the employee and the specific request for a leave. Click on the request. A pop up will appear from the right side of the screen. It will show you the details of the request; start and end date, reason and any potential notes.",
                     "images": [
-                        "logo.png"
+                        "Schedule_Edit.png"
                     ]
                 },
                 {
@@ -368,11 +363,11 @@
                 },
                 {
                     "bodyText": "2. Go into the approval tab (next to the Overview tab). A list of the requests for leave with their start and end dates, and reasons for the leave can be seen here.",
-                    "images": ["logo.png"]
+                    "images": ["Schedule_Edit2.png"]
                 },
                 {
                     "bodyText": "Press on a list item to get to the pop up mentioned in option one, or hover on the three dots that can be found on the right side of each list item. By hovering on the dots three options will show; edit, approve and reject. ",
-                    "images": ["logo.png"]
+                    "images": []
                 },
                 {
                     "bodyText": "Edit will open the same pop up window mentioned before. Approve and reject will directly, after a confirmation, approve or reject the request for a leave.",
@@ -382,83 +377,76 @@
             ]
         },
         {
-            "id":"6",
-            "title": "How do I create a new route?",
-            "category": "Lists",
-            "content": [
-                {
-                    "bodyText": "By clicking Create pick list in the upper right corner, you’ll see a pop up, which enables you to create a new list.",
-                    "images": [
-                        "logo.png"
-                    ]
-                },
-                {
-                    "bodyText":"Firstly you must choose which company to make the pick list for. n/ Secondly you must pick out which packages to add to the list. Each carrier has a number to the right of their names. The number shows how many packages that the specific carrier has available. You can manually choose which ones you want added to the list. By checking off a box you get the list of the available packages for that specific company.",
-                    "images":[
-                         "social_proof_task_bem.png"
-                    ]
-                }
-            ]
-        },
-        {
-            "id":"7",
-            "title": "How do I see the infromation of a serial number?",
+            "id":"51",
+            "title": "How do I check a serial number?",
             "category": "Serial Number",
             "content": [
                 {
-                    "bodyText": "On the serial number page you can search for a serial number of a specific item. (At first the page is empty. You must first pick a serial number to get information.)",
+                    "bodyText": "To get the information of a serial number, click on the “Search” field. You will be given a drop down with options of serial numbers. You can also write in the search field to filter/search for a specific serial number.",
                     "images": [
-                        "puppies.jpg"
+                        "Serial_Number.jpg"
                     ]
                 },
                 {
-                    "bodyText":"To get the information of a serial number, click on the “Search” field. You will be given a drop down with options of serial numbers. You can also write in the search field to filter/search for a specific serial number.",
+                    "bodyText":" Click on the serial number you want to check, to get the information.",
                     "images":[ 
-                        "logo.png"
+                        "Serial_Number-Search.png"
                     ]
                 },
                 {
-                    "bodyText":"",
+                    "bodyText":"Here you can see which company the item is from, the order and parcel the item is connected to by “Order ID” and “Parcel”, the name of the item under “Product”, the SKU,  the serial number of the item and who scanned the item.",
                     "images":[ 
-                        "social_proof_task_bem.png"
+                        "Serial_Number-Details.png"
+                    ]
+                },
+                {
+                    "bodyText":"You can see the order by clicking on the order ID or parcel number. You will then get sent to the order page for the item.",
+                    "images":[ 
+                        "Serial_Number-Details2.png"
+                    ]
+                },
+                {
+                    "bodyText":"(It is possible to scan an item and get more than one result for a serial number. This should not happen and can be caused by human error.)",
+                    "images":[ 
+                        
                     ]
                 }
 
             ]
         },
         {
-            "id":"",
+            "id":"20",
             "title": "How do I pick a time period?",
             "category": "Salary",
             "content": [
                 {
                     "bodyText": "To see your salary report, you first need to pick a period of time for the system to search in. You can manually pick a start- and end date, or you can make a rough estimate on the period you want to search on by picking a specific month. Once you’ve picked your search period, press apply.",
                     "images": [
-                        "social_proof_task_bem.png"
+                        "Salary.png"
                     ]
                 },
                 {
                     "bodyText":"",
                     "images":[ 
-                        "social_proof_task_bem.png"
+                        "Salary2.png"
                     ]
                 },
                 {
                     "bodyText":"Start date:",
                     "images":[ 
-                        "social_proof_task_bem.png"
+                        "Salary-DateStart.png"
                     ]
                 },
                 {
                     "bodyText":"End date:",
                     "images":[ 
-                        "social_proof_task_bem.png"
+                        "Salary_DateEnd.png"
                     ]
                 },
                 {
                     "bodyText":"Picking a month:",
                     "images":[ 
-                        "social_proof_task_bem.png"
+                        "Salary_MonthPicker.png"
                     ]
                 },
                 {
@@ -468,64 +456,59 @@
             ]
         },
         {
-            "id":"",
+            "id":"21",
             "title": "How do I overwiew the salary information?",
             "category": "Salary",
             "content": [
                 {
                     "bodyText": "Once you’ve chosen the search period, a list will appear with the requested information.",
                     "images": [
-                        "puppies.jpg"
+                        "Salary_Search_Period.png"
                     ]
                 },
                 {
                     "bodyText":"By clicking on a specific list item, you may choose to click one of the two buttons on the bottom right. By pressing “View details”, you may see the specifics of the individual list item.",
                     "images": [
-                        "logo.png"
+                        "Salary_Search_Period-Details.png"
                     ]
                 },
                 {
                     "bodyText":"By pressing “Download CSV”, you may download the specifics of a chosen list item as a CSV file (like an Excel document).",
                     "images": [
-                        "logo.png"
+                        "Salary_Search_Period-Download.png"
                     ]
                 }
             ]
         },
         {
-            "id":"",
+            "id":"22",
             "title": "How to get the information on multible list items",
             "category": "Salary",
             "content": [
                 {
                     "bodyText": "By, while viewing the list on the salary report page, press and hold the Ctrl button on your keyboard and click on multiple list items you wish to see. This allows you to view or download the specifics of multiple list items at the same time",
                     "images": [
-                        "puppies.jpg"
+                        "Salary_Search_Period-Select.png"
                     ]
                 }
             ]
         },
         {
-            "id":"",
+            "id":"23",
             "title": "How to pick a period",
             "category": "Statistics",
             "content": [
                 {
                     "bodyText": "To view the list of statistical data, first pick a period. A period can be picked from the period date range. You can pick a specific period from the list, or you can click on Date range to get the option to choose a period between two dates.",
                     "images": [
-                        "puppies.jpg"
-                    ]
-                },
-                {
-                    "bodyText": "",
-                    "images": [
-                        "puppies.jpg"
+                        "Statistics_Date_Range.png",
+                        "Statistics_Search_Period.png"
                     ]
                 },
                 {
                     "bodyText": "Press Apply to fetch the statistics for the period.",
                     "images": [
-                        "puppies.jpg"
+                        "Statistics_Search_Overview.png"
                     ]
                 },
                 {
@@ -535,27 +518,27 @@
             ]
         },
         {
-            "id":"",
+            "id":"24",
             "title": "How to toggle the currency",
             "category": "Statistics",
             "content": [
                 {
                     "bodyText": "On the top right there is a toggle switch, which allows you to hide everything in the statistics that has to do with money and sensitive data. Simply just click the “Currency” toggle and you will hide the sensitive data",
                     "images": [
-                        "puppies.jpg"
+                        "Statistics_Toggle.png"
                     ]
                 }
             ]
         },
         {
-            "id":"",
+            "id":"25",
             "title": "How to view the packers",
             "category": "Statistics",
             "content": [
                 {
                     "bodyText": "To view the statistics for the packers, simply just press “Packers” in the top left corner.",
                     "images": [
-                        "puppies.jpg"
+                        "Statistics_Packers.png"
                     ]
                 },
                 {
@@ -564,7 +547,7 @@
                 },
                 {
                     "bodyText": "First of all, when picking the time frame, you cannot make a rough estimate of a week or a month like you could on the pickers page. You can only choose a specific time frame like when we picked “Date range” on the pickers page.",
-                    "images": ["puppies.jpg"]
+                    "images": ["Statistics_Packers-Date_Range.png"]
                 },
                 {
                     "bodyText": "Secondly, on the list of the packers all of the information is the same as the information displayed in the pickers list, however each list item is colour coded. Employees who have done their assignments in less than 35 hours are marked with red, and the ones who worked for more than 35 hours are marked with green.",
@@ -572,19 +555,19 @@
                 },
                 {
                     "bodyText": "The Purpose of this is to get an overview of who is putting the most effort into their work. It can be an indication of an employee's motivation to quit, and that gives the company a heads up in regards to finding a potential replacement.",
-                    "images": ["puppies.jpg"]
+                    "images": ["Statistics_Packers-Overview.png"]
                 }
             ]
         },
         {
-            "id":"11",
+            "id":"26",
             "title": "How do I pick a list?",
             "category": "Lists",
             "content": [
                 {
                     "bodyText": "This is the first list you see when you go into the page. The Pick list site is a list of lists. Each list item is in themselves a list. Each list is an array of orders that needs to be picked up by a wagon in the store room and shipped together.",
                     "images": [
-                        "puppies.jpg"
+                        "Lists_Pick-Lists.png"
                     ]
                 },
                 {
@@ -594,14 +577,14 @@
             ]
         },
         {
-            "id":"",
+            "id":"27",
             "title": "How to create a new route",
             "category": "Lists",
             "content": [
                 {
                     "bodyText": "By clicking Create pick list in the upper right corner, you’ll see a pop up, which enables you to create a new list.",
                     "images": [
-                        "puppies.jpg"
+                        "Lists_Pick-Lists-Create.png"
                     ]
                 },
                 {
@@ -610,20 +593,20 @@
                 },
                 {
                     "bodyText":"Secondly you must pick out which packages to add to the list. Each carrier has a number to the right of their names. The number shows how many packages that the specific carrier has available. You can manually choose which ones you want added to the list. By checking off a box you get the list of the available packages for that specific company.",
-                    "images": ["puppies.jpg"]
+                    "images": ["Lists_Pick-Lists-Create2.png"]
                 },
                 {
                     "bodyText":"It is perfectly possible to cross out multiple boxes at the same time",
-                    "images": ["puppies.jpg"]
+                    "images": []
                 },
                 {
                     "bodyText":"Select the products that you want to add to the list. By removing the check mark from the “Order ID” box at the top of the list, everything will be unchecked. When you’re ready to create the list, click “Create pick list”",
-                    "images": ["puppies.jpg"]
+                    "images": ["Lists_Pick-Lists-Create3.png"]
                 }
             ]
         },
         {
-            "id":"",
+            "id":"28",
             "title": "How to view the details of a pick list",
             "category": "Lists",
             "content": [
@@ -641,12 +624,12 @@
                 },
                 {
                     "bodyText":"A pop up will appear in the right side of the screen, which will contain the detailed information for the specific pick list",
-                    "images": ["puppies.jpg"]
+                    "images": ["Lists_Pick-Lists-Details.png"]
                 }
             ]
         },
         {
-            "id":"",
+            "id":"29",
             "title": "How to print out a pick list",
             "category": "Lists",
             "content": [
@@ -657,7 +640,7 @@
             ]
         },
         {
-            "id":"",
+            "id":"30",
             "title": "The Collect lists",
             "category": "Lists",
             "content": [
@@ -667,16 +650,16 @@
                 },
                 {
                     "bodyText": "To view the list of Collect lists, press “Collect Lists” at the top of the screen.",
-                    "images": ["puppies.jpg"]
+                    "images": ["Lists_Collect-Lists.png"]
                 },
                 {
                     "bodyText": "To find a specific collect list, the lists can be searched by ID in the search field",
-                    "images": ["puppies.jpg"]
+                    "images": ["Lists_Collect-Lists-Search.png"]
                 }
             ]
         },
         {
-            "id":"",
+            "id":"31",
             "title": "How to download or print a collect list",
             "category": "Lists",
             "content": [
@@ -687,7 +670,7 @@
             ]
         },
         {
-            "id":"",
+            "id":"32",
             "title": "How to add a new collect list",
             "category": "Lists",
             "content": [
@@ -710,7 +693,7 @@
             ]
         },
         {
-            "id":"",
+            "id":"33",
             "title": "The Bulk invoicing page",
             "category": "Lists",
             "content": [
@@ -720,29 +703,29 @@
                 },
                 {
                     "bodyText": "To get to the Bulk Invoicing list, click “Bulk Invoicing” at the top of the screen. ",
-                    "images": ["image.jpg"]
+                    "images": ["Lists_Bulk-Invoicing.png"]
                 }
             ]
         },
         {
-            "id":"",
+            "id":"34",
             "title": "How to create a bulk invoice",
             "category": "Lists",
             "content": [
                 {
                     "bodyText": "To create a new bulk, start out by choosing the country you want to ship to, and then pick the carrier. The carriers have been pre-assigned. Each carrier on the list has a number next to them. This is the number of orders in the specific bulk. Press “Create bulk invoicing” and confirm the creation. ",
-                    "images": ["image.jpg"]
+                    "images": ["Lists_Bulk-Invoicing-Filter.png"]
                 }
             ]
         },
         {
-            "id":"",
+            "id":"35",
             "title": "How to view bulk invoice information",
             "category": "Lists",
             "content": [
                 {
                     "bodyText": "To view bulk invoice information, first find the bulk you would like to see the information of.",
-                    "images": ["image.jpg"]
+                    "images": ["Lists_Bulk-Invoicing-Overview.png"]
                 },
                 {
                     "bodyText": "Then do one of the following:",
@@ -758,7 +741,7 @@
                 },
                 {
                     "bodyText": "A pop up will appear on the right side of the screen.",
-                    "images": ["image.jpg"]
+                    "images": ["Lists_Bulk-Invoicing-Overview2.png"]
                 },
                 {
                     "bodyText": "On the top left side is information about the bulk. The ID, the date it was created and the employee that created the bulk. To the right is information about the number of orders in the bulk, the name of the company from where the bulk comes and the name of the carrier. Underneath that is a list of the orders which make up the bulk.",
@@ -767,7 +750,7 @@
             ]
         },
         {
-            "id":"",
+            "id":"36",
             "title": "How to print out the bulk information",
             "category": "Lists",
             "content": [
@@ -810,7 +793,7 @@
             ]
         },
         {
-            "id":"14",
+            "id":"38",
             "title": "How do I scan?",
             "category": "Scan",
             "content": [
@@ -827,9 +810,9 @@
                     ]
                 }
             ]
-        },
+        } ,
         {
-            "id":"15",
+            "id":"39",
             "title": "How do I use the Dashboard?",
             "category": "Dashboard",
             "content": [
@@ -849,7 +832,7 @@
             ]
         },
         {
-            "id":"16",
+            "id":"40",
             "title": "How do I get trophies?",
             "category": "Trophies",
             "content": [
@@ -868,8 +851,8 @@
             ]
         },
         {
-            "id":"17",
-            "title": "How do I search for users?",
+            "id":"41",
+            "title": "How do I search for users",
             "category": "Users",
             "content": [
                 {
@@ -1005,7 +988,7 @@
             ]
         },
         {
-            "id":"18",
+            "id":"42",
             "title": "How do I edit a user?",
             "category": "Users",
             "content": [
@@ -1037,7 +1020,7 @@
             ]
         },
         {
-            "id":"19",
+            "id":"43",
             "title": "How do I delete a user?",
             "category": "Users",
             "content": [
@@ -1066,7 +1049,7 @@
             ]
         },
         {
-            "id":"20",
+            "id":"44",
             "title": "How do I view a user's information",
             "category": "Users",
             "content": [
@@ -1091,7 +1074,7 @@
             ]
         },
         {
-            "id":"21",
+            "id":"45",
             "title": "How do I view the details of an order?",
             "category": "Parcels",
             "content": [
@@ -1384,7 +1367,7 @@
             ]
         },
         {
-            "id":"22",
+            "id":"46",
             "title": "How do I see shipments?",
             "category": "Parcels",
             "content": [
@@ -1511,7 +1494,7 @@
             ]
         },
         {
-            "id":"23",
+            "id":"47",
             "title": "How do I create a shipment?",
             "category": "Parcels",
             "content": [
@@ -1826,7 +1809,7 @@
             ]
         },
         {
-            "id":"24",
+            "id":"48",
             "title": "What can I do with the a shipment?",
             "category": "Parcels",
             "content": [
@@ -2056,7 +2039,7 @@
             ]
         },
         {
-            "id":"25",
+            "id":"49",
             "title": "How do I create a copy of a shipment",
             "category": "Parcels",
             "content": [
@@ -2155,45 +2138,7 @@
             ]
         },
         {
-            "id":"7",
-            "title": "How do I check a serial number?",
-            "category": "Serial Number",
-            "content": [
-                {
-                    "bodyText": "To get the information of a serial number, click on the “Search” field. You will be given a drop down with options of serial numbers. You can also write in the search field to filter/search for a specific serial number.",
-                    "images": [
-                        "puppies.jpg"
-                    ]
-                },
-                {
-                    "bodyText":" Click on the serial number you want to check, to get the information.",
-                    "images":[ 
-                        "logo.png"
-                    ]
-                },
-                {
-                    "bodyText":"Here you can see which company the item is from, the order and parcel the item is connected to by “Order ID” and “Parcel”, the name of the item under “Product”, the SKU,  the serial number of the item and who scanned the item.",
-                    "images":[ 
-                        "social_proof_task_bem.png"
-                    ]
-                },
-                {
-                    "bodyText":"You can see the order by clicking on the order ID or parcel number. You will then get sent to the order page for the item.",
-                    "images":[ 
-                        "social_proof_task_bem.png"
-                    ]
-                },
-                {
-                    "bodyText":"(It is possible to scan an item and get more than one result for a serial number. This should not happen and can be caused by human error.)",
-                    "images":[ 
-                        
-                    ]
-                }
-
-            ]
-        },
-        {
-            "id":"8",
+            "id":"50",
             "title": "How do I see orders?",
             "category": "Parcels",
             "content": [
@@ -2393,7 +2338,5 @@
                 }
             ]
         }
- 
-        
   ]
 }

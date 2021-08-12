@@ -88,20 +88,30 @@ export default {
 </script>
 
 <style>
+body{
+   font-family: inherit;
+   background-color: white;
+}
 .navigation{
    position: fixed;
-   width: 30%;
+   width: 15%;
 }
 .container{
    border-left: lightgrey solid 2px;
    display: inline-block;
    width: 200px;
-   margin-left: 100px;
+   margin-left: 50px;
+   margin-top: 20px;
+   margin-bottom: 20px;
 }
 .subject_list{
    padding-left: 10px;
    list-style-type: none;
 
+}
+.title__text{
+   margin-left: 10px;
+   color: #c2c8ce;
 }
 .subject_list__item{
    cursor: pointer;
@@ -112,7 +122,8 @@ export default {
 
 .active, .subject_list__item:hover{
   padding-left: 20px;
-  color: aquamarine;
+  background-color: #f1f2f6;
+  width: 80%;
 }
 
 .title__text:hover{

@@ -2,7 +2,7 @@
  <div class="wrapper"> 
         <h2>Results for: "{{searchResult}}"</h2>    
         <div class="list-container" v-for="article in filteredArticles" :key="article.id">
-                <div class="list-item" @click="goToArticle(article.title)">
+                <div class="list-item" @click="goToArticle(article)">
                     <h3 class="list-item__title">{{article.title}}</h3>
                     <p v-if="article.content[0].bodyText !== '' " 
                         class="list-item__Text">{{article.content[0].bodyText}}
@@ -31,8 +31,9 @@ export default{
     },
     methods: {
         goToArticle(id) {
-            id= encodeURIComponent(id)
-            this.$router.push("/articles/" + id);
+            //id= encodeURIComponent(id)
+            console.log(id.title);
+            this.$router.push("/articles/" + id.id);
         }
     },
     watch: {
@@ -63,6 +64,12 @@ export default{
 </script>
 
 <style scoped>
+body{
+    
+}
+.list-container{
+   background-color: white;
+}
 .wrapper{
     font-family: "Avenir", Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -82,13 +89,5 @@ export default{
     margin-left: 4rem;
     margin-right: 4rem;
 }
-/* .list-container{
-      
-    margin-left:30%;
-} */
-/* .wrapper{
-    padding-top: 2%;
-
-} */
 
 </style>

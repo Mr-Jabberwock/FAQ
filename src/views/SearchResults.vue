@@ -1,6 +1,6 @@
 <template>
     <div class="wrapper">
-        <navigation-bar></navigation-bar>
+        <navigation-bar class="Navigation__Bar"></navigation-bar>
         <div class="search-result-content">
             <search-bar class="searchInput"  @searchCriteria="searchData"></search-bar>
             <filtered-articles class="results"/>
@@ -22,14 +22,12 @@ export default{
     },
     data(){
        return{
-            // componentKey: 0,
             searchWord: this.$route.params.id
        }
     },
     methods:{
         searchData(data){
             this.searchResult = data;
-            // this.componentKey += 1;
             this.$router.push("/search/" + data).catch(()=>{});
         }
     }
@@ -37,7 +35,12 @@ export default{
 </script>
 
 <style scoped>
- .wrapper{
+body{
+     font-family: inherit;
+      background-color: white;
+   
+}
+.wrapper{
     font-family: "Avenir", Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -45,8 +48,9 @@ export default{
     margin-top: 60px;
 }
 .search-result-content{
-    padding-left: 30%;
+    margin-left: 30%;
     max-width: 60%;
 }
+
 
 </style>

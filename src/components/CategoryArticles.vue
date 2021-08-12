@@ -46,3 +46,9 @@ export default ({
    
 })
 </script>
+
+<style scoped>
+.results{
+    background-color: white;
+}
+</style>
