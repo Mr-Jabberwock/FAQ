@@ -1,8 +1,10 @@
 <template>
     <div class="wrapper">
-        <navigation-bar></navigation-bar>
-        <search-bar class="searchInput" @searchCriteria="searchData"></search-bar>
-        <category-articles :key="componentKey"/>
+        <navigation-bar class="navigation__bar"></navigation-bar>
+        <div class="Category__Search">
+            <search-bar class="searchInput" @searchCriteria="searchData"></search-bar>
+            <category-articles :key="componentKey"/>
+        </div>
     </div>
 </template>
 <script>
@@ -38,21 +40,35 @@ export default {
 }
 </script>
 <style>
+body{
+     font-family: inherit;
+     
+}
     .wrapper{
         font-family: "Avenir", Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         color: #2c3e50;
         margin-top: 60px;
+        
+    }
+    .Category__Search{
+        background-color: white;
+        width: 50%;
+        margin-left: 30%;
+
     }
     .results{
-        padding-left: 30%;
-        max-width: 60%;
+
+        
     }
     .results__item{
         cursor: pointer;
         border: 1px solid #ebebeb;
         margin-top:1rem;
+        width: 95%;
+        margin-left: 2.5%;
+        
     }
     .results__itemTitle{
         margin-left: 3rem;
@@ -63,5 +79,9 @@ export default {
     }
     .searchInput{
         margin-left: 30%;
+    }
+    .navigation__bar{
+        background-color: white;
+        margin-left: 5%;
     }
 </style>

@@ -70,7 +70,7 @@ export default {
   position: relative;
 }
 .accordion__trigger_active, .accordion__item:hover{
-    background-color: #ccc;
+    background-color: #f7f7f7;
 }
 
 .accordion__content{
