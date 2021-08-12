@@ -11,7 +11,7 @@
                     {{content.bodyText}}
                 </p>
                 <img alt="#" v-for="image in content.images" 
-                :key="image" class="article__image" :src="require('../assets/' + image)">
+                :key="image" class="article__image" :src="require('../assets/image/' + image)">
             </div>
         </div>
     </div>
