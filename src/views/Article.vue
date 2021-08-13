@@ -13,7 +13,12 @@
                 <img alt="#" v-for="image in content.images" 
                 :key="image" class="article__image" :src="require('../assets/image/' + image)">
             </div>
+            <div class="buttons">
+                <button v-if="articleData.id != 1" @click="previousArticle()" >Previous Article</button>
+                <button @click="nextArticle()" >Next Article</button>
+            </div>
         </div>
+       
     </div>
 </template>
 <script>
@@ -42,15 +47,31 @@ export default {
         //     return this.json.articles;
         // },
         articleData(){
-            //var id = this.articleId;
             return this.articles.find(
                 article => article.title === this.articleURI
+            )
+        },
+        nextTitle(){
+            return this.articles.find(
+                article => parseInt(article.id) === parseInt(this.articleData.id) +1
+            )
+        },
+        previousTitle(){
+            return this.articles.find(
+                article => parseInt(article.id) === parseInt(this.articleData.id) -1
             )
         }
     },
     methods: {
         searchData(data){
             this.$router.push("/search/" + data);
+        },
+        nextArticle(){
+           
+            this.$router.push("/articles/" + encodeURIComponent(this.nextTitle.title))
+        },
+        previousArticle(){
+            this.$router.push("/articles/" + encodeURIComponent(this.previousTitle.title))
         }
     },
     // method:{
@@ -102,4 +123,8 @@ body{
         margin-right: auto;
         margin-left: auto;
     }
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
 </style>
