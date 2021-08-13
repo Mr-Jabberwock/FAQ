@@ -1,8 +1,6 @@
 <template>
     <div class="wrapper">
-        <!--<button @click="editArticle">Edit this article</button>-->
-        <navigation-bar></navigation-bar>
-        <search-bar class="searchInput"  @searchCriteria="searchData"></search-bar>
+        <navigation-bar class="navigation-bar"></navigation-bar>
         <div class="article">
             
             <h1 class="article__title">{{articleData.title}}</h1>
@@ -16,8 +14,8 @@
                 :key="image" class="article__image" :src="require('../assets/image/' + image)">
             </div>
             <div class="buttons">
-                <button v-if="articleData.id != 1" @click="previousArticle()" >Previous Article</button>
-                <button @click="nextArticle()" >Next Article</button>
+                <button class="buttons__previous" v-if="articleData.id != 1" @click="previousArticle()" >Previous Article</button>
+                <button class="buttons__next" v-if="articleData.id != articles.length-1" @click="nextArticle()" >Next Article</button>
             </div>
         </div>
         <div class="edit" v-show="edit">
@@ -72,12 +70,30 @@ export default {
                 article => article.title === this.articleURI
             )
         },
+        // categoryArticles(){
+        //     var result = this.articles.find(
+        //         article => article.title === this.articleURI
+        //     ) 
+        //     return this.articles.filter(function(article) {
+        //         return article.category === result.category;
+        //     });
+        // },
         nextTitle(){
+            var result = this.articles.find(
+                article => parseInt(article.id) === parseInt(this.articleData.id) +1
+                )
+            localStorage.setItem('category', result.category);
+            
             return this.articles.find(
                 article => parseInt(article.id) === parseInt(this.articleData.id) +1
+
             )
         },
         previousTitle(){
+           var result = this.articles.find(
+                article => parseInt(article.id) === parseInt(this.articleData.id) -1
+                )
+            localStorage.setItem('category', result.category);
             return this.articles.find(
                 article => parseInt(article.id) === parseInt(this.articleData.id) -1
             )
@@ -127,12 +143,27 @@ body{
         margin-top: 60px;
     }
     .article{
-        padding-left: 30%;
-        max-width: 60%;
+    background-color: white;
+    width: 60%;
+    margin-left: 30%;
     }
-    img{
-        width: 50%;
-        height: 50%;
+    .article__title{
+        margin-left: 3rem;
+    }
+    .article__content{
+        width: 80%;
+        padding-left: 10%;
+        padding-right:10%;
+        padding-top: 1rem;
+        padding-bottom: 5%;
+        
+    }
+    .article__image{
+        display: block;
+        width: 75%;
+        height: 75%;
+        margin-right: auto;
+        margin-left: auto;
     }
 .buttons{
     display: flex;
@@ -147,5 +178,11 @@ body{
     top: 0px;
     right: 0px;
     overflow: scroll;
+}
+.buttons__previous{
+    margin-right: auto;
+}
+.buttons__next{
+    margin-left: auto;
 }
 </style>

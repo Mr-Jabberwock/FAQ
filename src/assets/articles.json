@@ -117,7 +117,7 @@
             ]
         },
         {
-            "id":"6",
+            "id":"40",
             "title": "How to select a printer (for admins)",
             "category": "Settings",
             "content": [
@@ -150,7 +150,7 @@
             ]
         },
         {
-            "id":"7",
+            "id":"41",
             "title": "The company page",
             "category": "Settings",
             "content": [
@@ -170,7 +170,7 @@
             ]
         },
         {
-            "id":"8",
+            "id":"42",
             "title": "The parcels page",
             "category": "Settings",
             "content": [
@@ -183,7 +183,7 @@
             ]
         },
         {
-            "id":"9",
+            "id":"43",
             "title": "The address book page",
             "category": "Settings",
             "content": [
@@ -196,7 +196,7 @@
             ]
         },
         {
-            "id":"10",
+            "id":"44",
             "title": "How to add an address",
             "category": "Settings",
             "content": [
@@ -213,7 +213,7 @@
             ]
         },
         {
-            "id":"11",
+            "id":"45",
             "title": "How to edit or delete an address",
             "category": "Settings",
             "content": [
@@ -238,7 +238,7 @@
             ]
         },
         {
-            "id":"12",
+            "id":"46",
             "title": "The Serial number page",
             "category": "Settings",
             "content": [
@@ -249,7 +249,7 @@
             ]
         },
         {
-            "id":"13",
+            "id":"47",
             "title": "The About page",
             "category": "Settings",
             "content": [
@@ -260,7 +260,7 @@
             ]
         },
         {
-            "id":"14",
+            "id":"37",
             "title": "How to request a leave",
             "category": "Schedule",
             "content": [
@@ -329,7 +329,7 @@
             ]
         },
         {
-            "id":"15",
+            "id":"38",
             "title": "How to get an overview of all employees most immediate days off (Admins only)",
             "category": "Schedule",
             "content": [
@@ -342,7 +342,7 @@
             ]
         },
         {
-            "id":"16",
+            "id":"39",
             "title": "How to approve or reject a leave request (Admins only)",
             "category": "Schedule",
             "content": [
@@ -376,7 +376,7 @@
             ]
         },
         {
-            "id":"51",
+            "id":"14",
             "title": "How do I check a serial number?",
             "category": "Serial Number",
             "content": [
@@ -493,7 +493,7 @@
             ]
         },
         {
-            "id":"23",
+            "id":"33",
             "title": "How to pick a period",
             "category": "Statistics",
             "content": [
@@ -517,7 +517,7 @@
             ]
         },
         {
-            "id":"24",
+            "id":"34",
             "title": "How to toggle the currency",
             "category": "Statistics",
             "content": [
@@ -530,7 +530,7 @@
             ]
         },
         {
-            "id":"25",
+            "id":"35",
             "title": "How to view the packers",
             "category": "Statistics",
             "content": [
@@ -559,7 +559,7 @@
             ]
         },
         {
-            "id":"26",
+            "id":"23",
             "title": "How do I pick a list?",
             "category": "Lists",
             "content": [
@@ -576,7 +576,7 @@
             ]
         },
         {
-            "id":"27",
+            "id":"24",
             "title": "How to create a new route",
             "category": "Lists",
             "content": [
@@ -605,7 +605,7 @@
             ]
         },
         {
-            "id":"28",
+            "id":"25",
             "title": "How to view the details of a pick list",
             "category": "Lists",
             "content": [
@@ -628,7 +628,7 @@
             ]
         },
         {
-            "id":"29",
+            "id":"26",
             "title": "How to print out a pick list",
             "category": "Lists",
             "content": [
@@ -639,7 +639,7 @@
             ]
         },
         {
-            "id":"30",
+            "id":"27",
             "title": "The Collect lists",
             "category": "Lists",
             "content": [
@@ -658,7 +658,7 @@
             ]
         },
         {
-            "id":"31",
+            "id":"28",
             "title": "How to download or print a collect list",
             "category": "Lists",
             "content": [
@@ -669,7 +669,7 @@
             ]
         },
         {
-            "id":"32",
+            "id":"29",
             "title": "How to add a new collect list",
             "category": "Lists",
             "content": [
@@ -692,7 +692,7 @@
             ]
         },
         {
-            "id":"33",
+            "id":"30",
             "title": "The Bulk invoicing page",
             "category": "Lists",
             "content": [
@@ -718,7 +718,7 @@
             ]
         },
         {
-            "id":"35",
+            "id":"31",
             "title": "How to view bulk invoice information",
             "category": "Lists",
             "content": [
@@ -749,7 +749,7 @@
             ]
         },
         {
-            "id":"36",
+            "id":"32",
             "title": "How to print out the bulk information",
             "category": "Lists",
             "content": [
@@ -760,7 +760,7 @@
             ]
         },
         {
-            "id":"38",
+            "id":"6",
             "title": "How do I scan?",
             "category": "Scan",
             "content": [
@@ -779,7 +779,7 @@
             ]
         } ,
         {
-            "id":"39",
+            "id":"36",
             "title": "How do I use the Dashboard?",
             "category": "Dashboard",
             "content": [
@@ -799,7 +799,7 @@
             ]
         },
         {
-            "id":"40",
+            "id":"7",
             "title": "How do I get trophies?",
             "category": "Trophies",
             "content": [
@@ -818,7 +818,7 @@
             ]
         },
         {
-            "id":"41",
+            "id":"15",
             "title": "How do I search for users",
             "category": "Users",
             "content": [
@@ -843,7 +843,7 @@
             ]
         },
         {
-            "id":"26",
+            "id":"16",
             "title": "How do I create a new user",
             "category": "Users",
             "content": [
@@ -955,7 +955,7 @@
             ]
         },
         {
-            "id":"42",
+            "id":"17",
             "title": "How do I edit a user?",
             "category": "Users",
             "content": [
@@ -987,7 +987,7 @@
             ]
         },
         {
-            "id":"43",
+            "id":"18",
             "title": "How do I delete a user?",
             "category": "Users",
             "content": [
@@ -1016,7 +1016,7 @@
             ]
         },
         {
-            "id":"44",
+            "id":"19",
             "title": "How do I view a user's information",
             "category": "Users",
             "content": [
@@ -1041,7 +1041,7 @@
             ]
         },
         {
-            "id":"45",
+            "id":"8",
             "title": "How do I view the details of an order?",
             "category": "Parcels",
             "content": [
@@ -1334,7 +1334,7 @@
             ]
         },
         {
-            "id":"46",
+            "id":"9",
             "title": "How do I see shipments?",
             "category": "Parcels",
             "content": [
@@ -1461,7 +1461,7 @@
             ]
         },
         {
-            "id":"47",
+            "id":"10",
             "title": "How do I create a shipment?",
             "category": "Parcels",
             "content": [
@@ -1776,7 +1776,7 @@
             ]
         },
         {
-            "id":"48",
+            "id":"11",
             "title": "What can I do with the a shipment?",
             "category": "Parcels",
             "content": [
@@ -2006,7 +2006,7 @@
             ]
         },
         {
-            "id":"49",
+            "id":"12",
             "title": "How do I create a copy of a shipment",
             "category": "Parcels",
             "content": [
@@ -2105,7 +2105,7 @@
             ]
         },
         {
-            "id":"50",
+            "id":"13",
             "title": "How do I see orders?",
             "category": "Parcels",
             "content": [

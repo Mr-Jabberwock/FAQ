@@ -51,4 +51,7 @@ export default ({
 .results{
     background-color: white;
 }
+.category{
+    margin-left: 2rem;
+}
 </style>

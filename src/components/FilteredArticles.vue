@@ -1,8 +1,8 @@
 <template>
  <div class="wrapper"> 
-        <h2>Results for: "{{searchResult}}"</h2>    
+        <h2 class="keyword">Results for: "{{searchResult}}"</h2>    
         <div class="list-container" v-for="article in filteredArticles" :key="article.id">
-                <div class="list-item" @click="goToArticle(article)">
+                <div class="list-item" @click="goToArticle(article.title)">
                     <h3 class="list-item__title">{{article.title}}</h3>
                     <p v-if="article.content[0].bodyText !== '' " 
                         class="list-item__Text">{{article.content[0].bodyText}}
@@ -31,9 +31,14 @@ export default{
     },
     methods: {
         goToArticle(id) {
-            //id= encodeURIComponent(id)
+            var article = this.articles.find(
+                    article => article.title === id
+            )
+            id= encodeURIComponent(id)
             console.log(id.title);
-            this.$router.push("/articles/" + id.id);
+            localStorage.setItem('category', article.category);
+            this.activeItem = localStorage.setItem('category', article.category);
+            this.$router.push("/articles/" + id);
         }
     },
     watch: {
@@ -67,6 +72,9 @@ export default{
 body{
     
 }
+.keyword{
+    margin-left: 2rem;
+}
 .list-container{
    background-color: white;
 }
@@ -78,9 +86,11 @@ body{
     margin-top: 60px;
 }
 .list-item{
-    border: 1px solid #ebebeb;
-    margin-top: 1rem;
     cursor: pointer;
+    border: 1px solid #ebebeb;
+    margin-top:1rem;
+    width: 95%;
+    margin-left: 2.5%;
 }
 .list-item__title{
     margin-left: 3rem;

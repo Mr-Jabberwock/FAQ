@@ -1,6 +1,6 @@
 <template>
     <div class="wrapper">
-        <navigation-bar class="Navigation__Bar"></navigation-bar>
+        <navigation-bar class="navigation-bar"></navigation-bar>
         <div class="search-result-content">
             <search-bar class="searchInput"  @searchCriteria="searchData"></search-bar>
             <filtered-articles class="results"/>
@@ -28,6 +28,8 @@ export default{
     methods:{
         searchData(data){
             this.searchResult = data;
+            localStorage.setItem('category', data.category);
+            this.activeItem = localStorage.setItem('category', data.category);
             this.$router.push("/search/" + data).catch(()=>{});
         }
     }
@@ -48,9 +50,14 @@ body{
     margin-top: 60px;
 }
 .search-result-content{
+    /* margin-left: 30%;
+    width: 60%; */
+    background-color: white;
+    width: 60%;
     margin-left: 30%;
-    max-width: 60%;
+    padding-bottom: 1rem;
 }
+
 
 
 </style>
