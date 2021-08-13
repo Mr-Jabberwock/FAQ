@@ -1,9 +1,9 @@
 <template>
     <div id="faq">
-        <navigation-bar class="Navigation__Bar"></navigation-bar>
+        <navigation-bar class="navigation-bar"></navigation-bar>
         <div class="faq__content">
         <search-bar class="faq__searchInput"  @searchCriteria="searchData"></search-bar>
-        <accordion class="Accordion">
+        <accordion class="accordion">
             <topics>
             <!-- This slot will handle the title/header of the accordion and is the part you click on -->
                 <!-- <template slot="accordion-trigger" v-if="punchClockSearched"> -->
@@ -337,11 +337,11 @@ body{
      font-family: inherit;
      background-color: #f1f2f6;
 }
-.SearchBar{
+/* .SearchBar{
     margin-bottom: 50px;
     margin-left: 25%;
     margin-top: 100px;
-}
+} */
 
 #faq{
     font-family: "Avenir", Helvetica, Arial, sans-serif;
@@ -351,21 +351,33 @@ body{
     margin-top: 60px;
 }
 .faq__content{
-    padding-left: 30%;
-    max-width: 60%;
+  background-color: white;
+  width: 60%;
+  margin-left: 30%;
     
 }
-.Navigation__Bar, .Accordion{
+.faq__searchInput{
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5%;
+}
+.navigation-bar, .accordion{
    background-color: white;
 }
-.Navigation__Bar{
+.navigation-bar{
   margin-left: 5%;
 }
 .accordion__title{
     margin-left: 5%;
 }
 .accordion{
-    max-width: 80%;
+    width: 80%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+
 }
 .accordion-content__list{
     margin-top: 1rem;

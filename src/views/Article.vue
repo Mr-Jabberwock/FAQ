@@ -1,6 +1,6 @@
 <template>
     <div class="wrapper">
-        <navigation-bar></navigation-bar>
+        <navigation-bar class="navigation-bar"></navigation-bar>
         <div class="article">
             <search-bar class="searchInput"  @searchCriteria="searchData"></search-bar>
             <h1 class="article__title">{{articleData.title}}</h1>
@@ -80,11 +80,26 @@ body{
         margin-top: 60px;
     }
     .article{
-        padding-left: 30%;
-        max-width: 60%;
+    background-color: white;
+    width: 60%;
+    margin-left: 30%;
     }
-    img{
-        width: 50%;
-        height: 50%;
+    .article__title{
+        margin-left: 3rem;
+    }
+    .article__content{
+        width: 80%;
+        padding-left: 10%;
+        padding-right:10%;
+        padding-top: 1rem;
+        padding-bottom: 5%;
+        
+    }
+    .article__image{
+        display: block;
+        width: 75%;
+        height: 75%;
+        margin-right: auto;
+        margin-left: auto;
     }
 </style>

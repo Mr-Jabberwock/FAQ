@@ -94,7 +94,6 @@ body{
 }
 .navigation{
    position: fixed;
-   width: 15%;
 }
 .container{
    border-left: lightgrey solid 2px;

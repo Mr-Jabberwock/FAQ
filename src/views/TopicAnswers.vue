@@ -1,7 +1,7 @@
 <template>
     <div class="wrapper">
-        <navigation-bar class="navigation__bar"></navigation-bar>
-        <div class="Category__Search">
+        <navigation-bar class="navigation-bar"></navigation-bar>
+        <div class="category__search">
             <search-bar class="searchInput" @searchCriteria="searchData"></search-bar>
             <category-articles :key="componentKey"/>
         </div>
@@ -52,15 +52,12 @@ body{
         margin-top: 60px;
         
     }
-    .Category__Search{
+    .category__search{
         background-color: white;
-        width: 50%;
+        width: 60%;
         margin-left: 30%;
+        padding-bottom: 1rem;
 
-    }
-    .results{
-
-        
     }
     .results__item{
         cursor: pointer;
@@ -68,6 +65,7 @@ body{
         margin-top:1rem;
         width: 95%;
         margin-left: 2.5%;
+        
         
     }
     .results__itemTitle{
@@ -78,7 +76,10 @@ body{
         margin-right: 4rem;
     }
     .searchInput{
-        margin-left: 30%;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5%;
     }
     .navigation__bar{
         background-color: white;

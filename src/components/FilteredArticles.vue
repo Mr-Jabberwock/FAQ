@@ -1,6 +1,6 @@
 <template>
  <div class="wrapper"> 
-        <h2>Results for: "{{searchResult}}"</h2>    
+        <h2 class="keyword">Results for: "{{searchResult}}"</h2>    
         <div class="list-container" v-for="article in filteredArticles" :key="article.id">
                 <div class="list-item" @click="goToArticle(article)">
                     <h3 class="list-item__title">{{article.title}}</h3>
@@ -67,6 +67,9 @@ export default{
 body{
     
 }
+.keyword{
+    margin-left: 2rem;
+}
 .list-container{
    background-color: white;
 }
@@ -78,9 +81,11 @@ body{
     margin-top: 60px;
 }
 .list-item{
-    border: 1px solid #ebebeb;
-    margin-top: 1rem;
     cursor: pointer;
+    border: 1px solid #ebebeb;
+    margin-top:1rem;
+    width: 95%;
+    margin-left: 2.5%;
 }
 .list-item__title{
     margin-left: 3rem;

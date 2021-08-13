@@ -13,10 +13,12 @@ export default{
 
 <style>
    input{
-       width: 500px;
+       width: 100%;
        border-style: none;
        border-bottom: solid lightgrey 2px;
        font-size: 20px;
+       margin-left:auto;
+       margin-right:auto;
    }
 
 
