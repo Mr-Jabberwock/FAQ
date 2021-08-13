@@ -9,7 +9,7 @@
                     "bodyText": "The big green 'Punch in' button is a toggle switch. Press it to start your shift. When you do so it will turn red and the text will say 'Punch out'.",
                     "images": [
                         "Punch_In.png",
-                        "Punch_Out.png"
+                        "Punch_out.png"
                         
                     ]
                 },
@@ -93,13 +93,12 @@
                 {
                     "bodyText":"The details include what kind of work was done, when it was done, the duration, the number of orders they handled in the time frame and the information about the parcels they handled in the period. When the “Parcels” button is blue it can be pressed. When it is grey it cannot. By pressing a button when it is blue (meaning that the number of parcels handled in this period is not 0), a pop up will appear on the right side of the screen:",
                     "images": [
-                        "social_proof_task_bem.png"
+                        "Report_Page-Overview3.png"
                     ]
                 },
                 {
                     "bodyText":"The information given here is the company the parcel was handled for, the start time, the end time, duration and the orders that parcel consist of. By pressing the number of an order, you will be redirected to the parcels page where you can view information on this individual order.",
                     "images": [
-                        "social_proof_task_bem.png"
                     ]
                 }
             ]
@@ -112,7 +111,7 @@
                 {
                     "bodyText": "Use the date pickers or make a rough estimate with the week picker.",
                     "images":[
-                        "Report_Page-Timeframe-search"
+                        "Report_Page-Timeframe-search.png"
                     ]
                 }
             ]
@@ -125,7 +124,7 @@
                 {
                     "bodyText":"Throughout the website, there are a few different places, namely in the functions that handle lists, where you can print out content. To do so, you first need to set a printer here in the settings. ",
                     "images":[
-                        "Printer.jpg"
+                        "Printer.png"
                     ]
                 },
                 {
@@ -245,7 +244,7 @@
             "content": [
                 {
                     "bodyText": "The serial number site contains information regarding a product checklist and some serial number check boxes.",
-                    "images": ["Serial_Number_Page"]
+                    "images": ["Serial_Number_Page.png"]
                 }
             ]
         },
@@ -384,7 +383,7 @@
                 {
                     "bodyText": "To get the information of a serial number, click on the “Search” field. You will be given a drop down with options of serial numbers. You can also write in the search field to filter/search for a specific serial number.",
                     "images": [
-                        "Serial_Number.jpg"
+                        "Serial_Number.png"
                     ]
                 },
                 {
@@ -434,7 +433,7 @@
                 {
                     "bodyText":"Start date:",
                     "images":[ 
-                        "Salary-DateStart.png"
+                        "Salary_DateStart.png"
                     ]
                 },
                 {
@@ -757,38 +756,6 @@
                 {
                     "bodyText": "When viewing the list of bulks, simply find the bulk you wish to print. Then go to the right side of the bulks list item, and hover over the three dots symbol. Then press “Print”.",
                     "images": []
-                }
-            ]
-        },
-        {
-            "id":"13",
-            "title": "How do I view reports?",
-            "category": "Punch Clock",
-            "content": [
-                {
-                    "bodyText": "To view a report go to the Report page.",
-                    "images": [
-
-                    ]
-                },
-                {
-                    "bodyText":"Like with the Validation page, the “Report” page is not different from the others except in regards to the content of the list at the bottom of the page.",
-                    "images": [
-                        "social_proof_task_bem.png"
-                    ]
-                },
-                {
-                    "bodyText":"The “Report” list keeps track of employees' work. By clicking on the arrow to the left you can see the details of the employees’ work history for the chosen period. ",
-                    "images": [
-                        "logo.png",
-                        "puppies.jpg"
-                    ]
-                },
-                {
-                    "bodyText":"The details include what kind of work was done, when it was done, the duration, the number of orders they handled in the time frame and the information about the parcels they handled in the period.",
-                    "images": [
-
-                    ]
                 }
             ]
         },
