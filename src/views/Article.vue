@@ -14,8 +14,8 @@
                 :key="image" class="article__image" :src="require('../assets/image/' + image)">
             </div>
             <div class="buttons">
-                <button v-if="articleData.id != 1" @click="previousArticle()" >Previous Article</button>
-                <button @click="nextArticle()" >Next Article</button>
+                <button class="buttons__previous" v-if="articleData.id != 1" @click="previousArticle()" >Previous Article</button>
+                <button class="buttons__next" v-if="articleData.id != articles.length-1" @click="nextArticle()" >Next Article</button>
             </div>
         </div>
        
@@ -51,12 +51,30 @@ export default {
                 article => article.title === this.articleURI
             )
         },
+        // categoryArticles(){
+        //     var result = this.articles.find(
+        //         article => article.title === this.articleURI
+        //     ) 
+        //     return this.articles.filter(function(article) {
+        //         return article.category === result.category;
+        //     });
+        // },
         nextTitle(){
+            var result = this.articles.find(
+                article => parseInt(article.id) === parseInt(this.articleData.id) +1
+                )
+            localStorage.setItem('category', result.category);
+            
             return this.articles.find(
                 article => parseInt(article.id) === parseInt(this.articleData.id) +1
+
             )
         },
         previousTitle(){
+           var result = this.articles.find(
+                article => parseInt(article.id) === parseInt(this.articleData.id) -1
+                )
+            localStorage.setItem('category', result.category);
             return this.articles.find(
                 article => parseInt(article.id) === parseInt(this.articleData.id) -1
             )
@@ -126,5 +144,11 @@ body{
 .buttons{
     display: flex;
     justify-content: space-between;
+}
+.buttons__previous{
+    margin-right: auto;
+}
+.buttons__next{
+    margin-left: auto;
 }
 </style>

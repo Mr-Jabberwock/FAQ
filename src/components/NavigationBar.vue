@@ -65,16 +65,20 @@ export default {
     name: 'NavigationBar',
     data(){
        return{
-          activeItem: this.$route.params.id
+          activeItem: localStorage.getItem('category')
        };
     },
     methods: {
       goToStart() {
             if(this.activeItem !== ""){
+               localStorage.setItem('category', '');
+               this.activeItem = localStorage.setItem('category', '');
                this.$router.push("/").catch(()=>{});
             }
       },
       goToCategory(category) {
+         localStorage.setItem('category', category);
+         this.activeItem = localStorage.setItem('category', category);
          this.$router.push("/categories/" + category).catch(()=>{});
       },
       isActive(menuItem) {

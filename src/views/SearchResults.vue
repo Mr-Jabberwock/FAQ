@@ -28,6 +28,8 @@ export default{
     methods:{
         searchData(data){
             this.searchResult = data;
+            localStorage.setItem('category', data.category);
+            this.activeItem = localStorage.setItem('category', data.category);
             this.$router.push("/search/" + data).catch(()=>{});
         }
     }

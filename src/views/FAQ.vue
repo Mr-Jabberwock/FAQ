@@ -263,7 +263,12 @@ export default {
        this.$router.push("/search/" + data);
       },
       goToArticle(id) {
+        var article = this.articles.find(
+                article => article.title === id
+        )
         id = encodeURIComponent(id);
+        localStorage.setItem('category', article.category);
+        this.activeItem = localStorage.setItem('category', article.category);
         this.$router.push("/articles/" + id);
     }
   },
@@ -357,7 +362,7 @@ body{
     
 }
 .faq__searchInput{
-  width: auto;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 5%;
