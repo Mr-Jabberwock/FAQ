@@ -4,7 +4,7 @@
         <div class="article">
             <search-bar class="searchInput"  @searchCriteria="searchData"></search-bar>
             <h1 class="article__title">{{articleData.title}}</h1>
-            <div class="article__content"                     
+            <div   class="article__content"                     
             v-for="content in articleData.content" 
             :key="content.bodyText">
                 <p class="article__bodytext">
@@ -18,8 +18,26 @@
                 <button class="buttons__next" v-if="articleData.id != articles.length-1" @click="nextArticle()" >Next Article</button>
             </div>
         </div>
-       
+        <div class="edit" v-show="edit">
+            <div class="article">
+            
+            <h1 class="article__title">{{articleData.title}}</h1>
+            <div   class="article__content"                     
+            v-for="content in articleData.content" 
+            :key="content.bodyText">
+                <textarea class="article__bodytext" v-model="content.bodyText">
+                    
+                </textarea>
+                <img alt="#" v-for="image in content.images" 
+                :key="image" class="article__image" :src="require('../assets/image/' + image)">
+            </div>
+        </div>
+            <button @click="editArticle">Edit</button>
+
+        </div>
     </div>
+
+    
 </template>
 <script>
 import NavigationBar from '../components/NavigationBar'
@@ -36,7 +54,8 @@ export default {
     data(){
         return{
             articles: json.articles,
-            articleURI: decodeURIComponent(this.$route.params.id)
+            articleURI: decodeURIComponent(this.$route.params.id),
+            edit: false
         }
     },
     computed: {
@@ -90,6 +109,11 @@ export default {
         },
         previousArticle(){
             this.$router.push("/articles/" + encodeURIComponent(this.previousTitle.title))
+        },
+        editArticle(){
+            console.log(this.edit)
+            this.edit = !this.edit;
+            
         }
     },
     // method:{
@@ -144,6 +168,16 @@ body{
 .buttons{
     display: flex;
     justify-content: space-between;
+}
+.edit{
+    height: 100%;
+    width: 80%;
+    background-color: white;
+    float: right;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    overflow: scroll;
 }
 .buttons__previous{
     margin-right: auto;
