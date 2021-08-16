@@ -5,6 +5,7 @@
       <h1 class="title__text" @click="goToStart">FAQ</h1>
    </div>
     <div>
+       <button class="create" @click="goToCreate">Create new</button>
     <ul class="subject_list">
          <li class="subject_list__item"  @click="goToCategory('Punch Clock')" :class="{active: isActive('Punch Clock')}" >
             Punch Clock
@@ -86,6 +87,9 @@ export default {
       },
       setActive(category) {
          this.$router.push("/categories/" + category);
+      },
+      goToCreate() {
+         this.$router.push("/create").catch(()=>{});
       }
    }
 }

@@ -27,6 +27,11 @@ const routes = [
     path: '/categories/:id',
     name: 'Topic',
     component: () => import(/* webpackChunkName: "about" */ '../views/TopicAnswers.vue')
+  },
+  {
+    path: '/create',
+    name: 'Create',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Create.vue')
   }
 ]
 
