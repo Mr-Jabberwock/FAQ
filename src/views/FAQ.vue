@@ -255,7 +255,8 @@ export default {
   },
   data(){
     return{
-      articles: json.articles
+      articles: json.articles,
+      result: JSON.stringify(this.articles, null, 2)
     }
   },
   methods: {

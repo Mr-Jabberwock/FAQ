@@ -1,0 +1,7 @@
+name = input('Enter you name: ')
+print('Hello', name)
+x = input('Enter a number: ')
+y = input('Enter a number: ')
+a = int(x)
+b = int(y)
+print(a+b)
