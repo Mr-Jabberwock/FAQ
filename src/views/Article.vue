@@ -2,7 +2,7 @@
     <div class="wrapper">
         <navigation-bar class="navigation-bar"></navigation-bar>
         <div class="article">
-            
+            <search-bar class="searchInput"  @searchCriteria="searchData"></search-bar>
             <h1 class="article__title">{{articleData.title}}</h1>
             <div   class="article__content"                     
             v-for="content in articleData.content" 
